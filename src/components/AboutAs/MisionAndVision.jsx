@@ -52,7 +52,7 @@ const MisionAndVision=()=>{
   
 </Row>  
 
-<img src={реконструкција} alt=''/>
+<img className="container-image" src={реконструкција} alt=''/>
 
 
 <Row><Col xs={12} sm={12} md={6} lg={6} xl={6}>
