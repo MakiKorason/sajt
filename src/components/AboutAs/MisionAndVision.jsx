@@ -3,7 +3,7 @@ import React from "react";
 import horhe from '../../images/horhe.jpg'
 import stiven from '../../images/stiven.jpg'
 import AnimatedImage from "../Department/AnimatedImage";
-import реконструкција from '../../images/реконструкција.jpg'
+
 
 const MisionAndVision=()=>{
 
@@ -52,7 +52,6 @@ const MisionAndVision=()=>{
   
 </Row>  
 
-<img className="container-image" src={реконструкција} alt=''/>
 
 
 <Row><Col xs={12} sm={12} md={6} lg={6} xl={6}>
