@@ -1,0 +1,32 @@
+
+.container-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2%;
+  border-radius: 5px;
+  border: 5px solid #3f2c1165;
+  animation: fadeInText 3s forwards;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 2);
+  margin-bottom: 4%; 
+  pointer-events: none;
+}
+
+.container-image2{
+  height: 25%;
+  width: 25%;
+  margin-left: 6%;
+  pointer-events: none;
+}
+
+.container-image3{
+  height: 90%;
+  width: 70%;
+  margin-left: 8%;
+  pointer-events: none;
+}
+
+.container-image4{
+  height: 70%;
+  width: 50%;
+  pointer-events: none;
+}
