@@ -3,7 +3,7 @@ import React from "react";
 import horhe from '../../images/horhe.jpg'
 import stiven from '../../images/stiven.jpg'
 import AnimatedImage from "../Department/AnimatedImage";
-
+import реконструкција from '../../images/реконструкција.jpg'
 
 const MisionAndVision=()=>{
 
@@ -51,6 +51,10 @@ const MisionAndVision=()=>{
   <AnimatedImage className="container-image" alt='књиге' src={horhe}/></Col>
   
 </Row>  
+
+<img src={реконструкција} alt=''/>
+
+
 <Row><Col xs={12} sm={12} md={6} lg={6} xl={6}>
         
 <Button onClick={shoot}  class="btn-library" id="toastbtn">Број корисника!</Button>  </Col></Row>
