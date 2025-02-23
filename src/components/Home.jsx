@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
-import { Button,  Col, Container,  Row } from 'react-bootstrap';
+import { Button,  Col,   Row } from 'react-bootstrap';
 import cobbis from '../images/cobbis.jpg'
 import matica from '../images/matica.jpg'
 import narodna from '../images/narodna.jpg'
@@ -67,7 +67,7 @@ const Home =()=> {
       <img src={biblioteka} alt="Зграда библиотеке"  className="d-block w-100 image-carousel img-thumbnail"/>
 
       <div  className="carousel-caption ">
-        <p >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
+        <p >Зграда gрадске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
           стваралаштва са изразитим карактеристикама средњоевропске сецесије, уз знатно присуство елемената традиционалне архитектуре.
         <Button
     href="http://localhost:3000/history " 
