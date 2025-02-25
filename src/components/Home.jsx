@@ -21,7 +21,8 @@ import books from '../images/books.jpg'
 import Panonija from '../images/Panonija.jpg'
 import karoselSlika from '../images/karoselSlika.jpg'
 import digitalna1 from '../images/digitalna1.jpg'
-import objava1 from '../images/objava1.jpg'
+
+import objava4 from '../images/objava4.jpg'
 // import zahvalnica from '../images/zahvalnica.jpg'
 import objava3 from '../images/objava3.jpg'
 import Calendar from 'react-calendar';
@@ -53,7 +54,7 @@ const Home =()=> {
   return (
 
     <>
-  <Row><Col md={12}>
+   <Row><Col md={12}>
   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="15000" data-bs-pause="false" >
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
@@ -64,10 +65,10 @@ const Home =()=> {
  
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={biblioteka} alt="Зграда библиотеке"  className="d-block w-100 image-carousel img-thumbnail"/>
+      <img src={biblioteka} alt="Зграда библиотеке"  className="d-block w-100 image-carousel img-thumbnail image-fluid"/>
 
       <div  className="carousel-caption ">
-        <p >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
+        <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
           стваралаштва.
         <Button
     href="http://localhost:3000/history " 
@@ -83,14 +84,14 @@ const Home =()=> {
 
     <div  className="carousel-item">
   
-<img src={digitalna1} alt="Атанасије Стојковић" className="d-block w-100 float-end image-carousel img-thumbnail"/>
+<img src={digitalna1}  alt="Атанасије Стојковић" className="d-block w-100 float-end image-carouselc img-thumbnail  img-fluid"/>
       <div  className="carousel-caption ">
-         <h3 style={{padding:'1%'}}>Атанасије Стојковић</h3>
-        <p style={{padding:'1%'}}>Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
+    
+        <p style={{padding:'1.5%',  objectPosition: '50% 10%' }}>Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
          <Button
     href="http://localhost:3000/events" 
       target="_blank"
- className="btn btn-light container-button"
+ className="btn btn-light container-button btn-lg"
   >
  ДЕТАЉНИЈЕ
   </Button> </p>
@@ -98,9 +99,9 @@ const Home =()=> {
     </div>
 
     <div className="carousel-item">
-      <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail " />
+      <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 float-end image-carouselb img-thumbnail img-fluid " />
       <div  className="carousel-caption ">
-        <p>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
+        <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
         <Button
     href="http://localhost:3000/project" 
       target="_blank"
@@ -113,11 +114,11 @@ const Home =()=> {
     </div>
 
     <div  className="carousel-item">
-     <img src={books} alt="књиге"   className="d-block w-100 image-carousel img-thumbnail " />
+     <img src={books} alt="књиге"   className="d-block w-100 float-end  image-carousela img-thumbnail" />
 
       <div className="carousel-caption ">
   
-<p><IoBookSharp /> <IoBookSharp /> <IoBookSharp /><br/>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА!
+<p style={{padding:'4%'}}><IoBookSharp /> <IoBookSharp /> <IoBookSharp /><br/>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА!
         <Button
     href="http://localhost:3000/recommendations" 
       target="_blank"
@@ -191,7 +192,19 @@ const Home =()=> {
         
       </Col>  
       <Col md={8}><p className='container-title'>Промоције књига и различита тематска предавања се углавном одржавају у просторијама Градске библиотеке. </p>  
-        </Col> <Col md={6}>
+        </Col>
+        
+        <Col md={6}><hr/>
+          
+          <img
+            src={objava4}
+            alt="Објава 4"
+            className="image-event"
+          />
+     
+</Col>         
+        
+         <Col md={6}>
      <hr/>
     <img
                 src={objava3}
@@ -200,15 +213,6 @@ const Home =()=> {
               />
     
          </Col>
-        <Col md={6}><hr/>
-          
-              <img
-                src={objava1}
-                alt="Објава 1"
-                className="image-event"
-              />
-         
- </Col> 
 
         </Row>         
         <br/>
@@ -236,7 +240,7 @@ className='btn btn-secondary'
 className='btn btn-secondary'
 >
 ДЕТАЉНИЈЕ
-</Button> </Col><hr/>
+</Button><br/><hr/> </Col>
 </Row>
      
     
