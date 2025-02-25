@@ -41,8 +41,8 @@ const Events = () => {
   return (
     <>
 
-      <Container className='container-library mt-4 mb-4'>
-        <Row>
+      <Container className='container-library d-flex flex-wrap justify-content-center mt-4 mb-4'>
+        <Row> 
           <Col md={6} xs={12} sm={12} lg={6} xl={6} className='text-center'>
           
             < AnimatedCard  className='events-card' >

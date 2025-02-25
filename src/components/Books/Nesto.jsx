@@ -1,7 +1,7 @@
 import { Button, Card } from "react-bootstrap"
 import './Nesto.css'
-// import { useAnimationFrame } from "motion/react"
-// import { useRef } from "react"
+
+
 const Nesto=()=>{
     const handleShowEvent1 = () => {
    
@@ -46,7 +46,7 @@ const Nesto=()=>{
                 <div className="side bottom" />
                 <div className="side back" />
             </div> */}
-         
+
       </div>
     )
 

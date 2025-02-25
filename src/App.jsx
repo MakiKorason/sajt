@@ -53,7 +53,8 @@ const App = () => {
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="ms-auto fs-5 " >
+      <Nav className="ms-auto fs-5 mt-4" >
+    
         <NavDropdown title="О НАМА" id="about-dropdown"   >
           <NavDropdown.Item as={Link} to="/history">Историјат библиотеке</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/employees">Запослени</NavDropdown.Item>

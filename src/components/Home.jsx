@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
-import { Button,  Col,   Row } from 'react-bootstrap';
+import { Button,   Col,   Row } from 'react-bootstrap';
 import cobbis from '../images/cobbis.jpg'
 import matica from '../images/matica.jpg'
 import narodna from '../images/narodna.jpg'
@@ -68,7 +68,7 @@ const Home =()=> {
 
       <div  className="carousel-caption ">
         <p >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
-          стваралаштва са изразитим карактеристикама средњоевропске сецесије, уз знатно присуство елемената традиционалне архитектуре.
+          стваралаштва.
         <Button
     href="http://localhost:3000/history " 
       target="_blank"
@@ -85,8 +85,9 @@ const Home =()=> {
   
 <img src={digitalna1} alt="Атанасије Стојковић" className="d-block w-100 float-end image-carousel img-thumbnail"/>
       <div  className="carousel-caption ">
-         <h3>Атанасије Стојковић</h3>
-        <p>Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.   <Button
+         <h3 style={{padding:'1%'}}>Атанасије Стојковић</h3>
+        <p style={{padding:'1%'}}>Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
+         <Button
     href="http://localhost:3000/events" 
       target="_blank"
  className="btn btn-light container-button"
@@ -132,24 +133,25 @@ const Home =()=> {
     </div></Col>
 </Row>
         <AnimatedContainer className='container-library ms-auto mt-4 mb-4'>
-          
+        
          <Row className='text-center'>
-         
-         <Col md={4} >       
+         <Col md={4}>     
+     
            <h6 className='container-title'><br/> Претражите<br/> наш фонд  </h6>
-        <br/><a  href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">
+        <a href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">
         <img 
       src={cobbis}
       alt="COBISS" 
-      style={{marginLeft:'-8%'}}
+      className='container-image'
+      style={{border:'none'}}
       />
- </a> 
+ </a>   
      </Col>
-      
+
      <Col md={4}>
      <h6 className='container-title'>  
               <br/> Наш дигитални<br/> фонд </h6>
-               <br/><br/><a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer"> <img 
+               <br/><a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer"> <img 
      src="/logo.jpg"
       alt="Грб библиотеке" 
       /></a>
@@ -157,8 +159,8 @@ const Home =()=> {
     
          <Col  md={4}  >
           <h6 className="container-title">
-              <br/> Књижевни <br/>конкурс </h6>
-          <br/> <a  href="http://localhost:3000/competition" target='_blank' rel="noopener noreferrer">   <img 
+                <br/> <br/> Књижевни <br/>конкурс </h6>
+           <a  href="http://localhost:3000/competition" target='_blank' rel="noopener noreferrer">   <img 
       src={konkurs}
       alt="Конкурс" 
        style={{width:'60%'}}

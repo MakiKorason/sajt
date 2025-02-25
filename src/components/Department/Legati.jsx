@@ -5,8 +5,12 @@ import Legat3 from '../../images/Legat3.jpg'
 import AnimatedImage from "./AnimatedImage";
 import { LiaBookSolid } from "react-icons/lia";
 
+
+
 const Legati=()=>{
-    return(
+
+   
+   return(
      <Container className='container-library mt-4 mb-4 '>
         <div className="container-frame">
     <Row> <h1 className="container-title" >ЛЕГАТИ</h1>     <div className="container-icon">
@@ -32,8 +36,8 @@ const Legati=()=>{
   
    <Row>
     <Col md={4}> 
-    <AnimatedImage src={Legat1} alt="Легат Николе Дреновца" className='container-image'/></Col>
-
+    <AnimatedImage src={Legat1} alt="Легат Николе Дреновца" className='container-image'/>
+</Col>
    <Col md={4}> 
    <AnimatedImage src={Legat2} alt="Легат Милутина Стојковића" className='container-image'/>
     </Col>
