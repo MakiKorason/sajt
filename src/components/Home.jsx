@@ -158,8 +158,7 @@ const Home =()=> {
       </Col> 
     
          <Col  md={4}  >
-         <br/>
-          <h6 className="container-title">
+         <br/><br/> <h6 className="container-title">
                  Књижевни <br/>конкурс </h6>
            <a  href="http://localhost:3000/competition" target='_blank' rel="noopener noreferrer">   <img 
       src={konkurs}
