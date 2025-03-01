@@ -23,8 +23,6 @@ import Legati from './components/Department/Legati';
 import MisionAndVision from './components/AboutAs/MisionAndVision';
 import { FaEnvelope } from 'react-icons/fa';
 
-
-
 const App = () => {
 
   return (<>

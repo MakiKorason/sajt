@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
-import { Button,   Col,   Row } from 'react-bootstrap';
+import { Button,   Col,   Container,   Row } from 'react-bootstrap';
 import cobbis from '../images/cobbis.jpg'
 import matica from '../images/matica.jpg'
 import narodna from '../images/narodna.jpg'
@@ -26,7 +26,8 @@ import objava4 from '../images/objava4.jpg'
 import objava3 from '../images/objava3.jpg'
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import AnimatedContainer from '../AnimatedContainer';
+import AnimatedImage from "./Department/AnimatedImage";
+import AnimatedCard from './Department/AnimatedCard'; 
 
 
 const Home =()=> { 
@@ -132,12 +133,13 @@ const Home =()=> {
 
     </div></Col>
 </Row>
-        <AnimatedContainer className='container-library ms-auto mt-4 mb-4'>
+        <Container className='container-library ms-auto mt-4 mb-4'>
         
          <Row className='text-center'>
          <Col md={4}>     
-     
+        
            <h6 className='container-title'><br/> Претражите<br/> наш фонд  </h6>
+         <AnimatedCard>
         <a href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">
         <img 
       src={cobbis}
@@ -145,57 +147,62 @@ const Home =()=> {
       className='container-image'
       style={{border:'none'}}
       />
- </a>   
+ </a>  </AnimatedCard> 
      </Col>
 
      <Col md={4}>
      <h6 className='container-title'>  
               <br/> Наш дигитални<br/> фонд </h6>
+              <AnimatedCard>
                <br/><a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer"> <img 
      src="/logo.jpg"
       alt="Грб библиотеке" 
-      /></a>
+      /></a></AnimatedCard>
       </Col> 
     
          <Col  md={4}  >
          <br/><br/> <h6 className="container-title">
                  Књижевни <br/>конкурс </h6>
-           <a  href="http://localhost:3000/competition" target='_blank' rel="noopener noreferrer">   <img 
+                 <AnimatedCard>
+           <a  href="http://localhost:3000/competition" target='_blank' rel="noopener noreferrer">  
+            <img 
       src={konkurs}
       alt="Конкурс" 
        style={{width:'60%'}}
-      /></a>
+      /></a></AnimatedCard>
         </Col></Row>
       
      <hr/>
        
-           <Row>   <h1 className='container-title' >Година иза нас</h1>
+           <Row>   
             <Col md={12}>
-            <div className='container-iframe'>
+            <AnimatedCard className='container-iframe'>
             <iframe src="https://www.youtube.com/embed/0Ay8XmhQHSI" 
     title="Филм: Година иза нас" 
     >
-    </iframe></div>
+    </iframe></AnimatedCard>
        </Col></Row>
-       </AnimatedContainer>
+       </Container>
 
     <br/><hr/>
   <h1 className= "container-title"  
        >ОГЛАСНА ТАБЛА</h1>
        <hr style={{margin: '0 auto', width: '50%' ,border: '1px solid' }} />
    
-    <AnimatedContainer  className=" container-library ms-auto mt-4 mb-4 ">
+    <Container  className=" container-library ms-auto mt-4 mb-4 ">
  <Row>
  <Col md={4} className='mt-3 mb-3  '>
+ <AnimatedCard>
         <Calendar  onChange={onChange} value={date}  tileClassName={tileClassName}  />
-        
+        </AnimatedCard>
+        <br/>
       </Col>  
       <Col md={8}><p className='container-title'>Промоције књига и различита тематска предавања се углавном одржавају у просторијама Градске библиотеке. </p>  
         </Col>
         
         <Col md={6}><hr/>
           
-          <img
+          <AnimatedImage
             src={objava4}
             alt="Објава 4"
             className="image-event"
@@ -205,7 +212,7 @@ const Home =()=> {
         
          <Col md={6}>
      <hr/>
-    <img
+    <AnimatedImage
                 src={objava3}
                 alt="Објава 3"
                 className="image-event"
@@ -215,11 +222,11 @@ const Home =()=> {
 
         </Row>         
         <br/>
-        </AnimatedContainer>
+        </Container>
 
         <br/><hr/>
-
-      <AnimatedContainer className='container-library ms-auto mt-4 mb-4' >
+   <AnimatedCard>
+      <Container className='container-library ms-auto mt-4 mb-4' >
         <Row>
     
     <Row>
@@ -241,11 +248,9 @@ className='btn btn-secondary'
 ДЕТАЉНИЈЕ
 </Button><br/><hr/> </Col>
 </Row>
-     
-    
     </Row>
-      </AnimatedContainer>
-
+      </Container>
+</AnimatedCard>
     <br/><hr/>
 
 <h1 className='container-title'>Пријатељи и сарадници </h1>

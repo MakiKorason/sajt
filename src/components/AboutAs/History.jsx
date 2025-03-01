@@ -81,7 +81,7 @@ COBISS/OPAC окружење и све услуге корисницима
 1912. године, под надзором пројектанта Осјечанина
 Виктора Аксмана. </p><hr/>
          </Col>
-           <Col xs={12} sm={12} md={6} lg={6} xl={6} className='mt-5'>
+           <Col xs={12} sm={12} md={6} lg={6} xl={6} className='mt-'>
           <AnimatedImage
             src={DJNA1}
             alt="Дом војске" 

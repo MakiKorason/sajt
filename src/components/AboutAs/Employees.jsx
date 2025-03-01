@@ -56,32 +56,36 @@ COBISS програмском окружењу. Библиотека
                <p className="employees">Књижничар: Драган Јанковић </p>
              </Card.Body>
          </AnimatedCard > </Col>  
+
+        <hr/>
+
     <Col md={12}  >
-             <Card className="employee-card  mb-4 shadow-sm">
+             <AnimatedCard className="employee-card  mb-4 shadow-sm">
              <Card.Body>
                <h4 className="text-center employees-text">Директор</h4>
                   <ImUserTie className="container-icon" />
                <p className="text-center employees">Дамир Васиљевић Тоскић</p>
              </Card.Body>
-           </Card> 
+           </AnimatedCard> 
        
 
-           <Card className="employee-card  mb-4 shadow-sm">
+           <AnimatedCard className="employee-card  mb-4 shadow-sm">
              <Card.Body>
                <h4 className="text-center employees-text" >Администрација</h4><hr/>
                <p className="text-center employees"><br/>Финансијско-рачуноводствени сарадник: Јована Маринковић </p>
                <CiMoneyCheck1 className="container-icon" />
               <p className="text-center employees"><br/>Правно административно финансијски референт: Брана Стојковић Поповић  </p>
              </Card.Body>
-           </Card>
-           <Card className="  employee-card  mb-4 shadow-sm">
+           </AnimatedCard>
+           <hr/>
+           <AnimatedCard className="  employee-card  mb-4 shadow-sm">
             <Card.Body>
            <h4  className="text-center employees-text">Одржавање</h4><hr/>
                <p className=" text-center employees">Хигијеничар-спремачица: Брана Угреновић </p>
                <br/><FaTools  className="container-icon" />
                <p className="text-center employees"><br/>Техничар за одржавање аудио-видео система и остале опреме: Драган Маричић </p>
             </Card.Body>
-           </Card> 
+           </AnimatedCard> 
     </Col>
       </Row>           </div>      
             
