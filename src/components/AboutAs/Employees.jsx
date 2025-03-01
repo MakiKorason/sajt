@@ -34,7 +34,7 @@ COBISS програмском окружењу. Библиотека
 Националном службом за запошљавање.    <br/>
           </p>
         </Col>  
-          <Col xs={12} sm={12} md={6} lg={6} xl={6} >    
+          <Col xs={12} sm={12} md={12} lg={12} xl={12} >    
            <AnimatedCard className="employee-card  mb-4 shadow-sm">
              <Card.Body>
              <br/> <h4 className="text-center employees-text">Одрасло одељење</h4><hr/>
@@ -56,8 +56,7 @@ COBISS програмском окружењу. Библиотека
                <p className="employees">Књижничар: Драган Јанковић </p>
              </Card.Body>
          </AnimatedCard > </Col>  
-
-           <Col md={6}  >
+    <Col md={12}  >
              <Card className="employee-card  mb-4 shadow-sm">
              <Card.Body>
                <h4 className="text-center employees-text">Директор</h4>
@@ -65,6 +64,7 @@ COBISS програмском окружењу. Библиотека
                <p className="text-center employees">Дамир Васиљевић Тоскић</p>
              </Card.Body>
            </Card> 
+       
 
            <Card className="employee-card  mb-4 shadow-sm">
              <Card.Body>
