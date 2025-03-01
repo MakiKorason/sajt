@@ -81,7 +81,7 @@ COBISS/OPAC окружење и све услуге корисницима
 1912. године, под надзором пројектанта Осјечанина
 Виктора Аксмана. </p><hr/>
          </Col>
-           <Col xs={12} sm={12} md={6} lg={6} xl={6} className='mt-2'>
+           <Col xs={12} sm={12} md={6} lg={6} xl={6} className='mt-4'>
           <AnimatedImage
             src={DJNA1}
             alt="Дом војске" 
@@ -101,8 +101,8 @@ COBISS/OPAC окружење и све услуге корисницима
             src={DJNA}
             alt="Слика старе библиотеке" 
             className='container-image mt-1'
-          /></Col> 
-           <br/>
+          />        <br/><br/></Col> 
+   
           <Col md={6} >
           <p  className='container-text'>
           У главну зграду узидане су две идентичне фигуре

@@ -21,7 +21,6 @@ import books from '../images/books.jpg'
 import Panonija from '../images/Panonija.jpg'
 import karoselSlika from '../images/karoselSlika.jpg'
 import digitalna1 from '../images/digitalna1.jpg'
-
 import objava4 from '../images/objava4.jpg'
 // import zahvalnica from '../images/zahvalnica.jpg'
 import objava3 from '../images/objava3.jpg'
@@ -84,7 +83,7 @@ const Home =()=> {
 
     <div  className="carousel-item">
   
-<img src={digitalna1}  alt="Атанасије Стојковић" className="d-block w-100 float-end image-carouselc img-thumbnail  img-fluid"/>
+<img src={digitalna1}  alt="Атанасије Стојковић" className="d-block w-100 float-end image-carousel img-thumbnail  img-fluid"/>
       <div  className="carousel-caption ">
     
         <p style={{padding:'1.5%',  objectPosition: '50% 10%' }}>Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
@@ -99,7 +98,7 @@ const Home =()=> {
     </div>
 
     <div className="carousel-item">
-      <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 float-end image-carouselb img-thumbnail img-fluid " />
+      <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 float-end image-carousel img-thumbnail img-fluid " />
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
         <Button
@@ -114,7 +113,7 @@ const Home =()=> {
     </div>
 
     <div  className="carousel-item">
-     <img src={books} alt="књиге"   className="d-block w-100 float-end  image-carousela img-thumbnail" />
+     <img src={books} alt="књиге"   className="d-block w-100 float-end  image-carousel img-thumbnail" />
 
       <div className="carousel-caption ">
   

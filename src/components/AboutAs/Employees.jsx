@@ -10,8 +10,6 @@ import { FaTools } from "react-icons/fa";
 import { LiaBookSolid } from "react-icons/lia";
 import AnimatedCard from '../Department/AnimatedCard'; 
 const Employees = () => {
-
-
     return (
 
      <Container className="container-library ms-auto  mt-4 mb-4"> 
@@ -20,7 +18,6 @@ const Employees = () => {
         <h1 className="container-title">Запослени</h1><div className="container-icon">
             <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>
         <Col  xs={12} sm={12} md={12} lg={12} xl={12}>
-      
           <p className="container-text">
           <br/>Градска библиотека „Атанасије Стојковић“ у Руми,
 оспособљена је за стручно и квалитетно обављање
@@ -61,30 +58,30 @@ COBISS програмском окружењу. Библиотека
          </AnimatedCard > </Col>  
 
            <Col md={6}  >
-             <AnimatedCard className="employee-card  mb-4 shadow-sm">
+             <Card className="employee-card  mb-4 shadow-sm">
              <Card.Body>
                <h4 className="text-center employees-text">Директор</h4>
                   <ImUserTie className="container-icon" />
                <p className="text-center employees">Дамир Васиљевић Тоскић</p>
              </Card.Body>
-           </AnimatedCard> 
+           </Card> 
 
-           <AnimatedCard className="employee-card  mb-4 shadow-sm">
+           <Card className="employee-card  mb-4 shadow-sm">
              <Card.Body>
                <h4 className="text-center employees-text" >Администрација</h4><hr/>
                <p className="text-center employees"><br/>Финансијско-рачуноводствени сарадник: Јована Маринковић </p>
                <CiMoneyCheck1 className="container-icon" />
               <p className="text-center employees"><br/>Правно административно финансијски референт: Брана Стојковић Поповић  </p>
              </Card.Body>
-           </AnimatedCard>
-           <AnimatedCard className="  employee-card  mb-4 shadow-sm">
+           </Card>
+           <Card className="  employee-card  mb-4 shadow-sm">
             <Card.Body>
            <h4  className="text-center employees-text">Одржавање</h4><hr/>
                <p className=" text-center employees">Хигијеничар-спремачица: Брана Угреновић </p>
                <br/><FaTools  className="container-icon" />
                <p className="text-center employees"><br/>Техничар за одржавање аудио-видео система и остале опреме: Драган Маричић </p>
             </Card.Body>
-           </AnimatedCard> 
+           </Card> 
     </Col>
       </Row>           </div>      
             

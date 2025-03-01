@@ -60,7 +60,7 @@ const Contact = () => {
          <br/>       
           <Row >
            <Col md={6} className='container-text text-center'>
-              <FaPhone style={{ fontSize: '2rem', color: '#4b301f' }} /><br/> <hr/>
+              <FaPhone className='container-icon' /><br/> <hr/>
               <h5>Дечије одељење</h5>
              <p>022/495-047</p>
               </Col>
@@ -85,13 +85,13 @@ const Contact = () => {
             <FaEnvelope className='container-icon'/>
             <hr/><h5>Е-mail</h5>
              <p>gbasruma@gmail.com</p></Col>
-         <Col md={6} className='mt-4' >
-           <AnimatedCard><hr/><iframe 
+         <Col md={6} className='mt-5' >
+           <AnimatedCard><br/><iframe 
            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.8357378135383!2d19.815873700000015!3d45.007957499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475babf03c300113%3A0x1b25325c9cabd2d9!2z0JPRgNCw0LTRgdC60LAg0LHQuNCx0LvQuNC-0YLQtdC60LAgItCQ0YLQsNC90LDRgdC40ZjQtSDQodGC0L7RmNC60L7QstC40Zsi!5e0!3m2!1ssr!2srs!4v1727858256248!5m2!1ssr!2srs"  
            height="110%"
           width='100%'
          title="Градска библиотека, Рума" 
-        ></iframe><hr/> </AnimatedCard> 
+        ></iframe></AnimatedCard> 
        </Col>     
 
         </Row>

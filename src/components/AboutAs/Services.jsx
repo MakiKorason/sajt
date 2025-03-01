@@ -3,16 +3,17 @@ import { Table, Container, Card } from 'react-bootstrap';
 import './Services.css';
 import { IoBookSharp } from "react-icons/io5";
 import AnimatedCard from '../Department/AnimatedCard'; 
+import AnimatedContainer from '../../AnimatedContainer';
 const Services =()=>{
 
   
   return (
     <Container className=" container-library mb-4 mt-4 ms-auto">
-      <Container className='cobiss-card'>
+      <AnimatedContainer className='cobiss-card'>
 <p className='container-title'>
   <IoBookSharp className='container-icon'/> </p><hr/>
 
-  <div className="container mt-3">
+  <AnimatedCard className="container mt-3">
 
   <br/>
 
@@ -45,9 +46,9 @@ const Services =()=>{
       <p className='container-text'>7. Корисницима резервишемо грађу која тренутно није доступна у фонду. </p>
     </div>
   </div>
-</div>
+</AnimatedCard>
 
-</Container>
+</AnimatedContainer>
 <br/><br/>
         <br/><h1 className='container-title' >ЦЕНОВНИК</h1>
      

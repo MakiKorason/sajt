@@ -22,7 +22,6 @@ import Project from './components/AboutAs/Project';
 import Legati from './components/Department/Legati';
 import MisionAndVision from './components/AboutAs/MisionAndVision';
 import { FaEnvelope } from 'react-icons/fa';
-import Nesto from './components/Books/Nesto'
 
 
 
@@ -71,7 +70,6 @@ const App = () => {
           <NavDropdown.Item as={Link} to="/competition">Конкурс</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/digitali">Дигитална библиотека</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/searche">Претраживање фонда</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/nesto">Nesto</NavDropdown.Item>
         </NavDropdown>
 
         <NavDropdown title="ОДЕЉЕЊА" id="sections-dropdown" 
@@ -111,7 +109,6 @@ const App = () => {
         <Route path='/project' element={<Project />} />
         <Route path='/homeland/legati' element={<Legati />} />
         <Route path='/misionAndvision' element={<MisionAndVision />} />
-        <Route path='/nesto' element={<Nesto/>} />
       </Routes>
     </Router>
 

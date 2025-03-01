@@ -1,7 +1,6 @@
 import React from 'react';
 import {  Row, Col,  Container } from 'react-bootstrap';
-
-
+import AnimatedImage from "../Department/AnimatedImage";
 const Recommendations =()=>{
 
 
@@ -167,7 +166,7 @@ const Recommendations =()=>{
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4}>
                             <a  href={knjiga.link} target="_blank" rel="noopener noreferrer">
-                               <br/> <img
+                               <br/> <AnimatedImage
                                     src={knjiga.slika}
                                     alt={knjiga.naslov}
                                     className="container-image"
@@ -192,7 +191,7 @@ const Recommendations =()=>{
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4} >
                             <a href={knjiga.link} target="_blank" rel="noopener noreferrer">
-                                <img
+                                <AnimatedImage
                                     src={knjiga.slika}
                                     alt={knjiga.naslov}
                                     className="container-image"
@@ -215,7 +214,7 @@ const Recommendations =()=>{
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4} >
                             <a href={knjiga.link} target="_blank" rel="noopener noreferrer">
-                                <img
+                                <AnimatedImage
                                     src={knjiga.slika}
                                     alt={knjiga.naslov}
                                     className="container-image"
