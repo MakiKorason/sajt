@@ -70,7 +70,7 @@ const Home =()=> {
         <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
           стваралаштва.
         <Button
-    href="http://localhost:3000/history " 
+    href="/history " 
       target="_blank"
  className="btn btn-light container-button"
   >
@@ -88,7 +88,7 @@ const Home =()=> {
     
         <p style={{padding:'1.5%',  objectPosition: '50% 10%' }}>Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
          <Button
-    href="http://localhost:3000/events" 
+    href="/events" 
       target="_blank"
  className="btn btn-light container-button btn-lg"
   >
@@ -102,7 +102,7 @@ const Home =()=> {
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
         <Button
-    href="http://localhost:3000/project" 
+    href="/project" 
       target="_blank"
  className="btn btn-light container-button"
   >
@@ -119,7 +119,7 @@ const Home =()=> {
   
 <p style={{padding:'4%'}}><IoBookSharp /> <IoBookSharp /> <IoBookSharp /><br/>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА!
         <Button
-    href="http://localhost:3000/recommendations" 
+    href="/recommendations" 
       target="_blank"
  className="btn btn-light container-button"
   >
