@@ -34,14 +34,14 @@ const Legati=()=>{
     <hr/>
      </Col>
   
-   <Row>
-    <Col md={4}> 
+   <Row className="text-center" >
+    <Col md={4} className="text-center"> 
     <AnimatedImage src={Legat1} alt="Легат Николе Дреновца" className='container-image'/>
 </Col>
-   <Col md={4}> 
+   <Col md={4} className="text-center"> 
    <AnimatedImage src={Legat2} alt="Легат Милутина Стојковића" className='container-image'/>
     </Col>
-    <Col md={4}>
+    <Col md={4} className="text-center">
     <AnimatedImage src={Legat3} alt="Легат Оливере шијачки" className='container-image'/>  <div className="container-icon">
       <br/><LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div></Col></Row>
 

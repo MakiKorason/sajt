@@ -23,9 +23,11 @@ return (<>
 јединица, које су обрађене по свим библиотечким
 стандардима. </p></Col>
         
-      <Col md={12}  >
+    <Col md={12} className="text-center">
             <AnimatedImage src={zavicajno} alt="Физика Атанасија Стојковића" className='container-image'/></Col>
-      <Col>
+ 
+ 
+      <Col md={12}>
           <br/>
           <p className="container-text"> Монографских публикација има
 2.285, периодике 125, док остатак представља
