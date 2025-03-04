@@ -80,7 +80,7 @@ const Events = () => {
                 <Card.Title className="container-title">
                   Румска књижевна <br/>колонија <BsCalendar2Heart />
                 </Card.Title>
-              <br/>  <Card.Img style={{width:'180px', borderRadius:'50%' }} src={knjizevnaKolonija}/>
+              <br/>  <Card.Img style={{width:'188px', borderRadius:'50%' }} src={knjizevnaKolonija}/>
               <p className='container-text'> <br/> Румска књижевна колонија традиционално се одржава сваке године у децембру.</p>
                 <br/><Button className='btn btn-secondary' onClick={handleShowEvent3}>Детаљније</Button>
               </Card.Body>
@@ -93,7 +93,7 @@ const Events = () => {
                 <Card.Title  className="container-title">
                   Румско културно<br/> лето <BsCalendar2Heart />
                 </Card.Title>
-                <br/><Card.Img style={{width:'230px', borderRadius:'50%'}}  src={kulturnoLeto}/>
+                <br/><Card.Img style={{width:'240px', borderRadius:'50%'}}  src={kulturnoLeto}/>
               <p className='container-text'> <br/>Одржавање манифестације je од 28. јуна до 31. августа, у Руми. <BsCalendar2Heart /> </p>
                <br/><Button className='btn btn-secondary' onClick={handleShowEvent4}>Детаљније</Button>
               </Card.Body>

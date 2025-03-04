@@ -160,7 +160,7 @@ const Recommendations =()=>{
            
             <Row className="mb-4">
                    
-                 <Col xs={12} md={12}>
+                 <Col xs={12} md={12} >
                     <h3 className='container-title' style={{marginLeft:'28rem'}}>Књиге за одрасле</h3><br/> <a className='container-text' href='https://www.instagram.com/reel/C6Vmssjsa3s/' target='_blank' rel="noreferrer">Препоручујемо вам! 📚</a> 
                     {knjigeZaOdrasle.map((knjiga, index) => (
                         <Row key={index} className="mb-4 align-items-center">
