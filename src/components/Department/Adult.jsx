@@ -19,7 +19,7 @@ const Adult =()=>{
         <h1 className="container-title">ОДЕЉЕЊЕ ЗА ОДРАСЛЕ</h1> <div className="container-icon">
               <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div><hr/>
 
-        <Col md={6} >
+        <Col md={8} >
           <p className="container-text">
           Одељење за одрасле је наше највеће одељење, са
 38.000 књига, активног фонда и мањим делом
@@ -48,7 +48,7 @@ const Adult =()=>{
              <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>
         </Col>
 
-        <Col md={6}>
+        <Col md={4}>
         <AnimatedImage src={odraslo} alt="Одрасло одељење" /><hr/>
         <AnimatedImage src={koncertNaOdraslom} alt="Концерт на Одраслом одељењу" />
       </Col>
@@ -57,7 +57,7 @@ const Adult =()=>{
 
        <Row>
 <h1 className="container-title">Културни кутак</h1>
-<Col md={6}>
+<Col md={8}>
 <p className="container-text"><br/>Владимирa Пишталa, тренутнoг управника
 Народне библиотеке Србије, и једног од
 најзначајних савремених српских писаца угостили
@@ -73,11 +73,11 @@ const Adult =()=>{
 Матице српске.
             </p></Col>
 
-<Col  md={6} className="mt-3">
+<Col  md={4} className="mt-5">
 <AnimatedImage src={pesmaOTriSveta} alt="Књига: Песма о три света" />
 </Col>
 
-<Col md={6}>
+<Col md={8} >
 <p className="container-text"><hr/><br/>Књига „Чудо у Банату“ је збирка
 кратких прича која даје приказ збивања на
 банатским просторима и говори о судбини
@@ -91,7 +91,7 @@ const Adult =()=>{
 документарне прозе и поезије. </p>
 
 </Col>
-<Col md={6}><AnimatedImage src={cudoUBanatu} alt="Чудо у Банату" className='container-image'/></Col>
+<Col md={4} className="mt-4"><AnimatedImage src={cudoUBanatu} alt="Чудо у Банату" className='container-image'/></Col>
 </Row>
 <hr/>
 <Col md={12}>
@@ -102,14 +102,15 @@ const Adult =()=>{
 књижевности“.</p>
 </Col>
 
-<Col md={12}>
-<AnimatedImage    src={likovniKonkurs1} alt="Женски ликови из књижевности" className='container-image2'/>
-<AnimatedImage    src={likovniKonkurs2} alt="Женски ликови из књижевности" className='container-image2'/>
-<AnimatedImage    src={likovniKonkurs3} alt="Женски ликови из књижевности" className='container-image2'/>
-</Col>
-<hr/>
 <Row>
-<Col md={6}>
+<Col md={4}>
+<AnimatedImage    src={likovniKonkurs1} alt="Женски ликови из књижевности" className='container-image2'/></Col>
+<Col md={4}><AnimatedImage    src={likovniKonkurs2} alt="Женски ликови из књижевности" className='container-image2'/></Col>
+<Col md={4}><AnimatedImage    src={likovniKonkurs3} alt="Женски ликови из књижевности" className='container-image2'/>
+</Col>
+<hr/></Row>
+<Row>
+<Col md={8}>
 <p className="container-text"><br/><br/>Три године касније на исти дан
 Александра Ћирић Бошковић, тадашња председница
 Општине Рума, одржала је предавање под називом
@@ -121,7 +122,7 @@ const Adult =()=>{
 <div className="container-icon">
               <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>
 </Col>
-<Col md={6}>
+<Col md={4}>
 <AnimatedImage src={osmiMart} alt="Предавање: Знамените Румљанке" className='container-image3'/>
 </Col>
        
