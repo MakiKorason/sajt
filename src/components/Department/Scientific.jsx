@@ -12,7 +12,7 @@ const Scientific =()=>{
       <div className="container-frame"><h2 className="container-title" >ОДЕЉЕЊЕ НАУЧНЕ<br/> И СТРУЧНЕ ЛИТЕРАТУРЕ</h2><div className="container-icon">
                    <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>  <hr/>
       <Row>   
-        <Col md={6} >
+        <Col md={8} >
 
           <p className="container-text">
    
@@ -48,12 +48,11 @@ const Scientific =()=>{
 ризницу знања и право је место где наши корисници
 могу да се едукују, истражују и прошире своје
 знање.	
-          </p><div className="container-icon">
-     <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>
+          </p>
         </Col>
         <br/>
       
-     <Col md={6}>
+     <Col md={4}>
      <AnimatedImage src={naucno} alt="Научно одељење" className='container-image'/>
      <br/><br/><br/><hr/>
      <AnimatedImage src={naucno2} alt="Научно одељење" className='container-image'/>
