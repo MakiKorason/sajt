@@ -158,6 +158,8 @@ const Home =()=> {
                <img 
      src="/logo.jpg"
       alt="Грб библиотеке" 
+      className='container-image'
+      style={{border:'none', width:'35%'}}
       /></a></AnimatedCard>
       </Col> 
     
