@@ -166,7 +166,7 @@ const Home =()=> {
           <h6 className="container-title">
                 <br/> Књижевни <br/>конкурс </h6>
                  <AnimatedCard>
-           <a  href="http://localhost:3000/competition" target='_blank' rel="noopener noreferrer">  
+           <a  href="/competition" target='_blank' rel="noopener noreferrer">  
             <img 
       src={konkurs}
       alt="Конкурс" 
