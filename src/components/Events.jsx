@@ -94,7 +94,7 @@ const Events = () => {
                   Румско културно<br/> лето <BsCalendar2Heart />
                 </Card.Title>
                 <br/><Card.Img style={{width:'240px', borderRadius:'50%'}}  src={kulturnoLeto}/>
-              <p className='container-text'> <br/>Традиционална манифестација која се сваке године одржава у Руми од 28. јуна до 31. августа. <BsCalendar2Heart /> </p>
+              <p className='container-text'> <br/>Традиционална манифестација која се одржава од 28. јуна до 31. августа. <BsCalendar2Heart /> </p>
                <br/><Button className='btn btn-secondary' onClick={handleShowEvent4}>Детаљније</Button>
               </Card.Body>
             </AnimatedCard >
