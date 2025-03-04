@@ -137,7 +137,6 @@ const Home =()=> {
         
          <Row className='text-center'>
          <Col md={4} className='mt-1'>     
-        
            <h6 className='container-title'><br/> Претражите<br/> наш фонд  </h6>
          <AnimatedCard>
         <a href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">
@@ -145,7 +144,7 @@ const Home =()=> {
       src={cobbis}
       alt="COBISS" 
       className='container-image'
-      style={{border:'none'}}
+      style={{border:'none', width: "90%"}}
       />
  </a>  </AnimatedCard> 
      </Col>
@@ -159,13 +158,13 @@ const Home =()=> {
      src="/logo.jpg"
       alt="Грб библиотеке" 
       className='container-image'
-      style={{border:'none', width:'35%'}}
+      style={{border:'none', width:'33%'}}
       /></a></AnimatedCard>
       </Col> 
     
-         <Col  md={4}  className='mt-5'>
+         <Col  md={4}  className='mt-1'>
           <h6 className="container-title">
-                 Књижевни <br/>конкурс </h6>
+                <br/> Књижевни <br/>конкурс </h6>
                  <AnimatedCard>
            <a  href="http://localhost:3000/competition" target='_blank' rel="noopener noreferrer">  
             <img 

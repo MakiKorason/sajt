@@ -50,10 +50,10 @@ const Events = () => {
                  <h1 className="container-title">
                   Дани словенске писмености и културе <BsCalendar2Heart />
                 </h1>
-                <Card.Img style={{width:'214px'}}  src={daniSlovensk} />
+                <Card.Img style={{width:'205px'}}  src={daniSlovensk} />
                 <p className='container-text'><br/>Дани словенске писмености и културе обележавају се у недељи када се прославља дан Светих
                    Ћирила и Методија, 24. мај.</p>
-                <br/><Button className='btn btn-secondary ' onClick={handleShowEvent1}>Детаљније</Button>
+              <Button className='btn btn-secondary ' onClick={handleShowEvent1}>Детаљније</Button>
             </Card.Body>
             </ AnimatedCard >
           </Col>
@@ -65,7 +65,7 @@ const Events = () => {
                   Дани Атанасија<br/> Стојковића <BsCalendar2Heart />
                 </Card.Title>
               
-                <Card.Img style={{width:'160px', borderRadius:'50%'}} src={Atanasije} />
+                <Card.Img style={{width:'140px', borderRadius:'50%'}} src={Atanasije} />
                 <p className='container-text'><br/>Дани Атанасија Стојковића традиционално се обележавају у току недеље његовог рођендана, 20. септембра.</p>
              <Button className='btn btn-secondary ' onClick={handleShowEvent2}>Детаљније</Button>
               </Card.Body>
@@ -82,7 +82,7 @@ const Events = () => {
                 </Card.Title>
               <br/>  <Card.Img style={{width:'180px', borderRadius:'50%' }} src={knjizevnaKolonija}/>
               <p className='container-text'> <br/> Румска књижевна колонија традиционално се одржава сваке године у децембру.</p>
-                <Button className='btn btn-secondary' onClick={handleShowEvent3}>Детаљније</Button>
+                <br/><Button className='btn btn-secondary' onClick={handleShowEvent3}>Детаљније</Button>
               </Card.Body>
             </ AnimatedCard >
           </Col>
@@ -93,7 +93,7 @@ const Events = () => {
                 <Card.Title  className="container-title">
                   Румско културно<br/> лето <BsCalendar2Heart />
                 </Card.Title>
-                <br/><Card.Img style={{width:'200px', borderRadius:'50%'}}  src={kulturnoLeto}/>
+                <br/><Card.Img style={{width:'230px', borderRadius:'50%'}}  src={kulturnoLeto}/>
               <p className='container-text'> <br/>Одржавање манифестације je од 28. јуна до 31. августа.</p>
                <br/><Button className='btn btn-secondary' onClick={handleShowEvent4}>Детаљније</Button>
               </Card.Body>
