@@ -35,7 +35,7 @@ const Kid =()=>{
           </p>
           
         </Col>
-        <Col md={12} >
+        <Col md={12} className="text-center" >
         <AnimatedImage src={decije} alt="Дечије одељење" className='container-image'/></Col>
           
       </Row>
@@ -66,7 +66,7 @@ const Kid =()=>{
 у њиховом креативном изражавању. </p>
         
        </Col>
-        <Col md={6} className="mt-3">
+        <Col md={6} className="mt-5">
         <AnimatedImage src={isidora} alt="Радионица: Исидора Мун" className='container-image'/>
            <br/><div className="container-icon">
            <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div> 

@@ -56,19 +56,21 @@ const Scientific =()=>{
      <AnimatedImage src={naucno} alt="Научно одељење" className='container-image'/>
      <br/><br/><br/><hr/>
      <AnimatedImage src={naucno2} alt="Научно одељење" className='container-image'/>
-     </Col>
-        
+     <div className="container-icon">
+     <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div> </Col>
+    
         <h1 className="container-title"  >Културни кутак</h1><hr/>
-        <Col md={12} className="text-center">
+        <Col md={8} className="text-center">
         <p className="container-text">Предавање на тему: „ТАЈНЕ КОВАЊА МАЧА“ које је
 одржао Слободан Маринић, мајстор ковача мачева,
 публика је имала прилику први пут да чује 12.
 октобра 2023. године у Читаоници наше установе.
 <br/>Како би своје умеће демонстрирао, аутор се
 одлучио да присутнима покаже уживо мач, и на тај
-начин предочи историју његовог настанка. </p>
-<AnimatedImage src={predavanjeOMacu} alt="Предавање о мачу" className='container-image4'/></Col>
-    
+начин предочи историју његовог настанка. </p><div className="container-icon">
+<LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div></Col>
+<Col md={4}><AnimatedImage src={predavanjeOMacu} alt="Предавање о мачу" className='container-image4'/></Col>
+    <hr/>
       <Col md={12} className="text-center">
       <p className="container-text"> У жељи да нашим суграђанима пружи могућност
 упознавања нових вештина, Градска библиотека

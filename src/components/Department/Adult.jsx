@@ -49,9 +49,9 @@ const Adult =()=>{
         </Col>
 
         <Col md={4}>
-        <AnimatedImage src={odraslo} alt="Одрасло одељење" /><hr/>
-        <AnimatedImage src={koncertNaOdraslom} alt="Концерт на Одраслом одељењу" />
-      </Col>
+        <AnimatedImage src={odraslo} alt="Одрасло одељење" /><hr/>  <AnimatedImage src={koncertNaOdraslom} alt="Концерт на Одраслом одељењу" />
+      </Col> 
+ 
       </Row> 
         <hr/>
 
