@@ -136,7 +136,7 @@ const Home =()=> {
         <Container className='container-library ms-auto mt-4 mb-4'>
         
          <Row className='text-center'>
-         <Col md={4}>     
+         <Col md={4} className='mt-1'>     
         
            <h6 className='container-title'><br/> Претражите<br/> наш фонд  </h6>
          <AnimatedCard>
@@ -150,25 +150,27 @@ const Home =()=> {
  </a>  </AnimatedCard> 
      </Col>
 
-     <Col md={4}>
+     <Col md={4} className='mt-1'>
      <h6 className='container-title'>  
               <br/> Наш дигитални<br/> фонд </h6>
               <AnimatedCard>
-               <br/><a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer"> <img 
+               <br/><br/><a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer"> 
+               <img 
      src="/logo.jpg"
       alt="Грб библиотеке" 
       /></a></AnimatedCard>
       </Col> 
     
-         <Col  md={4}  >
-         <br/><br/> <h6 className="container-title">
+         <Col  md={4}  className='mt-5'>
+          <h6 className="container-title">
                  Књижевни <br/>конкурс </h6>
                  <AnimatedCard>
            <a  href="http://localhost:3000/competition" target='_blank' rel="noopener noreferrer">  
             <img 
       src={konkurs}
       alt="Конкурс" 
-       style={{width:'60%'}}
+      className='container-image'
+      style={{border:'none', width:'55%'}}
       /></a></AnimatedCard>
         </Col></Row>
       
