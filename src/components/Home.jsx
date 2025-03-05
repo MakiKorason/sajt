@@ -73,7 +73,7 @@ const Home =()=> {
         <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
           стваралаштва.
         <Button
-    href="/history " 
+    href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/ " 
       target="_blank"
  className="btn btn-light container-button"
   >
@@ -92,7 +92,7 @@ const Home =()=> {
     
         <p >Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
          <Button
-    href="/events" 
+    href="https://www.virtualna-ruma.rs/page.php?pro_id=59" 
       target="_blank"
  className="btn btn-light container-button btn-lg"
   >
@@ -107,7 +107,7 @@ const Home =()=> {
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
         <Button
-    href="/project" 
+    href="https://sremskevesti.rs/sva-odeljenja-rumske-gradske-biblioteke-atanasije-stojkovic-dostupna-ljudima-ostecenog-sluha-slepim-i-slabovidim-osobama/" 
       target="_blank"
  className="btn btn-light container-button"
   >
@@ -125,7 +125,7 @@ const Home =()=> {
   
 <p style={{padding:'4%'}}><IoBookSharp /> <IoBookSharp /> <IoBookSharp /><br/>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА!
         <Button
-    href="/recommendations" 
+    href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma/videos/967554408223187?locale=sr_RS" 
       target="_blank"
  className="btn btn-light container-button"
   >
@@ -141,43 +141,43 @@ const Home =()=> {
         <Container className='container-library ms-auto mt-4 mb-4'>
         
          <Row className='text-center'>
-         <Col md={4} className='mt-1'>     
-           <h6 className='container-title'><br/> Претражите<br/> наш фонд  </h6>
+         <Col md={4} className='mt-4'>     
+           
          <AnimatedCard>
         <a href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">
-        <img 
+        <h6 className='container-title'>Претражите<br/> наш фонд  </h6> </a><img 
       src={cobbis}
       alt="COBISS" 
       className='container-image'
       style={{border:'none', width: "90%"}}
       />
- </a>  </AnimatedCard> 
+  </AnimatedCard> 
      </Col>
 
-     <Col md={4} className='mt-1'>
-     <h6 className='container-title'>  
-              <br/> Наш дигитални<br/> фонд </h6>
+     <Col md={4} className='mt-4'>
+    
               <AnimatedCard>
-               <br/><br/><a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer"> 
-               <img 
+               <a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer">  <h6 className='container-title'>  
+              Наш дигитални<br/> фонд </h6></a>
+               <br/><br/><img 
      src="/logo.jpg"
       alt="Грб библиотеке" 
       className='container-image'
       style={{border:'none', width:'33%'}}
-      /></a></AnimatedCard>
+      /> </AnimatedCard>
       </Col> 
     
-         <Col  md={4}  className='mt-1'>
-          <h6 className="container-title">
-                <br/> Књижевни <br/>конкурс </h6>
+         <Col  md={4}  className='mt-4'>
+          
                  <AnimatedCard>
-           <a  href="/competition" target='_blank' rel="noopener noreferrer">  
-            <img 
+           <a  href="https://www.facebook.com/story.php/?story_fbid=993378846121072&id=100063468972871&_rdr" target='_blank' rel="noopener noreferrer">  
+            <h6 className="container-title">
+              Књижевни <br/>конкурс </h6></a><img 
       src={konkurs}
       alt="Конкурс" 
       className='container-image'
       style={{border:'none', width:'55%'}}
-      /></a></AnimatedCard>
+      /></AnimatedCard>
         </Col></Row>
       
      <hr/>

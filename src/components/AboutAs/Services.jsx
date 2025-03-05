@@ -90,7 +90,7 @@ const Services =()=>{
     </tr>
     <tr>
       <td>Међубиблиотечка позајмица</td>
-      <td>500,00</td>
+      <td>700,00</td>
     </tr>
   </tbody>
 </Table><br/>

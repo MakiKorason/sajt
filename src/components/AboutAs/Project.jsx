@@ -9,10 +9,10 @@ const Project =()=>{
        
         <div className="container-frame">   <h1 className="container-title">Култура за све</h1>
             <Row>
-         <Col md={6}>
+         <Col md={4} className="mt-4">
       <AnimatedImage alt='Култура за све' src={kulturaZaSve1} className="container-image"/><br/><br/><br/>
          </Col>
-         <Col md={6} >
+         <Col md={8} >
        <hr/>  <p  className="container-text mt-5"> 
     Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање
 техничких капацитета наше установе како би све
@@ -117,17 +117,6 @@ const Project =()=>{
 доступност културних садржаја унутар наше
 локалне заједнице.
 </p></Col>
-
-<Col md={12}>
-<a
-    href="https://sremskevesti.rs/sva-odeljenja-rumske-gradske-biblioteke-atanasije-stojkovic-dostupna-ljudima-ostecenog-sluha-slepim-i-slabovidim-osobama/" 
-    target="_blank"
-    rel="noreferrer"
-style={{fontSize:'200%'}}
-  >Сремске новине
-</a>
-
-</Col>
 
 </div>
       </Container>

@@ -49,7 +49,7 @@ const Competition =()=>{
 Главна 114,
 22400 Рума </li>
 <li class="list-group-item container-text">     Додатне информације можете добити на тел. 060/505-39-23 (Ивана Костадиновић) или на
-                  мејл адресу: gbasruma@mail.com       </li>
+                  мејл адресу: gbasruma@gmail.com       </li>
   </ul>
 </div>
         </AnimatedCard>

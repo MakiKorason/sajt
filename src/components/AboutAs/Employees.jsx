@@ -39,7 +39,7 @@ COBISS програмском окружењу. Библиотека
              <Card.Body>
              <br/> <h4 className="text-center employees-text">Одрасло одељење</h4><hr/>
                <p className="employees">Библиотекар: Марина Крањчевић </p>
-               <p className="employees">Библиотекар: Софија Лакетић</p> 
+               <p className="employees">Библиотекар: Софија Лакетић Рибић</p> 
                <br/><h4 className="text-center employees-text">Дечије одељење</h4><hr/>
                <p className=" employees">Библиотекар: Ивана Костадиновић</p>
                <p className=" employees ">Библиотекар: Маријана Бизумић</p>     
@@ -74,14 +74,14 @@ COBISS програмском окружењу. Библиотека
                <h4 className="text-center employees-text" >Администрација</h4><hr/>
                <p className="text-center employees"><br/>Финансијско-рачуноводствени сарадник: Јована Маринковић </p>
                <CiMoneyCheck1 className="container-icon" />
-              <p className="text-center employees"><br/>Правно административно финансијски референт: Брана Стојковић Поповић  </p>
+              <p className="text-center employees"><br/>Правно административно финансијски референт: Бранка Стојковић Поповић  </p>
              </Card.Body>
            </AnimatedCard>
            <hr/>
            <AnimatedCard className="  employee-card  mb-4 shadow-sm">
             <Card.Body>
            <h4  className="text-center employees-text">Одржавање</h4><hr/>
-               <p className=" text-center employees">Хигијеничар-спремачица: Брана Угреновић </p>
+               <p className=" text-center employees">Хигијеничар-спремачица: Бранкица Угреновић </p>
                <br/><FaTools  className="container-icon" />
                <p className="text-center employees"><br/>Техничар за одржавање аудио-видео система и остале опреме: Драган Маричић </p>
             </Card.Body>
