@@ -67,7 +67,7 @@ const Home =()=> {
     <div className="carousel-item active">
     <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-  loading="lazy"/>
+/>
 
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
@@ -87,7 +87,7 @@ const Home =()=> {
     <div  className="carousel-item">
   
 <img src={digitalna}  alt="Атанасије Стојковић"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-  loading="lazy"/>
+/>
       <div  className="carousel-caption ">
     
         <p >Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
@@ -103,7 +103,7 @@ const Home =()=> {
 
     <div className="carousel-item">
       <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-  loading="lazy" />
+   />
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
         <Button
@@ -119,7 +119,7 @@ const Home =()=> {
 
     <div  className="carousel-item">
      <img src={books} alt="књиге"    className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-  loading="lazy" />
+  />
 
       <div className="carousel-caption ">
   
