@@ -16,7 +16,7 @@ html, body {
 
 .bar-content {
   display: inline-block;
-  animation: scroll 30s linear infinite;
+  animation: scroll 50s linear infinite;
   font-family: 'Arial';
   font-weight: bold;
   font-size: 1.2em;
