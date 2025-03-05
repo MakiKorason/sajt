@@ -91,7 +91,7 @@ const App = () => {
         <Route path='/istorija' element={<History />} />
         <Route path='/zaposleni' element={<Employees />} />
         <Route path='/usluge' element={<Services />} />
-        <Route path='/dogadjaji' element={<Events />} />
+        <Route path='/manifestacije' element={<Events />} />
         <Route path='/konkurs' element={<Competition />} />
         <Route path='/preporuke' element={<Recommendations />} />
         <Route path='/nasaIzdanja' element={<OurPublic />} />

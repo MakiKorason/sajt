@@ -159,7 +159,7 @@ const Home =()=> {
               <AnimatedCard>
                <a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer">  <h6 className='container-title'>  
               Наш дигитални<br/> фонд </h6></a>
-               <br/><br/><img 
+               <br/>S<img 
      src="/logo.jpg"
       alt="Грб библиотеке" 
       className='container-image'
@@ -168,7 +168,6 @@ const Home =()=> {
       </Col> 
     
          <Col  md={4}  className='mt-4'>
-          
                  <AnimatedCard>
            <a  href="https://www.facebook.com/story.php/?story_fbid=993378846121072&id=100063468972871&_rdr" target='_blank' rel="noopener noreferrer">  
             <h6 className="container-title">
