@@ -2,8 +2,8 @@
 import { Table, Container, Card } from 'react-bootstrap';
 import './Services.css';
 import { IoBookSharp } from "react-icons/io5";
-import AnimatedCard from '../Department/AnimatedCard'; 
-import AnimatedContainer from '../../AnimatedContainer';
+import AnimatedCard from './Department/AnimatedCard'; 
+import AnimatedContainer from '../AnimatedContainer';
 const Services =()=>{
 
   
@@ -19,7 +19,7 @@ const Services =()=>{
 
   <ul className="nav nav-tabs" role="tablist" >
     <li className="nav-item">
-      <a className="nav-link active" style={{color:'#3f2c11'}} data-bs-toggle="tab" href="#home">ПРАВИЛНИК</a>
+      <a className="nav-link active" style={{color:'#3f2c11'}} data-bs-toggle="tab" href="#home">ПРАВИЛA</a>
     </li>
     <li className="nav-item">
       <a className="nav-link" data-bs-toggle="tab"  style={{color:'#3f2c11'}} href="#menu1">1</a>

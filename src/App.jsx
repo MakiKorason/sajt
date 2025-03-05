@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import History from './components/AboutAs/History';
 import Employees from './components/AboutAs/Employees';
-import Services from './components/AboutAs/Services';
+import Services from './components/Services';
 import Competition from './components/AboutAs/Competition';
 import Recommendations from './components/Books/Recommendations';
 import DigitalLibrary from './components/Books/DigitalLibrary';
