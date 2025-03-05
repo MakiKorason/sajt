@@ -19,13 +19,13 @@ const Services =()=>{
 
   <ul className="nav nav-tabs" role="tablist" >
     <li className="nav-item">
-      <a className="nav-link active" style={{color:'#3f2c11'}} data-bs-toggle="tab" href="#home">Home</a>
+      <a className="nav-link active" style={{color:'#3f2c11'}} data-bs-toggle="tab" href="#home">ПРАВИЛНИК</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" data-bs-toggle="tab"  style={{color:'#3f2c11'}} href="#menu1">Menu 1</a>
+      <a className="nav-link" data-bs-toggle="tab"  style={{color:'#3f2c11'}} href="#menu1">1</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" data-bs-toggle="tab"  style={{color:'#3f2c11'}} href="#menu2">Menu 2</a>
+      <a className="nav-link" data-bs-toggle="tab"  style={{color:'#3f2c11'}} href="#menu2">2</a>
     </li> 
   </ul>
 

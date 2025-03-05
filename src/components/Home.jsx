@@ -20,7 +20,7 @@ import trkulja from '../images/trkulja.jpg'
 import books from '../images/books.jpg'
 import Panonija from '../images/Panonija.jpg'
 import karoselSlika from '../images/karoselSlika.jpg'
-import digitalna1 from '../images/digitalna1.jpg'
+import digitalna from '../images/digitalna.jpg'
 import objava4 from '../images/objava4.jpg'
 // import zahvalnica from '../images/zahvalnica.jpg'
 import objava3 from '../images/objava3.jpg'
@@ -55,7 +55,7 @@ const Home =()=> {
 
     <>
    <Row><Col md={12}>
-  <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="15000" data-bs-pause="false" >
+  <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="12000" data-bs-pause="false" >
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -65,7 +65,9 @@ const Home =()=> {
  
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={biblioteka} alt="Зграда библиотеке"  className="d-block w-100 image-carousel img-thumbnail image-fluid"/>
+    <img src={biblioteka} alt="Зграда библиотеке"  
+  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+  loading="lazy"/>
 
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
@@ -84,10 +86,11 @@ const Home =()=> {
 
     <div  className="carousel-item">
   
-<img src={digitalna1}  alt="Атанасије Стојковић" className="d-block w-100 float-end image-carousel img-thumbnail  img-fluid"/>
+<img src={digitalna}  alt="Атанасије Стојковић"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+  loading="lazy"/>
       <div  className="carousel-caption ">
     
-        <p style={{padding:'1.5%',  objectPosition: '50% 10%' }}>Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
+        <p >Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
          <Button
     href="/events" 
       target="_blank"
@@ -99,7 +102,8 @@ const Home =()=> {
     </div>
 
     <div className="carousel-item">
-      <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 float-end image-carousel img-thumbnail img-fluid " />
+      <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+  loading="lazy" />
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
         <Button
@@ -114,7 +118,8 @@ const Home =()=> {
     </div>
 
     <div  className="carousel-item">
-     <img src={books} alt="књиге"   className="d-block w-100 float-end  image-carousel img-thumbnail" />
+     <img src={books} alt="књиге"    className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+  loading="lazy" />
 
       <div className="carousel-caption ">
   
