@@ -32,9 +32,7 @@ const App = () => {
       <Col md={12} className="bar-content">
         <span>Адреса: Главна 114, Рума</span>
         <span> |Радно време: понедељак-петак: 08-20h и суботом: 08-13h </span>
-        <span> | <a style={{ color: 'white' }} href="https://youtube.com/@gradskabibliotekaruma" target="_blank" rel="noopener noreferrer">YouTube</a>
-        </span><span> | <a style={{ color: 'white' }} href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma" target="_blank" rel="noopener noreferrer">Facebook</a></span>
-        <span> | < a style={{ color: 'white' }} href="https://www.instagram.com/gradska_biblioteka_ruma" target="_blank" rel="noopener noreferrer">Instagram</a></span>
+       
       </Col>
     </Row>
 
