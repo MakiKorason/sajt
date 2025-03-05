@@ -42,8 +42,8 @@ const App = () => {
   <Container>
     <Navbar.Brand as={Link} to="/" >
     <Row>
-   <Col md={4}> <img src="/logo.jpg" alt="Logo" className='logo' /></Col>
-   <Col md={4}><p className='container-text fw-bold '>Градска библиотека „Атанасије Стојковић” Рума</p></Col>
+   <Col md={4}> <img src="/logo.jpg" alt="Logo" className='logo' style={{marginLeft:'4rem'}} /></Col>
+   <Col md={4} className='mt-3'><p className='container-text fw-bold 'style={{marginLeft:'2rem'}}  >Градска библиотека „Атанасије Стојковић” Рума</p></Col>
     </Row>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -54,7 +54,6 @@ const App = () => {
           <NavDropdown.Item as={Link} to="/istorija">Историјат библиотеке</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/zaposleni">Запослени</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/misijaIvizija">Визија и мисија</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/usluge">Услуге</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/projekat">Пројекат</NavDropdown.Item>
   
         </NavDropdown>         
@@ -77,9 +76,10 @@ const App = () => {
             <NavDropdown.Item as={Link} to="/zavicajno/legati" >Легати</NavDropdown.Item>
           </NavDropdown>
         </NavDropdown>
-
+        <Nav.Link as={Link} to="/usluge">УСЛУГЕ</Nav.Link>
         <Nav.Link as={Link} to="/manifestacije">МАНИФЕСТАЦИЈЕ</Nav.Link>
         <Nav.Link as={Link} to="/kontakt">КОНТАКТ</Nav.Link>
+    
       </Nav>
     </Navbar.Collapse>
   </Container>
@@ -104,7 +104,7 @@ const App = () => {
         <Route path='/zavicajno' element={<Homeland />} />
         <Route path='/projekat' element={<Project />} />
         <Route path='/zavicajno/legati' element={<Legati />} />
-        <Route path='/misionAndvision' element={<MisionAndVision />} />
+        <Route path='/misijaIvizija' element={<MisionAndVision />} />
       </Routes>
     </Router>
 
