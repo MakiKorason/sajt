@@ -48,21 +48,20 @@ const App = () => {
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="ms-auto fs-5 mt-4" >
+      <Nav className="ms-auto fs-5 mt-5" >
     
         <NavDropdown title="О НАМА" id="about-dropdown"   >
           <NavDropdown.Item as={Link} to="/istorija">Историјат библиотеке</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/zaposleni">Запослени</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/misijaIvizija">Визија и мисија</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/projekat">Пројекат</NavDropdown.Item>
-  
+          <NavDropdown.Item as={Link} to="/konkurs">Конкурс</NavDropdown.Item>
         </NavDropdown>         
 
         <NavDropdown title="ФОНД" id="fund-dropdown" 
          > 
           <NavDropdown.Item as={Link} to="/preporuke">Препоруке библиотекара</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/nasaIzdanja">Наша издања</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/konkurs">Конкурс</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/digitalna">Дигитална библиотека</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/pretrazivanje">Претраживање фонда</NavDropdown.Item>
         </NavDropdown>
