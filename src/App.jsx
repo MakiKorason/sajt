@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import History from './components/AboutAs/History';
 import Employees from './components/AboutAs/Employees';
 import Services from './components/AboutAs/Services';
-import Competition from './components/Books/Competition';
+import Competition from './components/AboutAs/Competition';
 import Recommendations from './components/Books/Recommendations';
 import DigitalLibrary from './components/Books/DigitalLibrary';
 import BooksSearche from './components/Books/BooksSearche';

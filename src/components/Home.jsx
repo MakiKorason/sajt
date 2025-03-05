@@ -28,6 +28,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import AnimatedImage from "./Department/AnimatedImage";
 import AnimatedCard from './Department/AnimatedCard'; 
+import pokrajina from '../images/pokrajina.jpg'
 
 
 const Home =()=> { 
@@ -263,18 +264,21 @@ className='btn btn-secondary'
 <h1 className='container-title'>Пријатељи и сарадници </h1>
 <Row className='image-background '>
     <div className="carousel-item active">
-      <div  style={{backgroundColor:'rgba(0, 0, 0, 0.2)'}} >
+      <div  style={{backgroundColor:'rgba(0, 0, 0, 0.1)'}} >
     
           <Col md={12} className='text-center' > 
-          <img style={{width:'15%'}} src={ministarstvo} alt='Министарство културе'/>  
-         <img style={{width:'15%'}}  src={opstina} alt='Општина Рума'/> 
-         <img style={{width:'10%'}}  alt='Народна библиотека Србије' src={narodna}/> 
-       <img style={{width:'15%'}}  src={matica} alt='Матица српска' />   
-          <br/> 
-          <img style={{width:'25%', marginTop:'1em', marginLeft:'1rem'}} src={muzej} alt='Музеј'/>
+          <img style={{width:'12%' }} src={ministarstvo} alt='Министарство културе'/> 
+          <img style={{width:'10%',marginLeft:'3em'}}  src={pokrajina} alt='Покрајински секретаријат за културу, јавно информисање и односе с верским заједницама'/> 
+        <img style={{width:'20%'}}  src={opstina} alt='Општина Рума'/> </Col>
+      
+          <hr/> 
+          <Col md={12} className='text-center'>
+           <img style={{width:'10%'}}  alt='Народна библиотека Србије' src={narodna}/> 
+       <img style={{width:'15%'}}  src={matica} alt='Матица српска' />  
+       <img style={{width:'25%', marginTop:'1em', marginLeft:'1rem'}} src={muzej} alt='Музеј'/>
           <img style={{width:'15%',marginLeft:'1rem' }} src={turisticka} alt='Туристичка'/>
           <img  style={{width:'10%', marginLeft:'1rem'}}  src={kc} alt="Културни центар"  />
-          </Col>
+         </Col>
           </div>
       </div>     
 </Row>

@@ -2,8 +2,7 @@
 import {  Button, Col, Container, Row } from 'react-bootstrap';
 import React from 'react';
 import konkurs from '../../images/konkurs.jpg'
-import AnimatedCard from '../Department/AnimatedCard';
-
+import AnimatedCard from '../Department/AnimatedCard'; 
 const Competition =()=>{
   
 
@@ -17,7 +16,7 @@ const Competition =()=>{
           </p>
         </Col>       </Row>
 
-        <Col md={12}> <AnimatedCard><img style={{width:'20%', marginLeft:'40%'}} src={konkurs} alt='конкурс'/></AnimatedCard> </Col>
+        <Col md={12} className='text-center'> <AnimatedCard><img  src={konkurs} alt='конкурс' style={{width:'20%'}}/></AnimatedCard> </Col>
 
 
             <div class="container mt-3">
