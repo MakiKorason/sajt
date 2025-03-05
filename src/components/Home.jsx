@@ -160,7 +160,7 @@ const Home =()=> {
               <AnimatedCard>
                <a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer">  <h6 className='container-title'>  
               Наш дигитални<br/> фонд </h6></a>
-               <br/>S<img 
+               <br/><img 
      src="/logo.jpg"
       alt="Грб библиотеке" 
       className='container-image'
