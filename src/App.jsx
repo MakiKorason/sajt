@@ -32,7 +32,6 @@ const App = () => {
       <Col md={12} className="bar-content">
         <span>Адреса: Главна 114, Рума</span>
         <span> |Радно време: понедељак-петак: 08-20h и суботом: 08-13h </span>
-       
       </Col>
     </Row>
 
@@ -52,35 +51,35 @@ const App = () => {
       <Nav className="ms-auto fs-5 mt-4" >
     
         <NavDropdown title="О НАМА" id="about-dropdown"   >
-          <NavDropdown.Item as={Link} to="/history">Историјат библиотеке</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/employees">Запослени</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/misionAndVision">Визија и мисија</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/services">Услуге</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/project">Пројекат</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/istorija">Историјат библиотеке</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/zaposleni">Запослени</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/misijaIvizija">Визија и мисија</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/usluge">Услуге</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/projekat">Пројекат</NavDropdown.Item>
   
         </NavDropdown>         
 
         <NavDropdown title="ФОНД" id="fund-dropdown" 
          > 
-          <NavDropdown.Item as={Link} to="/recommendations">Препоруке библиотекара</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/ourpublications">Наша издања</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/competition">Конкурс</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/digitali">Дигитална библиотека</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/searche">Претраживање фонда</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/preporuke">Препоруке библиотекара</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/nasaIzdanja">Наша издања</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/konkurs">Конкурс</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/digitalna">Дигитална библиотека</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/pretrazivanje">Претраживање фонда</NavDropdown.Item>
         </NavDropdown>
 
         <NavDropdown title="ОДЕЉЕЊА" id="sections-dropdown" 
 >
-          <NavDropdown.Item as={Link} to="/kid" >Одељење за децу</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/adult">Одељење за одрасле</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/scientific">Одељење научне и стручне литературе</NavDropdown.Item>
-          <NavDropdown title={<Link to="/homeland"   style={{color:'black'}}>Завичајна збирка</Link>} id="homeland-submenu" drop="end">
-            <NavDropdown.Item as={Link} to="/homeland/legati" >Легати</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/decije" >Одељење за децу</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/odraslo">Одељење за одрасле</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/naucno">Одељење научне и стручне литературе</NavDropdown.Item>
+          <NavDropdown title={<Link to="/zavicajno"   style={{color:'black'}}>Завичајна збирка</Link>} id="homeland-submenu" drop="end">
+            <NavDropdown.Item as={Link} to="/zavicajno/legati" >Легати</NavDropdown.Item>
           </NavDropdown>
         </NavDropdown>
 
-        <Nav.Link as={Link} to="/events">МАНИФЕСТАЦИЈЕ</Nav.Link>
-        <Nav.Link as={Link} to="/contact">КОНТАКТ</Nav.Link>
+        <Nav.Link as={Link} to="/manifestacije">МАНИФЕСТАЦИЈЕ</Nav.Link>
+        <Nav.Link as={Link} to="/kontakt">КОНТАКТ</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>
@@ -89,22 +88,22 @@ const App = () => {
   
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/history' element={<History />} />
-        <Route path='/employees' element={<Employees />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/events' element={<Events />} />
-        <Route path='/competition' element={<Competition />} />
-        <Route path='/recommendations' element={<Recommendations />} />
-        <Route path='/ourpublications' element={<OurPublic />} />
-        <Route path='/digitali' element={<DigitalLibrary />} />
-        <Route path='/searche' element={<BooksSearche />} />
-        <Route path='/kid' element={<Kid />} />
-        <Route path='/adult' element={<Adult />} />
-        <Route path='/scientific' element={<Scientific />} />
-        <Route path='/homeland' element={<Homeland />} />
-        <Route path='/project' element={<Project />} />
-        <Route path='/homeland/legati' element={<Legati />} />
+        <Route path='/kontakt' element={<Contact />} />
+        <Route path='/istorija' element={<History />} />
+        <Route path='/zaposleni' element={<Employees />} />
+        <Route path='/usluge' element={<Services />} />
+        <Route path='/dogadjaji' element={<Events />} />
+        <Route path='/konkurs' element={<Competition />} />
+        <Route path='/preporuke' element={<Recommendations />} />
+        <Route path='/nasaIzdanja' element={<OurPublic />} />
+        <Route path='/digitalna' element={<DigitalLibrary />} />
+        <Route path='/pretrazivanje' element={<BooksSearche />} />
+        <Route path='/decije' element={<Kid />} />
+        <Route path='/odraslo' element={<Adult />} />
+        <Route path='/naucno' element={<Scientific />} />
+        <Route path='/zavicajno' element={<Homeland />} />
+        <Route path='/projekat' element={<Project />} />
+        <Route path='/zavicajno/legati' element={<Legati />} />
         <Route path='/misionAndvision' element={<MisionAndVision />} />
       </Routes>
     </Router>
