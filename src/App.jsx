@@ -42,8 +42,8 @@ const App = () => {
   <Container>
     <Navbar.Brand as={Link} to="/" >
     <Row>
-   <Col md={4}> <img src="/logo.jpg" alt="Logo" className='logo' style={{marginLeft:'4rem'}} /></Col>
-   <Col md={4} className='mt-3'><p className='container-text fw-bold 'style={{marginLeft:'2rem'}}  >Градска библиотека „Атанасије Стојковић” Рума</p></Col>
+   <Col md={4}> <img src="/logo.jpg" alt="Logo" className='logo' style={{marginLeft:'3.5rem'}} /></Col>
+   <Col md={4} className='mt-3'><p className='container-text fw-bold 'style={{marginLeft:'1.5rem'}}  >Градска библиотека „Атанасије Стојковић” Рума</p></Col>
     </Row>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
