@@ -21,7 +21,6 @@ max-height: auto;
  animation: flashEffect 10s forwards; 
  object-fit: cover;
  height: 177vh;
-
 }
 @media (max-width: 768px) {
   .image-carousel {
@@ -64,7 +63,7 @@ max-height: auto;
 
 .container-library {
  max-width: 95%;
- padding: 30px;
+ padding: 15px;
  background-color: #f3f2ee;
  border-radius: 8px;
  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -114,7 +113,7 @@ max-height: auto;
  color: #3f2c11;
  font-size: 25px;
  margin-bottom: 30px;
- text-align: left;
+ text-align: justify;
  opacity: 0; 
  animation: fadeInText 3s forwards;
  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);

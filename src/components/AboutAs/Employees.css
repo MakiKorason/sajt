@@ -14,7 +14,7 @@ animation: fadeInText 3s forwards;
     background: linear-gradient(135deg, #f3f0e970, #ad9e876e);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
    border: 2px solid #ccc; 
-  border-radius: 2rem;  
+  border-radius: 1rem;  
      text-align: center;
 }
  .employees{

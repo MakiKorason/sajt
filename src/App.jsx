@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import Contact from './components/Contact';
 import Home from './components/Home';
@@ -24,6 +24,7 @@ import MisionAndVision from './components/AboutAs/MisionAndVision';
 import { FaEnvelope } from 'react-icons/fa';
 
 const App = () => {
+
 
   return (<>
 

@@ -32,9 +32,10 @@ html, body {
 }
 @media (max-width: 400px) {  
   .bar-content {  
-    font-size: 1em;  
+    font-size: 1em;    animation: scroll 25s linear infinite; 
   }  
 }
+
 @media (max-width: 500px) {
   .logo {
     width: 80px;
