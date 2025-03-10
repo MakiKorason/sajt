@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import Contact from './components/Contact';
 import Home from './components/Home';
@@ -21,25 +21,12 @@ import Project from './components/AboutAs/Project';
 import Legati from './components/Department/Legati';
 import MisionAndVision from './components/AboutAs/MisionAndVision';
 import { FaEnvelope } from 'react-icons/fa';
-import { Helmet } from 'react-helmet';
-
-const SEO = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
-  
-  return (
-    <Helmet>
-      <link rel="canonical" href={`https://bibliotekaruma.rs/#${currentPath}`} />
-    </Helmet>
-  );
-};
 
 const App = () => {
 
 
   return (<>
     <Router>
-      <SEO />
     <Row className="top-bar">
       <Col md={12} className="bar-content">
         <span>Адреса: Главна 114, Рума</span>

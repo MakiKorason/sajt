@@ -8,7 +8,7 @@ import ministarstvo from '../images/ministarstvo.jpg'
 import opstina from '../images/opstina.jpg'  
 import biblioteka from '../images/biblioteka.jpg'
 import konkurs from '../images/konkurs.jpg'
-import { IoBookSharp } from "react-icons/io5";
+import { IoBookSharp, IoCalendarSharp } from "react-icons/io5";
 import muzej from '../images/muzej.jpg'
 import kc from '../images/kc.jpg'
 import turisticka from '../images/turisticka.jpg'
@@ -29,6 +29,10 @@ import 'react-calendar/dist/Calendar.css';
 import AnimatedImage from "./Department/AnimatedImage";
 import AnimatedCard from './Department/AnimatedCard'; 
 import pokrajina from '../images/pokrajina.jpg'
+import ButtonSparkle from './ButtonSparkle';
+import dis from '../images/dis.jpg'
+
+
 
 
 const Home =()=> { 
@@ -71,15 +75,15 @@ const Home =()=> {
 />
 
       <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
+        <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић” представља пример јединственог архитектонског 
           стваралаштва.
         <Button
-    href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/ " 
-      target="_blank"
- className="btn btn-light container-button"
-  >
- ДЕТАЉНИЈЕ
-  </Button>
+          href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/"
+          target="_blank"
+          className="btn btn-light container-button"
+        >
+          ДЕТАЉНИЈЕ
+        </Button>
         </p>
      
       </div>
@@ -92,13 +96,13 @@ const Home =()=> {
       <div  className="carousel-caption ">
     
         <p >Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат на Западу.  
-         <Button
+         <ButtonSparkle
     href="https://www.virtualna-ruma.rs/page.php?pro_id=59" 
       target="_blank"
- className="btn btn-light container-button btn-lg"
+ className="btn-light container-button btn-lg"
   >
  ДЕТАЉНИЈЕ
-  </Button> </p>
+  </ButtonSparkle> </p>
       </div>  
     </div>
 
@@ -106,14 +110,14 @@ const Home =()=> {
       <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
    />
       <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
-        <Button
+        <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ” представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
+        <ButtonSparkle
     href="https://sremskevesti.rs/sva-odeljenja-rumske-gradske-biblioteke-atanasije-stojkovic-dostupna-ljudima-ostecenog-sluha-slepim-i-slabovidim-osobama/" 
       target="_blank"
- className="btn btn-light container-button"
+ className="btn-light container-button"
   >
  ДЕТАЉНИЈЕ
-  </Button>
+  </ButtonSparkle>
         </p>
       </div>
     </div>
@@ -125,13 +129,13 @@ const Home =()=> {
       <div className="carousel-caption ">
   
 <p style={{padding:'4%'}}><IoBookSharp /> <IoBookSharp /> <IoBookSharp /><br/>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА!
-        <Button
+        <ButtonSparkle
     href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma/videos/967554408223187?locale=sr_RS" 
       target="_blank"
- className="btn btn-light container-button"
+ className="btn-light container-button"
   >
  ДЕТАЉНИЈЕ
-  </Button>
+  </ButtonSparkle>
         </p>
       </div>  </div>
       
@@ -139,6 +143,43 @@ const Home =()=> {
 
     </div></Col>
 </Row>
+
+<Container className='container-library ms-auto mt-4 mb-4'>
+  <Row className='text-center'>
+    <Col md={12}>
+      <div className="date-badge">
+        <IoCalendarSharp className="calendar-icon" />
+        <a href="https://www.youtube.com/watch?v=eCKjhozrBdA" target="_blank" rel="noopener noreferrer" className="date-text">
+          10. март
+        </a>
+      </div>
+      <img 
+        src={dis} 
+        alt="Владислав Петковић Дис" 
+        className="dis-image mb-4"
+        style={{ maxWidth: '300px', borderRadius: '50%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}
+      />
+      <h2 className='container-title mb-4'> На данашњи дан, пре 145 година, рођен је велики српски песник Владислав Петковић Дис. </h2>
+      <Row>
+        <Col md={12}>
+          <p className='container-text mb-4'>
+            Градска библиотека „Атанасије Стојковић” поносно чува и позајмљује својим корисницима његове збирке песама.
+          </p>
+          <div className='dis-quote'>
+            <p className='italic-text'>
+              "Заборавио сам јутрос песму једну ја,<br/>
+              песму једну у сну што сам сву ноћ слушао:<br/>
+              да је чујем узалуd сам данас кушао,<br/>
+              као да је песма била срећа моја сва.<br/>
+              Заборавио сам јутроs песму једну ја."
+            </p>
+          </div>
+        </Col>
+      </Row>
+    </Col>
+  </Row>
+</Container>
+
         <Container className='container-library ms-auto mt-4 mb-4'>
         
          <Row className='text-center'>
@@ -146,7 +187,7 @@ const Home =()=> {
            
          <AnimatedCard>
         <a href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">
-        <h6 className='container-title'>Претражите<br/> наш фонд  </h6> </a><img 
+        <h6 className='container-title'>Претражите<br/> наш фонд  </h6></a><img 
       src={cobbis}
       alt="COBISS" 
       className='container-image'
@@ -208,22 +249,22 @@ const Home =()=> {
       <Col md={8}><p className='container-title'>Промоције књига и различита тематска предавања се углавном одржавају у просторијама Градске библиотеке. </p>  
         </Col>
         
-        <Col md={6}><hr/>
+        <Col md={6} className='text-center'>
           
           <AnimatedImage
             src={objava4}
             alt="Објава 4"
-            className="image-event"
+         
           />
-     
 </Col>         
         
-         <Col md={6}>
-     <hr/>
+         <Col md={6} className='text-center'
+       >
+     
     <AnimatedImage
                 src={objava3}
                 alt="Објава 3"
-                className="image-event"
+        
               />
     
          </Col>
@@ -242,19 +283,19 @@ const Home =()=> {
   <Col md={12}>
         <h1 className='container-title'>Званични документи</h1><br/>
         <p className='container-text'>Правилник о условима и начину коришћења библиотечке грађе</p>
-        <Button
+        <ButtonSparkle
   onClick={() => window.open('/Pravilnik.pdf', '_blank')}
 className='btn btn-secondary'
 >
 ДЕТАЉНИЈЕ
-</Button><hr/>
-<p className='container-text'>Статут установе Градске библиотеке „Атанасије Стојковић“ Рума </p>
-        <Button
+</ButtonSparkle><hr/>
+<p className='container-text'>Статут установе Градске библиотеке „Атанасије Стојковић" Рума </p>
+        <ButtonSparkle
   onClick={() => window.open('/Statut.pdf', '_blank')}
 className='btn btn-secondary'
 >
 ДЕТАЉНИЈЕ
-</Button><br/><hr/> </Col>
+</ButtonSparkle><br/><hr/> </Col>
 </Row>
     </Row>
       </Container>
@@ -268,8 +309,8 @@ className='btn btn-secondary'
     
           <Col md={12} className='text-center' > 
           <img style={{width:'12%' }} src={ministarstvo} alt='Министарство културе'/> 
-          <img style={{width:'10%',marginLeft:'3em'}}  src={pokrajina} alt='Покрајински секретаријат за културу, јавно информисање и односе с верским заједницама'/> 
-        <img style={{width:'20%'}}  src={opstina} alt='Општина Рума'/> </Col>
+          <img style={{width:'10%',marginLeft:'2.2em'}}  src={pokrajina} alt='Покрајински секретаријат за културу, јавно информисање и односе с верским заједницама'/> 
+        <img style={{width:'20%',marginLeft:'0.8em' }}  src={opstina} alt='Општина Рума'/> </Col>
       
           <hr/> 
           <Col md={12} className='text-center'>
@@ -324,7 +365,6 @@ className='btn btn-secondary'
     />
   </div>
 </div><hr/>
-
 
     </>
   );
