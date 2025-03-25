@@ -22,7 +22,7 @@ import Project from './components/AboutAs/Project';
 import Legati from './components/Department/Legati';
 import MisionAndVision from './components/AboutAs/MisionAndVision';
 import { FaEnvelope } from 'react-icons/fa';
-
+import NaDanasnjiDan from './components/Books/NaDanasnjiDan'
 const App = () => {
 
 
@@ -63,7 +63,9 @@ const App = () => {
           <NavDropdown.Item as={Link} to="/preporuke">Препоруке библиотекара</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/nasaIzdanja">Наша издања</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/digitalna">Дигитална библиотека</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to='/naDanasnjiDan'>На данашњи дан</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/pretrazivanje">Претраживање фонда</NavDropdown.Item>
+
         </NavDropdown>
 
         <NavDropdown title="ОДЕЉЕЊА" id="sections-dropdown" 
@@ -104,6 +106,7 @@ const App = () => {
         <Route path='/projekat' element={<Project />} />
         <Route path='/zavicajno/legati' element={<Legati />} />
         <Route path='/misijaIvizija' element={<MisionAndVision />} />
+        <Route path='/naDanasnjiDan' element={<NaDanasnjiDan/>}/>
       </Routes>
     </Router>
 
