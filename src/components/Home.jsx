@@ -154,24 +154,7 @@ const Home =()=> {
     </div></Col>
 </Row>
 
-<Container>
-  <Row>
-    <Col md={12} className='container-title text-center mt-4'><h1> На данашњи дан (25.3.1947.) рођен је Елтон Џон</h1><hr/>
-    <p className='container-text'>Реџиналд Двајт био је стидљив дечак са наочарима који је растао у лондонском предграђу Пинер и сањао да постане поп-звезда. Када је напунио двадесет три године, имао је свој први наступ у Америци, у светложутим фармеркама и паром тешких радничких чизама, такође јарко жутих. У том тренутку рођен је Елтон Џон и музички свет се заувек променио.</p>
-    </Col>
-    <Col className='text-center mb-4'>
-    <AnimatedCard><iframe width="660" height="415" src="https://www.youtube.com/embed/HLqrimhpjRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</AnimatedCard>
 
-<h1>Поменуту књигу можете пронаћи и у нашој библиотеци. </h1>
-
-<a  style={{fontSize:'27px'}} href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">Претражите</a>
-</Col>
-</Row>
-
-
-
-</Container>
   {/* <Container  className='container-day'>
     <Row className='text-center mt-5'>
       <Col md={12} className=' text-center '>
