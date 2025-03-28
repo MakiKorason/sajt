@@ -68,7 +68,10 @@ const Home =()=> {
 
   return (
 
-    <>
+     
+    
+    <> <h1 className="text-center">Добродошли у Градску библиотеку „Атанасије Стојковић”</h1>
+
    <Row><Col md={12}>
   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="12000" data-bs-pause="false" >
   <div className="carousel-indicators">
