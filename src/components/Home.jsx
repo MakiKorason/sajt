@@ -73,7 +73,7 @@ const Home =()=> {
     <>
 
    <Row><Col md={12}>
-  <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="12000" data-bs-pause="false" >
+  <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false" >
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
