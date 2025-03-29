@@ -66,7 +66,7 @@ const Events = () => {
                 </Card.Title>
               
                 <Card.Img style={{width:'140px', borderRadius:'50%'}} src={Atanasije} />
-                <p className='container-text'><br/>„Дани Атанасија Стојковића традиционално се обележавају током недеље у којој се обележава датум његовог рођења – 20. септембар.“</p>
+                <p className='container-text'><br/>„Дани Атанасија Стојковића традиционално се одржавају током недеље у којој се обележава датум његовог рођења – 20. септембар.“</p>
              <Button className='btn btn-secondary ' onClick={handleShowEvent2}>Детаљније</Button>
               </Card.Body>
             </ AnimatedCard >
