@@ -30,7 +30,7 @@ import AnimatedImage from "./Department/AnimatedImage";
 import AnimatedCard from './Department/AnimatedCard'; 
 import vanGog from '../images/vanGog.jpg'
 import pokrajina from '../images/pokrajina.jpg'
-
+import { Helmet } from "react-helmet";
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
   const markedDates = [
@@ -52,26 +52,27 @@ const Home =()=> {
   const onChange= date =>{
     setDate(date);
   }
-  // const books = [
-  //   { id: 1, title: 'Писма брату', genre: 'Епистоларни жанр' },
-  //   { id: 2, title: 'Живот у боји: Ван Гог', genre: 'Артистички анализе' },
-  //   { id: 3, title: 'Ван Гог: Писма', genre: 'Писма' }
+  // const book = [
+  //   { id: 1, title: 'Писма брату', genre: 'Биографија' },
+  //   { id: 2, title: 'Хајдегер о сликарству: Франц Марк, Винсент Ван Гог, Пол Сезан, Паул Кле', genre: 'Филозофија' },
+  //   {id: 3, title: 'Жудња за животом', genre:'Роман'},
+  //   {id: 4, title:'Винсет Бан Гог: 1853-1890. :између визије и стварности', genre:'Сликарство'}
   // ];
 
 
-  // const [showBooks, setShowBooks] = useState(false);
+  const [showBooks, setShowBooks] = useState(false);
 
 
-  // const handleClick = () => {
-  //   setShowBooks(!showBooks); 
-  // };
+  const handleClick = () => {
+    setShowBooks(!showBooks); 
+  };
 
   return (
-
-     
-    
     <>
-
+  <Helmet>
+        <title>Biblioteka Ruma – Početna</title>
+        <link rel="canonical" href="https://biblioteka.ruma.rs/" />
+      </Helmet>
    <Row><Col md={12}>
   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false" >
   <div className="carousel-indicators">
@@ -98,7 +99,7 @@ const Home =()=> {
  ДЕТАЉНИЈЕ
   </Button>
         </p>
-     
+  
       </div>
     </div>
 
@@ -108,7 +109,7 @@ const Home =()=> {
 />
       <div  className="carousel-caption ">
     
-        <p >Румљанин Атанасије Стојковић је међу првим српским научницима<br/> чији је рад признат у Русији.  
+        <p style={{padding:'1.5%'}} >  Румљанин Атанасије Стојковић био је најобразованији Србин<br/> прве трећине 19. века.
          <Button
     href="https://www.virtualna-ruma.rs/page.php?pro_id=59" 
       target="_blank"
@@ -172,7 +173,7 @@ const Home =()=> {
 
       {showBooks && ( 
         <div>
-          {books.map((book) => (
+          {book.map((book) => (
             <li key={book.id}>
               {book.title} — {book.genre}
             </li>

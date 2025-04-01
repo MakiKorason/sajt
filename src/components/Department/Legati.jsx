@@ -148,10 +148,7 @@ const Legati=()=>{
 
     </Col>
     
-    <Col  md={4}>
-    <br/>
-   
-    </Col>
+
  
      <hr />
     </Row>

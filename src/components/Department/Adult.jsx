@@ -104,9 +104,9 @@ const Adult =()=>{
 
 <Row>
 <Col md={4}>
-<AnimatedImage    src={likovniKonkurs1} alt="Женски ликови из књижевности" className='container-image2'/></Col>
-<Col md={4}><AnimatedImage    src={likovniKonkurs2} alt="Женски ликови из књижевности" className='container-image2'/></Col>
-<Col md={4}><AnimatedImage    src={likovniKonkurs3} alt="Женски ликови из књижевности" className='container-image2'/>
+<AnimatedImage  src={likovniKonkurs1} alt="Женски ликови из књижевности" className='container-image2'/></Col>
+<Col md={4}><AnimatedImage  src={likovniKonkurs2} alt="Женски ликови из књижевности" className='container-image2'/></Col>
+<Col md={4}><AnimatedImage  src={likovniKonkurs3} alt="Женски ликови из књижевности" className='container-image2'/>
 </Col>
 <hr/></Row>
 <Row>

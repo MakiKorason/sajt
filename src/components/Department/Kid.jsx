@@ -8,7 +8,7 @@ const Kid =()=>{
     return (<>
     <Container className="container-library mt-4 mb-4">
          <div className="container-frame"><h2 className="container-title" > ОДЕЉЕЊЕ ЗА ДЕЦУ</h2><div className="container-icon">
-                         <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>   <hr/><br/>
+          <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>   <hr/><br/>
       <Row>
         <Col md={12} >
           <p className='container-text'>
