@@ -3,10 +3,15 @@ import {  Button, Col, Container, Row } from 'react-bootstrap';
 import React from 'react';
 import konkurs from '../../images/konkurs.jpg'
 import AnimatedCard from '../Department/AnimatedCard'; 
+import { Helmet } from 'react-helmet';
 const Competition =()=>{
   
-
     return (<>
+     
+          <Helmet>
+            <title>Konkurs - Biblioteka Ruma</title>
+            <link rel="canonical" href="https://bibliotekaruma.rs/konkurs" />
+          </Helmet>  
      <Container className="container-library mt-4 mb-4 ">
       <Row >
         <Col xs={12} sm={12} md={12} lg={12} xl={12} >

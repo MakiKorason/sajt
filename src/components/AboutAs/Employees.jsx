@@ -9,9 +9,14 @@ import { CiMoneyCheck1 } from "react-icons/ci";
 import { FaTools } from "react-icons/fa";
 import { LiaBookSolid } from "react-icons/lia";
 import AnimatedCard from '../Department/AnimatedCard'; 
+import { Helmet } from 'react-helmet';
 const Employees = () => {
     return (
-
+<>
+<Helmet>
+        <title>Biblioteka Ruma – Zaposleni</title>
+        <link rel="canonical" href="https://bibliotekaruma.rs/" />
+      </Helmet>
      <Container className="container-library ms-auto  mt-4 mb-4"> 
    <div className="container-frame">
        <Row>
@@ -90,6 +95,7 @@ COBISS програмском окружењу. Библиотека
       </Row>           </div>      
             
          </Container>
+         </>
     );
 };
 

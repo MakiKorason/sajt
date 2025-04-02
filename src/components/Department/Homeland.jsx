@@ -4,8 +4,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import { LiaBookSolid } from "react-icons/lia";
 import zavicajno from '../../images/zavicajno.jpg'
 import AnimatedImage from "./AnimatedImage";
+import { Helmet } from 'react-helmet';
 const Homlend =()=>{
 return (<>
+
+<Helmet>
+         <title>Zavičajno odeljenje - Biblioteka Ruma</title>
+         <link rel="canonical" href="https://bibliotekaruma.rs/zavicajno" />
+       </Helmet> 
  <Container  className="container-library mt-4 mb-4">
  <div className="container-frame">
 

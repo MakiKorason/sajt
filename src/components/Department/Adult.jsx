@@ -10,9 +10,14 @@ import likovniKonkurs3 from '../../images/likovniKonkurs3.jpg'
 import cudoUBanatu from '../../images/cudoUBanatu.jpg'
 import AnimatedImage from "./AnimatedImage";
 import odraslo from '../../images/odraslo.jpg'
+import { Helmet } from 'react-helmet';
 const Adult =()=>{
     return(
-        
+        <>
+        <Helmet>
+         <title>Odeljenje za odrasle - Biblioteka Ruma</title>
+         <link rel="canonical" href="https://bibliotekaruma.rs/odraslo" />
+       </Helmet> 
           <Container className="container-library mt-4 mb-4"> 
        <div className="container-frame">
       <Row>         
@@ -129,8 +134,8 @@ const Adult =()=>{
        
        </Row> <hr/>
      </div>
-    
-    </Container>
+
+    </Container>    </>
     );
 }
 

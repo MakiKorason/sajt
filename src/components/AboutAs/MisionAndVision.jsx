@@ -3,7 +3,7 @@ import React from "react";
 import horhe from '../../images/horhe.jpg'
 import stiven from '../../images/stiven.jpg'
 import AnimatedImage from "../Department/AnimatedImage";
-
+import { Helmet } from 'react-helmet';
 
 const MisionAndVision=()=>{
 
@@ -12,7 +12,11 @@ const MisionAndVision=()=>{
     }
  
     return (
- 
+  <>
+       <Helmet>
+         <title>Vizija i misija - Biblioteka Ruma</title>
+         <link rel="canonical" href="https://bibliotekaruma.rs/misijaIvizija" />
+       </Helmet>  
     <Container className='container-library mt-4 mb-4'>
         <Row>
           
@@ -60,6 +64,7 @@ const MisionAndVision=()=>{
 <hr/>
 
   </Container>
+  </>
   )
 
 

@@ -4,13 +4,15 @@ import Legat2 from '../../images/Legat2.jpg'
 import Legat3 from '../../images/Legat3.jpg'
 import AnimatedImage from "./AnimatedImage";
 import { LiaBookSolid } from "react-icons/lia";
-
-
+import { Helmet } from 'react-helmet';
 
 const Legati=()=>{
-
-   
    return(
+    <>
+         <Helmet>
+         <title>Legati - Biblioteka Ruma</title>
+         <link rel="canonical" href="https://bibliotekaruma.rs/zavicajno/legati" />
+       </Helmet> 
      <Container className='container-library mt-4 mb-4 '>
         <div className="container-frame">
     <Row> <h1 className="container-title" >ЛЕГАТИ</h1>     <div className="container-icon">
@@ -154,7 +156,7 @@ const Legati=()=>{
     </Row>
     </div>
      </Container>
-    
+    </>
     )
 }
 

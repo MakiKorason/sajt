@@ -28,9 +28,15 @@ import public21 from "../../images/Ourpublic/public21.jpg"
 import public22 from "../../images/Ourpublic/public22.jpg"
 import public23 from "../../images/Ourpublic/public23.jpg"
 import AnimatedImage from "../Department/AnimatedImage";
+import { Helmet } from 'react-helmet';
+ 
 const OurPublic =()=>{
 
     return (<>
+    <Helmet>
+        <title>Naša izdanja - Biblioteka Ruma</title>
+        <link rel="canonical" href="https://bibliotekaruma.rs/nasaIzdanja" />
+      </Helmet> 
 <Container className="container-library mt-4 mb-4">
 <p  className="container-text">
 Током три деценије постојања издавачке

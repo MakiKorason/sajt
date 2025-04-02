@@ -22,7 +22,7 @@ import Project from './components/AboutAs/Project';
 import Legati from './components/Department/Legati';
 import MisionAndVision from './components/AboutAs/MisionAndVision';
 import { FaEnvelope } from 'react-icons/fa';
-
+import { HelmetProvider } from "react-helmet-async";
 const App = () => {
 
 
@@ -34,7 +34,7 @@ const App = () => {
         <span> |Радно време: понедељак-петак: 08-20h и суботом: 08-13h </span>
       </Col>
     </Row>
-
+    <HelmetProvider> 
     <Router> 
       <header>
 
@@ -108,7 +108,7 @@ const App = () => {
    
       </Routes>
     </Router>
-
+    </HelmetProvider>
     <footer className="library-footer">
       <Container>
         <Row>

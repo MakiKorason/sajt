@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Row, Col,  Container } from 'react-bootstrap';
-import AnimatedImage from "../Department/AnimatedImage";
+import AnimatedImage from "../Department/AnimatedImage"; import { Helmet } from 'react-helmet';
 const Recommendations =()=>{
 
 
@@ -154,8 +154,15 @@ const Recommendations =()=>{
 
 
     ];
-
+   
+ 
     return (
+
+            <>
+                 <Helmet>
+                 <title>Preporuke bibliotekara - Biblioteka Ruma</title>
+                 <link rel="canonical" href="https://bibliotekaruma.rs/preporuke" />
+               </Helmet> 
           <Container className='container-library  mb-4 mt-4 ms-auto '>
            
             <Row className="mb-4">
@@ -232,6 +239,7 @@ const Recommendations =()=>{
                 </Col>
             </Row>
         </Container>
+        </>
     );
 };
 

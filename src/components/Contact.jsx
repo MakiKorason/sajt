@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, CardTitle } from 'react-bootstrap';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'; 
 import AnimatedCard from './Department/AnimatedCard';
-import { Helmet } from "react-helmet-async";
+import { Helmet } from 'react-helmet';
 const Contact = () => {
 
   // const onSubmit = async (event) => {
@@ -36,11 +36,13 @@ const Contact = () => {
 
 
   return (
-
-    <Container fluid> 
-       {/* <Helmet>
+    <>
+ <Helmet>
+       <title>Kontakt - Biblioteka Ruma</title>
     <link rel="canonical" href="https://www.bibliotekaruma.rs/kontakt" />
-  </Helmet> */}
+  </Helmet>
+    <Container fluid> 
+      
          <h1 className='container-title mt-5' >КОНТАКТИРАЈТЕ НАС</h1>
          <Row >
     
@@ -130,10 +132,8 @@ const Contact = () => {
      </ Card >
          </Col>
          </Row>
-  
-
      </Container>
-   
+   </>
   );
 };
 

@@ -71,7 +71,7 @@ const Home =()=> {
     <>
   <Helmet>
         <title>Biblioteka Ruma – Početna</title>
-        <link rel="canonical" href="https://biblioteka.ruma.rs/" />
+        <link rel="canonical" href="https://bibliotekaruma.rs" />
       </Helmet>
    <Row><Col md={12}>
   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false" >

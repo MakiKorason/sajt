@@ -3,9 +3,16 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import cobbis from '../../images/cobbis.jpg'
 import './BooksSearche.css'
 import AnimatedCard from '../Department/AnimatedCard'; 
-
+import { Helmet } from 'react-helmet';
+ 
 const BooksSearche = () => {
   return (
+    <>
+      <Helmet>
+        <title>Pretraživanje fonda - Biblioteka Ruma</title>
+        <link rel="canonical" href="https://bibliotekaruma.rs/preporuke" />
+      </Helmet>  
+    
     <Container className="container-library ms-auto mt-4 mb-4">
       <Row>
         <Col xs={12} md={12} >
@@ -94,6 +101,7 @@ web продавници - Google play: MCOBISS. <a href='https://play.google.c
         </Col>
       </Row>
     </Container>
+    </>
   );
 };
 

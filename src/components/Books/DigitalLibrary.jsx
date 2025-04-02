@@ -1,9 +1,14 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import digitalna2 from '../../images/digitalna2.jpg'
-import AnimatedCard from '../Department/AnimatedCard'; 
+import AnimatedCard from '../Department/AnimatedCard';     import { Helmet } from 'react-helmet';
 const DigitalLibrary =()=>{
     return (<>
+
+        <Helmet>
+         <title>Digitalna biblioteka - Biblioteka Ruma</title>
+         <link rel="canonical" href="https://bibliotekaruma.rs/digitalna" />
+       </Helmet> 
      <Container className='container-library mt-4 mb-4' >
       <h2 className="container-title  mb-4" >НАШ ДИГИТАЛНИ ФОНД <hr/></h2>
       <p className="container-text mb-5">

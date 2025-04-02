@@ -6,8 +6,13 @@ import naucno2 from '../../images/naucno2.jpg'
 import predavanjeOMacu from '../../images/predavanjeOMacu.jpg'
 import WordPress from '../../images/WordPress.jpg'
 import AnimatedImage from "./AnimatedImage";
+import { Helmet } from 'react-helmet';
 const Scientific =()=>{
     return(<>
+    <Helmet>
+<title>Odeljenje naučne i stručne literature - Biblioteka Ruma</title>
+<link rel="canonical" href="https://bibliotekaruma.rs/naucno" />
+</Helmet> 
       <Container className="container-library mt-4 mb-4">
       <div className="container-frame"><h2 className="container-title" >ОДЕЉЕЊЕ НАУЧНЕ<br/> И СТРУЧНЕ ЛИТЕРАТУРЕ</h2><div className="container-icon">
                    <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>  <hr/>

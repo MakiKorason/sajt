@@ -5,9 +5,15 @@ import DJNA from '../../images/DJNA.jpg'
 import DJNA1 from '../../images/DJNA1.webp'
 import AnimatedImage from '../Department/AnimatedImage';
 import AnimatedCard from '../Department/AnimatedCard'; 
+import { Helmet } from 'react-helmet';
 const History = () => {
 
   return (
+    <>
+      <Helmet>
+        <title>Istorija - Biblioteka Ruma</title>
+        <link rel="canonical" href="https://bibliotekaruma.rs/istorija" />
+      </Helmet>   
     <Container className="container-library mt-4 mb-4  ">
  <div className="container-frame">
       <Row>     
@@ -122,7 +128,7 @@ COBISS/OPAC окружење и све услуге корисницима
       </div>
     </Container>
 
-    
+    </>
   
   );
 };

@@ -3,9 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import decije from '../../images/decije.jpg'
 import { LiaBookSolid } from "react-icons/lia";
 import isidora from '../../images/isidora.jpg'
-import AnimatedImage from "./AnimatedImage";
+import AnimatedImage from "./AnimatedImage";import { Helmet } from 'react-helmet';
 const Kid =()=>{
     return (<>
+
+           <Helmet>
+         <title>Decije odeljenje - Biblioteka Ruma</title>
+         <link rel="canonical" href="https://bibliotekaruma.rs/decije" />
+       </Helmet> 
     <Container className="container-library mt-4 mb-4">
          <div className="container-frame"><h2 className="container-title" > ОДЕЉЕЊЕ ЗА ДЕЦУ</h2><div className="container-icon">
           <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>   <hr/><br/>

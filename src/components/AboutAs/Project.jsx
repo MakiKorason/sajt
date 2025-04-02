@@ -3,8 +3,14 @@ import React from "react"
 import kulturaZaSve1 from '../../images/kulturaZaSve1.jpg'
 import kulturaZaSve2 from '../../images/kulturaZaSve2.jpg'
 import AnimatedImage from "../Department/AnimatedImage";
+import { Helmet } from 'react-helmet';
+ 
 const Project =()=>{
-    return(<>
+    return(
+    <><Helmet>
+  <title>Projekat - Biblioteka Ruma</title>
+  <link rel="canonical" href="https://bibliotekaruma.rs/projekat" />
+</Helmet> 
         <Container className='container-library mb-4 mt-4' >
        
         <div className="container-frame">   <h1 className="container-title">Култура за све</h1>
