@@ -103,7 +103,9 @@ max-height: auto;
 } */
 
 .container-day{
-background-color: rgb(231, 226, 219);
+max-width: 95%;
+padding: 3%;
+background-color: rgb(243, 242, 224);
 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 
 }

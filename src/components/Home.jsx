@@ -29,8 +29,12 @@ import 'react-calendar/dist/Calendar.css';
 import AnimatedImage from "./Department/AnimatedImage";
 import AnimatedCard from './Department/AnimatedCard'; 
 import vanGog from '../images/vanGog.jpg'
+import smrtniIshod from '../images/smrtniIshod.jpg'
 import pokrajina from '../images/pokrajina.jpg'
 import { Helmet } from "react-helmet";
+import { FaBookReader } from "react-icons/fa";
+
+
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
   const markedDates = [
@@ -52,12 +56,12 @@ const Home =()=> {
   const onChange= date =>{
     setDate(date);
   }
-  // const book = [
-  //   { id: 1, title: 'Писма брату', genre: 'Биографија' },
-  //   { id: 2, title: 'Хајдегер о сликарству: Франц Марк, Винсент Ван Гог, Пол Сезан, Паул Кле', genre: 'Филозофија' },
-  //   {id: 3, title: 'Жудња за животом', genre:'Роман'},
-  //   {id: 4, title:'Винсет Бан Гог: 1853-1890. :између визије и стварности', genre:'Сликарство'}
-  // ];
+  const book = [
+    { id: 1, title: 'Писма брату', genre: 'Биографија' },
+    { id: 2, title: 'Хајдегер о сликарству: Франц Марк, Винсент Ван Гог, Пол Сезан, Паул Кле', genre: 'Филозофија' },
+    {id: 3, title: 'Жудња за животом', genre:'Роман'},
+    {id: 4, title:'Винсет Бан Гог: 1853-1890. :између визије и стварности', genre:'Сликарство'}
+  ];
 
 
   const [showBooks, setShowBooks] = useState(false);
@@ -158,6 +162,34 @@ const Home =()=> {
     </div></Col>
 </Row>
 
+
+<Container  className='container-day mt-4'>
+    <Row className='text-center mt-5'>
+      <Col md={6}>  <AnimatedImage className='container-image' src={smrtniIshod}  alt='Смртни исход атлетских повреда'/>   
+      <a 
+  href="https://plus.cobiss.net/cobiss/sr/sr/bib/search/advanced?ax=%D0%B2%D1%83%D1%87%D0%BA%D0%BE%D0%B2%D0%B8%D1%9B%2C+%D0%BC%D0%B8%D0%BB%D0%B8%D1%86%D0%B0*&ti&kw&db=gbru&mat=allmaterials" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="btn btn-primary"
+>
+  Кликните за приказ књига ауторке Милице Вучковић које поседује наша библиотека и примерке који су слободни.
+</a></Col>
+
+    <Col md={6} className=' text-center '>
+     <h1 className='container-title'>Април у знаку књиге <FaBookReader />  </h1><hr/>
+     <p className='container-text'>Ако сте у потрази за књигом која ће вам побудити најснажније емоције: туге, емпатије, сажаљења и разочарања,  онда је роман „Смртни исход атлетских повреда“ прави избор за вас.
+      Приповедање које тече у првом лицу, избегавајући еуфемизам, ствара интимнији однос главне јунакиње и читаоца који верно прати њен живот и којем се пружа могућност да буде у исто време Евин психолог, судија и на крају писац који ће завршити овај роман. </p>
+     <br/>  <strong className='container-text'>„Једном сам се, сећам се тога, наљутила на мајку јер није знала колико ми је година. Испоставило се,
+    она је била у праву. Дописала сам себи, грешком, једну више.“ <br/> - Ева
+     </strong>
+      </Col>
+      <Col md={12}>
+
+     
+
+      </Col>
+    </Row>
+  </Container>
 
   {/* <Container  className='container-day'>
     <Row className='text-center mt-5'>
