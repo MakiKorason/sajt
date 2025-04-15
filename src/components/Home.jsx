@@ -165,15 +165,7 @@ const Home =()=> {
 
 <Container  className='container-day mt-4'>
     <Row className='text-center mt-5'>
-      <Col md={6}>  <AnimatedImage className='container-image' src={smrtniIshod}  alt='Смртни исход атлетских повреда'/>   
-      <a 
-  href="https://plus.cobiss.net/cobiss/sr/sr/bib/search/advanced?ax=%D0%B2%D1%83%D1%87%D0%BA%D0%BE%D0%B2%D0%B8%D1%9B%2C+%D0%BC%D0%B8%D0%BB%D0%B8%D1%86%D0%B0*&ti&kw&db=gbru&mat=allmaterials" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="btn btn-primary"
->
-  Кликните за приказ књига ауторке Милице Вучковић које поседује наша библиотека и примерке који су слободни.
-</a></Col>
+   
 
     <Col md={6} className=' text-center '>
      <h1 className='container-title'>Април у знаку књиге <FaBookReader />  </h1><hr/>
@@ -182,7 +174,15 @@ const Home =()=> {
      <br/>  <strong className='container-text'>„Једном сам се, сећам се тога, наљутила на мајку јер није знала колико ми је година. Испоставило се,
     она је била у праву. Дописала сам себи, грешком, једну више.“ <br/> - Ева
      </strong>
-      </Col>
+      </Col>   <Col md={6}>  <AnimatedImage className='container-image' src={smrtniIshod}  alt='Смртни исход атлетских повреда'/>   
+      <a 
+  href="https://plus.cobiss.net/cobiss/sr/sr/bib/search/advanced?ax=%D0%B2%D1%83%D1%87%D0%BA%D0%BE%D0%B2%D0%B8%D1%9B%2C+%D0%BC%D0%B8%D0%BB%D0%B8%D1%86%D0%B0*&ti&kw&db=gbru&mat=allmaterials" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="btn btn-primary"
+>
+  Kњигe ауторке Милице Вучковић које поседује наша библиотека.
+</a></Col>
       <Col md={12}>
 
      
