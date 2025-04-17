@@ -33,7 +33,8 @@ import smrtniIshod from '../images/smrtniIshod.jpg'
 import pokrajina from '../images/pokrajina.jpg'
 import { Helmet } from "react-helmet";
 import { FaBookReader } from "react-icons/fa";
-
+import uskrs from '../images/uskrs.jpg'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
@@ -70,7 +71,7 @@ const Home =()=> {
   const handleClick = () => {
     setShowBooks(!showBooks); 
   };
-
+  
   return (
     <>
   <Helmet>
@@ -78,16 +79,23 @@ const Home =()=> {
         <link rel="canonical" href="https://bibliotekaruma.rs" />
       </Helmet>
    <Row><Col md={12}>
-  <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false" >
+  <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="9500" data-bs-pause="false" >
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
   </div>
  
   <div className="carousel-inner">
-    <div className="carousel-item active">
+
+  <div className="carousel-item active">
+  <img src={uskrs} alt="Додатни слајд" className="d-block w-100 image-carousel img-thumbnail img-fluid" />
+</div>
+
+
+    <div className="carousel-item">
     <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
