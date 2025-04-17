@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css'
 import { Button,   Col,   Container,   Row } from 'react-bootstrap';
 import cobbis from '../images/cobbis.jpg'
@@ -35,6 +35,7 @@ import { Helmet } from "react-helmet";
 import { FaBookReader } from "react-icons/fa";
 import uskrs from '../images/uskrs.jpg'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
@@ -71,6 +72,16 @@ const Home =()=> {
   const handleClick = () => {
     setShowBooks(!showBooks); 
   };
+  
+  useEffect(() => {
+    const myCarousel = document.querySelector('#demo');
+    if (myCarousel) {
+      new Carousel(myCarousel, {
+        interval: 10000,
+        ride: 'carousel',
+      });
+    }
+  }, []);
   
   return (
     <>
