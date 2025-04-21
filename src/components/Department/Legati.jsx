@@ -6,9 +6,12 @@ import AnimatedImage from "./AnimatedImage";
 import { LiaBookSolid } from "react-icons/lia";
 import { Helmet } from 'react-helmet';
 
-const Legati=()=>{
+
+const Legati= ()=>{
    return(
+    
     <>
+       
          <Helmet>
          <title>Legati - Biblioteka Ruma</title>
          <link rel="canonical" href="https://bibliotekaruma.rs/zavicajno/legati" />

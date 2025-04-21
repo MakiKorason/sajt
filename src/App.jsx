@@ -1,7 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import Contact from './components/Contact';
 import Home from './components/Home';
@@ -23,8 +23,11 @@ import Legati from './components/Department/Legati';
 import MisionAndVision from './components/AboutAs/MisionAndVision';
 import { FaEnvelope } from 'react-icons/fa';
 import { HelmetProvider } from "react-helmet-async";
+import { useState } from "react";
 const App = () => {
 
+
+  const [expanded, setExpanded] = useState(false);
 
   return (<>
 
@@ -37,53 +40,59 @@ const App = () => {
     <HelmetProvider> 
     <Router> 
       <header>
-
-    <Navbar expand="lg" className="sticky-navbar shadow" >
+      <Navbar expand="lg" expanded={expanded} onToggle={() => setExpanded(!expanded)} className="sticky-navbar shadow">
   <Container>
-    <Navbar.Brand as={Link} to="/" >
-    <Row>
-   <Col md={4}> <img src="/logo.jpg" alt="Logo" className='logo' style={{marginLeft:'3.5rem'}} /></Col>
-   <Col md={4} className='mt-3'><p className='container-text fw-bold 'style={{marginLeft:'1.5rem'}} >Градска библиотека „Атанасије Стојковић” Рума</p></Col>
-    </Row>
+    <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
+      <Row>
+        <Col md={4}>
+          <img src="/logo.jpg" alt="Logo" className='logo' style={{ marginLeft: '3.5rem' }} />
+        </Col>
+        <Col md={4} className='mt-3'>
+          <p className='container-text fw-bold' style={{ marginLeft: '1.5rem' }}>
+            Градска библиотека „Атанасије Стојковић” Рума
+          </p>
+        </Col>
+      </Row>
     </Navbar.Brand>
+
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="ms-auto fs-5 mt-5" >
-    
-        <NavDropdown title="О НАМА" id="about-dropdown"   >
-          <NavDropdown.Item as={Link} to="/istorija">Историјат библиотеке</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/zaposleni">Запослени</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/misijaIvizija">Визија и мисија</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/projekat">Пројекат</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/konkurs">Конкурс</NavDropdown.Item>
-        </NavDropdown>         
+      <Nav className="ms-auto fs-5 mt-5">
 
-        <NavDropdown title="ФОНД" id="fund-dropdown" 
-         > 
-          <NavDropdown.Item as={Link} to="/preporuke">Препоруке библиотекара</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/nasaIzdanja">Наша издања</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/digitalna">Дигитална библиотека</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/pretrazivanje">Претраживање фонда</NavDropdown.Item>
-
+        <NavDropdown title="О НАМА" id="about-dropdown">
+          <NavDropdown.Item as={Link} to="/istorija" onClick={() => setExpanded(false)}>Историјат библиотеке</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/zaposleni" onClick={() => setExpanded(false)}>Запослени</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/misijaIvizija" onClick={() => setExpanded(false)}>Визија и мисија</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/projekat" onClick={() => setExpanded(false)}>Пројекат</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/konkurs" onClick={() => setExpanded(false)}>Конкурс</NavDropdown.Item>
         </NavDropdown>
 
-        <NavDropdown title="ОДЕЉЕЊА" id="sections-dropdown" 
->
-          <NavDropdown.Item as={Link} to="/decije" >Одељење за децу</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/odraslo">Одељење за одрасле</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/naucno">Одељење научне и стручне литературе</NavDropdown.Item>
-          <NavDropdown title={<Link to="/zavicajno"   style={{color:'black'}}>Завичајна збирка</Link>} id="homeland-submenu" drop="end">
-            <NavDropdown.Item as={Link} to="/zavicajno/legati" >Легати</NavDropdown.Item>
+        <NavDropdown title="ФОНД" id="fund-dropdown">
+          <NavDropdown.Item as={Link} to="/preporuke" onClick={() => setExpanded(false)}>Препоруке библиотекара</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/nasaIzdanja" onClick={() => setExpanded(false)}>Наша издања</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/digitalna" onClick={() => setExpanded(false)}>Дигитална библиотека</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/pretrazivanje" onClick={() => setExpanded(false)}>Претраживање фонда</NavDropdown.Item>
+         <NavDropdown.Item as={Link} to="/zavicajno/legati" onClick={() => setExpanded(false)}>Легати</NavDropdown.Item></NavDropdown>
+
+        <NavDropdown title="ОДЕЉЕЊА" id="sections-dropdown">
+          <NavDropdown.Item as={Link} to="/decije" onClick={() => setExpanded(false)}>Одељење за децу</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/odraslo" onClick={() => setExpanded(false)}>Одељење за одрасле</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/naucno" onClick={() => setExpanded(false)}>Одељење научне и стручне литературе</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/naucno" onClick={() => setExpanded(false)} >Завичајна збирка </NavDropdown.Item>
+           
           </NavDropdown>
-        </NavDropdown>
-        <Nav.Link as={Link} to="/usluge">УСЛУГЕ</Nav.Link>
-        <Nav.Link as={Link} to="/manifestacije">МАНИФЕСТАЦИЈЕ</Nav.Link>
-        <Nav.Link as={Link} to="/kontakt">КОНТАКТ</Nav.Link>
     
+
+        <Nav.Link as={Link} to="/usluge" onClick={() => setExpanded(false)}>УСЛУГЕ</Nav.Link>
+        <Nav.Link as={Link} to="/manifestacije" onClick={() => setExpanded(false)}>МАНИФЕСТАЦИЈЕ</Nav.Link>
+        <Nav.Link as={Link} to="/kontakt" onClick={() => setExpanded(false)}>КОНТАКТ</Nav.Link>
+
       </Nav>
     </Navbar.Collapse>
   </Container>
 </Navbar>
+
 </header>
   
       <Routes>
