@@ -82,9 +82,24 @@ const Home =()=> {
       });
     }
   }, []);
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Назив видеа",
+    "description": "Кратак опис видеа",
+    "thumbnailUrl": "https://img.youtube.com/vi/0Ay8XmhQHSI/maxresdefault.jpg",
+    "uploadDate": "2025-03-12",
+    "contentUrl": "https://www.bibliotekaruma.rs/",
+    "embedUrl": "https://www.youtube.com/embed/0Ay8XmhQHSI"
+  };
+  
   
   return (
     <>
+    <script type="application/ld+json">
+  {JSON.stringify(videoSchema)}
+</script>
+
   <Helmet>
         <title>Biblioteka Ruma – Početna</title>
         <link rel="canonical" href="https://bibliotekaruma.rs" />
@@ -282,10 +297,17 @@ const Home =()=> {
            <Row>   
             <Col md={12}>
             <AnimatedCard className='container-iframe'>
-            <iframe src="https://www.youtube.com/embed/0Ay8XmhQHSI" 
-    title="Филм: Година иза нас" 
-    >
-    </iframe></AnimatedCard>
+            <iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/0Ay8XmhQHSI" 
+  title="Филм: Година иза нас" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+
+    </AnimatedCard>
        </Col></Row>
        </Container>
 

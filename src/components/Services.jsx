@@ -4,12 +4,16 @@ import './Services.css';
 import { IoBookSharp } from "react-icons/io5";
 import AnimatedCard from './Department/AnimatedCard'; 
 import AnimatedContainer from '../AnimatedContainer';
+import { Helmet } from 'react-helmet';
 const Services =()=>{
 
   
   return (
     <>
-
+  <Helmet>
+        <title>Biblioteka Ruma – Услуге</title>
+        <link rel="canonical" href="https://bibliotekaruma.rs/usluge" />
+      </Helmet>
     <Container className=" container-library mb-4 mt-4 ms-auto">
       <AnimatedContainer className='cobiss-card'>
 <p className='container-title'>
