@@ -38,7 +38,7 @@ const App = () => {
       </Col>
     </Row>
     <HelmetProvider> 
-    <Router> 
+   <Router> 
       <header>
       <Navbar expand="lg" expanded={expanded} onToggle={() => setExpanded(!expanded)} className="sticky-navbar shadow">
   <Container>

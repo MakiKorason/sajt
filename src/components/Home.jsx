@@ -116,12 +116,10 @@ const Home =()=> {
  
   <div className="carousel-inner">
 
-  <div className="carousel-item active">
-  <img src={uskrs} alt="Додатни слајд" className="d-block w-100 image-carousel img-thumbnail img-fluid" />
-</div>
+ 
 
 
-    <div className="carousel-item">
+    <div className="carousel-item active">
     <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
