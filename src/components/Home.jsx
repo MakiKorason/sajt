@@ -101,7 +101,7 @@ const Home =()=> {
 </script>
 
   <Helmet>
-        <title>Градска бiblioteka</title>
+        <title>Biblioteka Ruma</title>
         <link rel="canonical" href="https://bibliotekaruma.rs" />
       </Helmet>
    <Row><Col md={12}>
