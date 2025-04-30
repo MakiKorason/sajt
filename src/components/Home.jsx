@@ -28,12 +28,12 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import AnimatedImage from "./Department/AnimatedImage";
 import AnimatedCard from './Department/AnimatedCard'; 
-import vanGog from '../images/vanGog.jpg'
+import zavicajno from '../images/zavicajno.jpg'
 import smrtniIshod from '../images/smrtniIshod.jpg'
 import pokrajina from '../images/pokrajina.jpg'
 import { Helmet } from "react-helmet";
 import { FaBookReader } from "react-icons/fa";
-import uskrs from '../images/uskrs.jpg'
+
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -105,7 +105,7 @@ const Home =()=> {
         <link rel="canonical" href="https://bibliotekaruma.rs" />
       </Helmet>
    <Row><Col md={12}>
-  <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="9500" data-bs-pause="false" >
+   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="30000" data-bs-pause="true">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -116,7 +116,24 @@ const Home =()=> {
  
   <div className="carousel-inner">
 
-    <div className="carousel-item active">
+  <div className="carousel-item active" >
+    <img
+      src={zavicajno}
+      alt="Обавештење о раду библиотеке за празнике"
+      className="d-block w-100 mx-auto image-carousel"
+    />
+    <div className="carousel-caption">
+      <p style={{ padding: '2.5%', fontSize:'100%'}}>
+        ОБАВЕШТЕЊЕ<br />
+        Због Међународног празника рада,<br />
+        библиотека неће радити од 1. до 3. маја.
+      </p>
+    </div>
+  </div>
+
+
+
+    <div className="carousel-item ">
     <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
@@ -157,7 +174,7 @@ const Home =()=> {
       <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
    />
       <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе, како би све културне садржаје учинили доступним особама са инвалидитетом.   
+        <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе.
         <Button
     href="https://sremskevesti.rs/sva-odeljenja-rumske-gradske-biblioteke-atanasije-stojkovic-dostupna-ljudima-ostecenog-sluha-slepim-i-slabovidim-osobama/" 
       target="_blank"
