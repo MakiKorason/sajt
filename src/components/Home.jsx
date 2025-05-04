@@ -111,29 +111,13 @@ const Home =()=> {
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+
   </div>
  
   <div className="carousel-inner">
 
-  <div className="carousel-item active" >
-    <img
-      src={zavicajno}
-      alt="Обавештење о раду библиотеке за празнике"
-      className="d-block w-100 mx-auto image-carousel"
-    />
-    <div className="carousel-caption">
-      <p style={{ padding: '2.5%', fontSize:'100%'}}>
-        ОБАВЕШТЕЊЕ<br />
-        Због Међународног празника рада,<br />
-        библиотека неће радити од 1. до 3. маја.
-      </p>
-    </div>
-  </div>
 
-
-
-    <div className="carousel-item ">
+    <div className="carousel-item active">
     <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
