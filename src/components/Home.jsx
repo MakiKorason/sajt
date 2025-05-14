@@ -207,7 +207,7 @@ const Home =()=> {
 И ове године, значајну подршку у реализацији програма пружа локална самоуправа, настављајући сарадњу са Градском библиотеком у неговању културних вредности.
 </p></Col>
 <Col md={6}>
-<img className='container-image' src={slikaZaDane}/></Col>
+<AnimatedImage className='container-image' src={slikaZaDane}/></Col>
 
 
   </Row>
