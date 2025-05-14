@@ -36,7 +36,7 @@ import { FaBookReader } from "react-icons/fa";
 import petnaestiDani from '../images/petnaestiDani.jpg'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import slikaZaDane from '../images/slikaZaDane.jpg';
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
   const markedDates = [
@@ -198,34 +198,21 @@ const Home =()=> {
     </div></Col>
 </Row>
 
+<Container className='container-library ms-auto mt-4 mb-4'>
 
-<Container  className='container-day mt-4'>
-    <Row className='text-center mt-5'>
-   
+  <Row>
+<Col md={6}>
+<p className='container-text'>Мај месец je од посебног значаја за словенске народе, како у духовном, тако и у културном смислу. 24. мај обележава се као празник Светих Ћирила и Методија – просветитеља и учитеља словенских народа, а сама манифестација посвећена је њиховом делу и наслеђу.
+Овај културно-уметнички догађај током година је постао једна од најзначајнијих манифестација не само за Руму и Срем, већ и за читаву Србију и словенски културни простор. Током четрнаест година постојања, „Дани словенске писмености и културе“ угостили су бројне угледне учеснике – амбасадоре словенских земаља, културне аташее, академике, књижевне критичаре, универзитетске професоре и друге истакнуте ствараоце из Србије и иностранства.
+И ове године, значајну подршку у реализацији програма пружа локална самоуправа, настављајући сарадњу са Градском библиотеком у неговању културних вредности.
+</p></Col>
+<Col md={6}>
+<img className='container-image' src={slikaZaDane}/></Col>
 
-    <Col md={6} className=' text-center '>
-     <h1 className='container-title'>Април у знаку књиге <FaBookReader />  </h1><hr/>
-     <p className='container-text'>Ако сте у потрази за књигом која ће вам побудити најснажније емоције: туге, емпатије, сажаљења и разочарања,  онда је роман „Смртни исход атлетских повреда“ прави избор за вас.
-      Приповедање које тече у првом лицу, избегавајући еуфемизам, ствара интимнији однос главне јунакиње и читаоца који верно прати њен живот и којем се пружа могућност да буде у исто време Евин психолог, судија и на крају писац који ће завршити причу. </p>
-     <br/>  <strong className='container-text'>„Једном сам се, сећам се тога, наљутила на мајку јер није знала колико ми је година. Испоставило се,
-    она је била у праву. Дописала сам себи, грешком, једну више.“ <br/> - Ева
-     </strong>
-      </Col>   <Col md={6}>  <img style={{width:'75%'}} src={smrtniIshod}  alt='Смртни исход атлетских повреда'/>   
-      <a 
-  href="https://plus.cobiss.net/cobiss/sr/sr/bib/search/advanced?ax=%D0%B2%D1%83%D1%87%D0%BA%D0%BE%D0%B2%D0%B8%D1%9B%2C+%D0%BC%D0%B8%D0%BB%D0%B8%D1%86%D0%B0*&ti&kw&db=gbru&mat=allmaterials" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="btn btn-primary"
->
-  Kњигe ауторке Милице Вучковић које поседује наша библиотека.
-</a></Col>
-      <Col md={12}>
 
-     
+  </Row>
+</Container>
 
-      </Col>
-    </Row>
-  </Container>
 
   {/* <Container  className='container-day'>
     <Row className='text-center mt-5'>
