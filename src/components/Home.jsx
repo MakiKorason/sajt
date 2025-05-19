@@ -122,11 +122,12 @@ const Home =()=> {
        <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
-      <div  className="carousel-caption ">
+<Col className='mt-3'>
+      <div  className="carousel-caption">
         <p>Због одржавања манифестације „Дани Словенске писмености и културе“ Градска библиотека ће у периоду од 19.5. до 23.5.2025. са читаоцима радити у времену од 8-12 часова.</p>
-     <br/>
+     
      У среду 21.5.2025. ЗБОГ ОБЕЛЕЖАВАЊА КРСНЕ СЛАВЕ, БИБЛИОТЕКА НЕЋЕ РАДИТИ СА КОРИСНИЦИМА.
-      </div>
+      </div></Col>
     </div>
 
     {/* <div className="carousel-item">
