@@ -38,6 +38,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import slikaZaDane from '../images/slikaZaDane.jpg';
 import program from '../images/program.jpg';
+import dani1 from '../images/dani1.jpg'
+import dani2 from '../images/dani2.jpg'
+import dani3 from '../images/dani3.jpg'
+import dani4 from '../images/dani4.jpg'
 
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
@@ -201,14 +205,31 @@ const Home =()=> {
 <Container className='container-library ms-auto mt-4 mb-4'>
 
   <Row>
-<Col md={6}>
-<p className='container-text'>Мај месец je од посебног значаја за словенске народе, како у духовном, тако и у културном смислу. 24. мај обележава се као празник Светих Ћирила и Методија – просветитеља и учитеља словенских народа, а сама манифестација посвећена је њиховом делу и наслеђу.
-Овај културно-уметнички догађај током година је постао једна од најзначајнијих манифестација не само за Руму и Срем, већ и за читаву Србију и словенски културни простор. Током четрнаест година постојања, „Дани словенске писмености и културе“ угостили су бројне угледне учеснике – амбасадоре словенских земаља, културне аташее, академике, књижевне критичаре, универзитетске професоре и друге истакнуте ствараоце из Србије и иностранства.
-И ове године, значајну подршку у реализацији програма пружа локална самоуправа, настављајући сарадњу са Градском библиотеком у неговању културних вредности.
-</p></Col>
-<Col md={6}>
-<AnimatedImage className='container-image' src={slikaZaDane}/></Col>
 
+<Col md={12}>
+<h3 className='text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ
+„Дани словенске писмености и културе”</h3>
+<hr/>
+</Col>
+
+<Col md={4}>
+<AnimatedImage className='container-image' src={dani1}/>
+<p>
+  ,,Вивкови виолинисти”, квартет виолина Мира Пуач, Искра Глигорић, Нина Арнаутовић, Тамара Цвијетић извeле су Шостаковић прелудијум и Подмосковске вечери.
+</p>
+</Col>
+
+<Col md={4}>
+<AnimatedImage className='container-image' src={dani2}/><p>Присутнима се пригодном беседом најпре обратио архијерејски намесник румски протојереј Сретен Лазаревић.</p>
+<AnimatedImage className='container-image' src={dani4}/>
+
+</Col>
+
+<Col md={4}>
+<AnimatedImage className='container-image' src={dani3}/><p>
+  У холу Културног центра отворена је 10. изложба икона и калиграфских радова ученика 5 основних школа и ССШ „Бранко Радичевић“.
+</p>
+</Col>
 
   </Row>
 </Container>
