@@ -32,11 +32,13 @@ import zavicajno from '../images/zavicajno.jpg'
 import smrtniIshod from '../images/smrtniIshod.jpg'
 import pokrajina from '../images/pokrajina.jpg'
 import { Helmet } from "react-helmet";
-import { FaBookReader } from "react-icons/fa";
+import { FaBookReader, FaProjectDiagram } from "react-icons/fa";
 import petnaestiDani from '../images/petnaestiDani.jpg'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import slikaZaDane from '../images/slikaZaDane.jpg';
+import program from '../images/program.jpg';
+
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
   const markedDates = [
@@ -107,7 +109,7 @@ const Home =()=> {
    <Row><Col md={12}>
    <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="true">
   <div className="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
+    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button> */}
     {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button> */}
@@ -115,12 +117,10 @@ const Home =()=> {
   </div>
  
   <div className="carousel-inner">
-
   <div className="carousel-item active">
-    <img src={petnaestiDani} alt="Дани словенске писмености и културе"  
+    <img src={program} alt="Програм за Дане словенске писмености и културе"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
-
     </div>
 
     {/* <div className="carousel-item">

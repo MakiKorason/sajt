@@ -3,6 +3,7 @@
 .carousel-control-next {
  display: none;
  color: black;
+   border: none !important;
 }
 .carousel-indicators {
  z-index: 10;
@@ -20,7 +21,7 @@ max-height: auto;
  opacity: 0;
  animation: flashEffect 10s forwards; 
  object-fit: cover;
- height: 177vh;
+ height: 200vh;
 }
 @media (max-width: 768px) {
   .image-carousel {
