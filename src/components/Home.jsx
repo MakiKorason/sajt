@@ -28,15 +28,11 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import AnimatedImage from "./Department/AnimatedImage";
 import AnimatedCard from './Department/AnimatedCard'; 
-import zavicajno from '../images/zavicajno.jpg'
-import smrtniIshod from '../images/smrtniIshod.jpg'
+
 import pokrajina from '../images/pokrajina.jpg'
 import { Helmet } from "react-helmet";
-import { FaBookReader, FaProjectDiagram } from "react-icons/fa";
-import petnaestiDani from '../images/petnaestiDani.jpg'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import slikaZaDane from '../images/slikaZaDane.jpg';
 import program from '../images/program.jpg';
 import dani1 from '../images/dani1.jpg'
 import dani2 from '../images/dani2.jpg'
@@ -110,21 +106,27 @@ const Home =()=> {
         <title>Biblioteka Ruma</title>
         <link rel="canonical" href="https://bibliotekaruma.rs" />
       </Helmet>
+      
    <Row><Col md={12}>
    <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="true">
   <div className="carousel-indicators">
-    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button> */}
-    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button> */}
-    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> */}
+    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>  */}
+    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> */}
+    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> */}
+    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> */}
   </div>
  
-  <div className="carousel-inner">
-  <div className="carousel-item active">
-    <img src={program} alt="Програм за Дане словенске писмености и културе"  
+  <div className="carousel-inner">   
+    <div className='carousel-item active'>
+       <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
+      <div  className="carousel-caption ">
+        <p>Због одржавања манифестације „Дани Словенске писмености и културе“ Градска библиотека ће у периоду од 19.5. до 23.5.2025. са читаоцима радити у времену од 8-12 часова.</p>
+     <br/>
+     У среду 21.5.2025. ЗБОГ ОБЕЛЕЖАВАЊА КРСНЕ СЛАВЕ, БИБЛИОТЕКА НЕЋЕ РАДИТИ СА КОРИСНИЦИМА.
+      </div>
     </div>
 
     {/* <div className="carousel-item">
@@ -199,11 +201,14 @@ const Home =()=> {
       
 </div>
 
-    </div></Col>
+  </div></Col>
 </Row>
 
 <Container className='container-library ms-auto mt-4 mb-4'>
-
+  <Row>
+  <Col md={12} className='text-center'>
+<img className='container-image' src={program}/>
+</Col></Row>
   <Row>
 
 <Col md={12}>

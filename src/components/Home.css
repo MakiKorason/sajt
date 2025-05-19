@@ -12,8 +12,7 @@
 .carousel-caption{
 background-color:rgba(0, 0, 0, 0.7); 
 animation: flashEffect 10s forwards;
-font-size: 1.5rem;
-
+font-size: 3rem;
 }
 .image-carousel {
  max-width: 100%; 
@@ -21,7 +20,7 @@ max-height: auto;
  opacity: 0;
  animation: flashEffect 10s forwards; 
  object-fit: cover;
- height: 200vh;
+ height: 150vh;
 }
 @media (max-width: 768px) {
   .image-carousel {
