@@ -3,7 +3,7 @@
 .carousel-control-next {
  display: none;
  color: black;
-   border: none !important;
+   
 }
 .carousel-indicators {
  z-index: 10;
