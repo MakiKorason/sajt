@@ -110,26 +110,19 @@ const Home =()=> {
    <Row><Col md={12}>
    <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="true">
   <div className="carousel-indicators">
-    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>  */}
-    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> */}
-    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> */}
-    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> */}
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>  
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> 
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> 
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> */}
   </div>
  
   <div className="carousel-inner">   
-    <div className='carousel-item active'>
-       <img src={biblioteka} alt="Зграда библиотеке"  
-  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-/>
-<Col className='mt-3'>
-      <div  className="carousel-caption">
-        <p>Због одржавања манифестације „Дани Словенске писмености и културе“ Градска библиотека ће у периоду од 19.5. до 23.5.2025. са читаоцима радити у времену од 8-12 часова, oсим у среду када се обележава крсна слава, тај дан је нерадан.</p>
+ 
+       
 
-      </div></Col>
-    </div>
 
-    {/* <div className="carousel-item">
+     <div className="carousel-item active">
     <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
@@ -180,9 +173,9 @@ const Home =()=> {
   </Button>
         </p>
       </div>
-    </div> */}
+    </div> 
 
-    {/* <div  className="carousel-item">
+    <div  className="carousel-item">
      <img src={books} alt="књиге"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
   />
 
@@ -197,7 +190,7 @@ const Home =()=> {
  ДЕТАЉНИЈЕ
   </Button>
         </p>
-      </div>  </div> */}
+      </div>  </div> 
       
 </div>
 
