@@ -108,7 +108,7 @@ const Home =()=> {
       </Helmet>
       
    <Row><Col md={12}>
-   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="true">
+   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="13000" data-bs-pause="true">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>  
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> 
@@ -118,9 +118,6 @@ const Home =()=> {
   </div>
  
   <div className="carousel-inner">   
- 
-       
-
 
      <div className="carousel-item active">
     <img src={biblioteka} alt="Зграда библиотеке"  

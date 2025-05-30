@@ -20,7 +20,7 @@ max-height: auto;
  opacity: 0;
  animation: flashEffect 10s forwards; 
  object-fit: cover;
- height: 150vh;
+ height: 175vh;
 }
 @media (max-width: 768px) {
   .image-carousel {
