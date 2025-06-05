@@ -20,6 +20,7 @@ import trkulja from '../images/trkulja.jpg'
 import books from '../images/books.jpg'
 import Panonija from '../images/Panonija.jpg'
 import karoselSlika from '../images/karoselSlika.jpg'
+import livada from '../images/livada.jpg'
 import digitalna from '../images/digitalna.jpg'
 import objava4 from '../images/objava4.jpg'
 // import zahvalnica from '../images/zahvalnica.jpg'
@@ -111,15 +112,21 @@ const Home =()=> {
    <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="33000" data-bs-pause="true">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>  
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> 
+    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> 
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> 
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> */}
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> */}
   </div>
  
   <div className="carousel-inner">   
 
-     <div className="carousel-item active">
+       <div className="carousel-item active">
+    <img src={livada} alt="Промоција збирке поезије"  
+  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+/>
+    </div>
+{/* 
+      <div className="carousel-item">
     <img src={biblioteka} alt="Зграда библиотеке"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
@@ -137,9 +144,9 @@ const Home =()=> {
         </p>
   
       </div>
-    </div>
+    </div> */}
 
-    <div  className="carousel-item">
+    {/* <div  className="carousel-item">
   
 <img src={digitalna}  alt="Атанасије Стојковић"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
@@ -154,9 +161,9 @@ const Home =()=> {
  ДЕТАЉНИЈЕ
   </Button> </p>
       </div>  
-    </div>
+    </div> */}
 
-    <div className="carousel-item">
+    {/* <div className="carousel-item">
       <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
    />
       <div  className="carousel-caption ">
@@ -170,8 +177,8 @@ const Home =()=> {
   </Button>
         </p>
       </div>
-    </div> 
-
+    </div>  */}
+{/* 
     <div  className="carousel-item">
      <img src={books} alt="књиге"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
   />
@@ -187,11 +194,13 @@ const Home =()=> {
  ДЕТАЉНИЈЕ
   </Button>
         </p>
-      </div>  </div> 
+      </div>  </div>  */}
       
 </div>
 
-  </div></Col>
+  </div>
+  </Col>
+
 </Row>
 
 <Container className='container-library ms-auto mt-4 mb-4'>
