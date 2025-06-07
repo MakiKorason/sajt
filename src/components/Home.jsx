@@ -115,7 +115,7 @@ const Home =()=> {
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> 
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> 
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    {/* <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button> */}
   </div>
  
   <div className="carousel-inner">   
@@ -175,8 +175,25 @@ const Home =()=> {
       </div>
     </div> 
  
+    <div className="carousel-item">
+      <img src={books} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+   />
+      <div  className="carousel-caption ">
+        <p style={{padding:'1.5%'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
+        <Button
+    href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma/videos/967554408223187?locale=sr_RS" 
+      target="_blank"
+ className="btn btn-light container-button"
+  >
+ ДЕТАЉНИЈЕ
+  </Button>
+        </p>
+      </div>
+    </div> 
+ 
       
 </div>
+
 
   </div>
   </Col>
