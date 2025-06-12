@@ -76,7 +76,7 @@ function InnerApp() {
 
     <NavDropdown.Item as={Link} to="/preporukaMeseca" onClick={() => setExpanded(false)}>Препорука месеца</NavDropdown.Item>
   </NavDropdown>
-                  <NavDropdown.Item as={Link} tp="/preporukaMeseca" onClick={()=>setExpanded(false)}>Preporuka meseca</NavDropdown.Item>
+
                   <NavDropdown.Item as={Link} to="/nasaIzdanja" onClick={() => setExpanded(false)}>Наша издања</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/digitalna" onClick={() => setExpanded(false)}>Дигитална библиотека</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/pretrazivanje" onClick={() => setExpanded(false)}>Претраживање фонда</NavDropdown.Item>
