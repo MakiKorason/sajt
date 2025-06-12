@@ -338,6 +338,8 @@ const Home =()=> {
       <Col md={8}><p className='container-title'>Промоције књига и различита тематска предавања се углавном одржавају у просторијама Градске библиотеке. </p>  
         </Col>
         
+
+
         <Col md={6} className='text-center'><hr/>
           <AnimatedImage
             src={objava4}
