@@ -25,7 +25,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { useState } from "react";
 import AnimatedPage from './components/Department/AnimatedPage';
 import { AnimatePresence } from 'framer-motion';
-import PreporukaMeseca from "./components/Books/PreporukaMeseca"
+
 function InnerApp() {
   const location = useLocation();
   const [expanded, setExpanded] = useState(false);
@@ -68,15 +68,7 @@ function InnerApp() {
                 </NavDropdown>
 
                 <NavDropdown title="ФОНД" id="fund-dropdown">
-                 <NavDropdown 
-    title="Препоруке библиотекара" 
-    id="preporuke-bibliotekara-dropdown" 
-    drop="end"  
-  >
-
-    <NavDropdown.Item as={Link} to="/preporukaMeseca" onClick={() => setExpanded(false)}>Препорука месеца</NavDropdown.Item>
-  </NavDropdown>
-
+                 <NavDropdown.Item as={Link} to="/preporuke" onClick={()=>setExpanded(false)}>Препорука библиотекара</NavDropdown.Item> 
                   <NavDropdown.Item as={Link} to="/nasaIzdanja" onClick={() => setExpanded(false)}>Наша издања</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/digitalna" onClick={() => setExpanded(false)}>Дигитална библиотека</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/pretrazivanje" onClick={() => setExpanded(false)}>Претраживање фонда</NavDropdown.Item>
@@ -120,7 +112,7 @@ function InnerApp() {
           <Route path='/projekat' element={<AnimatedPage><Project /></AnimatedPage>} />
           <Route path='/zavicajno/legati' element={<AnimatedPage><Legati /></AnimatedPage>} />
           <Route path='/misijaIvizija' element={<AnimatedPage><MisionAndVision /></AnimatedPage>} />
-          <Route path='/preporukaMeseca' element ={<AnimatedPage><PreporukaMeseca/></AnimatedPage>}/>
+
         </Routes>
       </AnimatePresence>
 
