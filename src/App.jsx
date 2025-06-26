@@ -79,7 +79,7 @@ function InnerApp() {
                   <NavDropdown.Item as={Link} to="/decije" onClick={() => setExpanded(false)}>Одељење за децу</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/odraslo" onClick={() => setExpanded(false)}>Одељење за одрасле</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/naucno" onClick={() => setExpanded(false)}>Одељење научне и стручне литературе</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/naucno" onClick={() => setExpanded(false)} >Завичајна збирка</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/zavicajno" onClick={() => setExpanded(false)} >Завичајна збирка</NavDropdown.Item>
                 </NavDropdown>
 
                 <Nav.Link as={Link} to="/usluge" onClick={() => setExpanded(false)}>УСЛУГЕ</Nav.Link>
