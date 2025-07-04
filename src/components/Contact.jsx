@@ -38,12 +38,14 @@ const Contact = () => {
   return (
     <>
  <Helmet>
-       <title>Kontakt - Biblioteka Ruma</title>
+       <title>Контакт – Библиотека Рума</title>
+       <meta name="description" content="Контактирајте Градску библиотеку Рума – сазнајте радно време, адресу и како да нас посетите или нам пошаљете поруку!" />
     <link rel="canonical" href="https://www.bibliotekaruma.rs/kontakt" />
+    <link rel="alternate" hreflang="sr" href="https://www.bibliotekaruma.rs/kontakt" />
   </Helmet>
     <Container fluid> 
       
-         <h1 className='container-title mt-5' >КОНТАКТИРАЈТЕ НАС</h1>
+        
          <Row >
     
 {/*     

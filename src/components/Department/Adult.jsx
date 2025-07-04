@@ -1,15 +1,15 @@
 import {  Col, Container, Row} from "react-bootstrap";
 import './Adult.css';
 import { LiaBookSolid } from "react-icons/lia";
-import koncertNaOdraslom from '../../images/koncertNaOdraslom.jpg'
-import osmiMart from '../../images/osmiMart.jpg'
-import pesmaOTriSveta from '../../images/pesmaOTriSveta.jpg'
-import likovniKonkurs1 from '../../images/likovniKonkurs1.jpg'
-import likovniKonkurs2 from '../../images/likovniKonkurs2.jpg'
-import likovniKonkurs3 from '../../images/likovniKonkurs3.jpg'
-import cudoUBanatu from '../../images/cudoUBanatu.jpg'
+import koncertNaOdraslom from '../../images/koncertNaOdraslom.webp'
+import osmiMart from '../../images/osmiMart.webp'
+import pesmaOTriSveta from '../../images/pesmaOTriSveta.webp'
+import likovniKonkurs1 from '../../images/likovniKonkurs1.webp'
+import likovniKonkurs2 from '../../images/likovniKonkurs2.webp'
+import likovniKonkurs3 from '../../images/likovniKonkurs3.webp'
+import cudoUBanatu from '../../images/cudoUBanatu.webp'
 import AnimatedImage from "./AnimatedImage";
-import odraslo from '../../images/odraslo.jpg'
+import odraslo from '../../images/odraslo.webp'
 import { Helmet } from 'react-helmet';
 const Adult =()=>{
     return(
@@ -21,7 +21,7 @@ const Adult =()=>{
           <Container className="container-library mt-4 mb-4"> 
        <div className="container-frame">
       <Row>         
-        <h1 className="container-title">ОДЕЉЕЊЕ ЗА ОДРАСЛЕ</h1> <div className="container-icon">
+        <h1 className="container-title">Одељење за одрасле</h1> <div className="container-icon">
               <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div><hr/>
 
         <Col md={8} >

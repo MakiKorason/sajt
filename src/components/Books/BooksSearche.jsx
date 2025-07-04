@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import cobbis from '../../images/cobbis.jpg'
+import cobbis from '../../images/cobbis.webp'
 import './BooksSearche.css'
 import AnimatedCard from '../Department/AnimatedCard'; 
 import { Helmet } from 'react-helmet';
@@ -30,7 +30,7 @@ Bibliographic System and Services).
           <AnimatedCard>
            <img 
                 src={cobbis}
-                alt="COBISS" 
+                alt="COBISS - logo sistema za pretragu biblioteka"
                 className="cobiss-image" 
                 style={{ 
                         display: 'block', 
@@ -67,7 +67,7 @@ Bibliographic System and Services).
            • Корисницима је на располагању прилагођена
 верзија mcobiss преко мобилних уређаја.
 <br/>• Апликација је бесплатна и може се преузети у
-web продавници - Google play: MCOBISS. <a href='https://play.google.com/store/apps/details?id=si.izum.mcobiss&hl=sr&pli=1' rel="noreferrer"   target="_blank" alt='линк ка MCOBISS'>MCOBISS.</a>  </p>
+web продавници - Google play: MCOBISS. <a href='https://play.google.com/store/apps/details?id=si.izum.mcobiss&hl=sr&pli=1' rel="noreferrer"   target="_blank" alt='линк ка MCOBISS'>MCOBISS.</a>  </p>
               </Card.Text>
             </Card.Body>
           </AnimatedCard>

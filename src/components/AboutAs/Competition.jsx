@@ -1,7 +1,6 @@
-
 import {  Button, Col, Container, Row } from 'react-bootstrap';
 import React from 'react';
-import konkurs from '../../images/konkurs.jpg'
+import konkurs from '../../images/konkurs.webp'
 import AnimatedCard from '../Department/AnimatedCard'; 
 import { Helmet } from 'react-helmet';
 const Competition =()=>{

@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap"
-import Legat1 from '../../images/Legat1.jpg'
-import Legat2 from '../../images/Legat2.jpg'
-import Legat3 from '../../images/Legat3.jpg'
+import Legat1 from '../../images/Legat1.webp'
+import Legat2 from '../../images/Legat2.webp'
+import Legat3 from '../../images/Legat3.webp'
 import AnimatedImage from "./AnimatedImage";
 import { LiaBookSolid } from "react-icons/lia";
 import { Helmet } from 'react-helmet';
@@ -18,7 +18,7 @@ const Legati= ()=>{
        </Helmet> 
      <Container className='container-library mt-4 mb-4 '>
         <div className="container-frame">
-    <Row> <h1 className="container-title" >ЛЕГАТИ</h1>     <div className="container-icon">
+    <Row> <h1 className="container-title" >Легати</h1>     <div className="container-icon">
                        <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div> 
      <hr />
      <Col md={12}>
@@ -56,8 +56,8 @@ const Legati= ()=>{
 године. У Словенији и Срему је радио као свештено
 лице, па затим одлази у Америку. По завршетку
 Другог светског рата враћа се у Југославију где
-ради као уредник „Слободне речи“, „Просвете“ и
-Литерарне редакције „Радио Београда“. Никола
+ради као уредник "Слободне речи", "Просвете" и
+Литерарне редакције "Радио Београда". Никола
 Дреновац је почетком својих тридесетих година
 почео да пише поезију и прозу. Посебно место у
 његовом ставаралаштву заузимају деца, којима је
@@ -67,7 +67,7 @@ const Legati= ()=>{
 Никола Дреновац, својим књижевним опусом
 заслужује уважавање и поштовање својих
 суграђана. Управо због тога Градска библиотека
-„Атанасије Стојковић“ у склопу свог фонда поседује
+"Атанасије Стојковић" у склопу свог фонда поседује
 и Легат Николе Дреновца. Легат је формиран 1996.
 године, има 287 публикација које су обрађене у
 
@@ -120,8 +120,8 @@ const Legati= ()=>{
     <p className='container-text'>  
     <br/> Спомен збирка Оливере Шијачки представља
 физички одвојену целину од остатка фонда наше
-библиотеке и носи назив „Спомен збирка Оливере
-Шијачки“. Оливера Шијачки је рођена у Новом Саду
+библиотеке и носи назив "Спомен збирка Оливере
+Шијачки". Оливера Шијачки је рођена у Новом Саду
 1938. године, где је завршила Филозофски
 факултет и где је живела и радила. Удајом улази у
 породицу Шијачки, која води порекло из Вогња, па

@@ -1,7 +1,7 @@
 import { Button, Col, Container, Row } from "react-bootstrap"
 import React from "react";
-import horhe from '../../images/horhe.jpg'
-import stiven from '../../images/stiven.jpg'
+import horhe from '../../images/horhe.webp'
+import stiven from '../../images/stiven.webp'
 import AnimatedImage from "../Department/AnimatedImage";
 import { Helmet } from 'react-helmet';
 
@@ -21,7 +21,7 @@ const MisionAndVision=()=>{
         <Row>
           
   <Col xs={12} sm={12} md={8} lg={8} xl={8}>
-  <h1 className="container-title">Визија</h1><br/>
+  <h1 className="container-title">Визија и мисија</h1><br/>
 <br/>
 <p className="container-text">Наша визија је да постанемо ослонац у образовању
 и културном развоју, пружајући подршку свим
@@ -37,7 +37,7 @@ const MisionAndVision=()=>{
 </Col></Row>
 <br/>
 <Row><Col xs={12} sm={12} md={8} lg={8} xl={8}>
-  <hr/><br/><h1 className="container-title">Мисија</h1> 
+  <hr/><br/><h2 className="container-title">Мисија</h2> 
 
 <p className="container-text">Мисија наше библиотеке је да пружи приступ
 информацијама, књигама и образовним ресурсима

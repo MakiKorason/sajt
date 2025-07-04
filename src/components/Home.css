@@ -1,4 +1,3 @@
-
 .carousel-control-prev,
 .carousel-control-next {
  display: none;
@@ -146,10 +145,9 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
  
 .image-event {
- max-width: 100%; 
- border-radius: 5%;
- transition: transform 0.3s ease;
-
+  max-width: 100%; 
+  border-radius: 5%;
+  transition: transform 0.3s ease;
 }
 
 .image-event:hover {
@@ -173,7 +171,7 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 .image-background {
- background-image:url('../images/biblioteka.jpg');
+ background-image:url('../images/biblioteka.webp');
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;

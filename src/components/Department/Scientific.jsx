@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { LiaBookSolid } from "react-icons/lia";
-import naucno from '../../images/naucno.jpg'
-import naucno2 from '../../images/naucno2.jpg'
-import predavanjeOMacu from '../../images/predavanjeOMacu.jpg'
-import WordPress from '../../images/WordPress.jpg'
+import naucno from '../../images/naucno.webp'
+import naucno2 from '../../images/naucno2.webp'
+import predavanjeOMacu from '../../images/predavanjeOMacu.webp'
+import WordPress from '../../images/WordPress.webp'
 import AnimatedImage from "./AnimatedImage";
 import { Helmet } from 'react-helmet';
 const Scientific =()=>{
@@ -63,9 +63,9 @@ const Scientific =()=>{
      <AnimatedImage src={naucno2} alt="Научно одељење" className='container-image'/>
       </Col>
     
-        <h1 className="container-title"  >Културни кутак</h1><hr/>
+        <h2 className="container-title">Културни кутак</h2><hr/>
         <Col md={8} className="text-center">
-        <p className="container-text">Предавање на тему: „ТАЈНЕ КОВАЊА МАЧА“ које је
+        <p className="container-text">Предавање на тему: "ТАЈНЕ КОВАЊА МАЧА" које је
 одржао Слободан Маринић, мајстор ковача мачева,
 публика је имала прилику први пут да чује 12.
 октобра 2023. године у Читаоници наше установе.
@@ -78,7 +78,7 @@ const Scientific =()=>{
       <Col md={12} className="text-center">
       <p className="container-text"> У жељи да нашим суграђанима пружи могућност
 упознавања нових вештина, Градска библиотека
-„Атанасије Стојковић“ угостила је део WordPress
+"Атанасије Стојковић" угостила је део WordPress
 заједнице.
 Циљ ових предавања је приближити интернет и
 

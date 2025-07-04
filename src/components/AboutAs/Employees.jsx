@@ -14,8 +14,8 @@ const Employees = () => {
     return (
 <>
 <Helmet>
-        <title>Zaposleni – Biblioteka Ruma </title>
-        <link rel="canonical" href="https://bibliotekaruma.rs/" />
+        <title>Запослени – Библиотека Рума</title>
+        <link rel="canonical" href="https://bibliotekaruma.rs/zaposleni" />
       </Helmet>
      <Container className="container-library ms-auto  mt-4 mb-4"> 
    <div className="container-frame">

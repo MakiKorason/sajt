@@ -36,6 +36,9 @@ function InnerApp() {
         <Col md={12} className="bar-content">
           <span>Адреса: Главна 114, Рума</span>
           <span> |Радно време: понедељак-петак: 08-20h и суботом: 08-13h </span>
+          <span> | <a href="https://youtube.com/@gradskabibliotekaruma" target="_blank" rel="noopener noreferrer" aria-label="YouTube kanal biblioteke" style={{ marginRight: '10px', fontSize: '1em', color: 'inherit' }}><i className="fab fa-youtube"></i> YouTube</a> |
+          <a href="https://www.instagram.com/gradska_biblioteka_ruma" target="_blank" rel="noopener noreferrer" aria-label="Instagram biblioteke" style={{ marginRight: '10px', fontSize: '1em', color: 'inherit' }}><i className="fab fa-instagram"></i> Instagram</a> |
+          <a href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma" target="_blank" rel="noopener noreferrer" aria-label="Facebook biblioteke" style={{ fontSize: '1em', color: 'inherit' }}><i className="fab fa-facebook"></i> Facebook</a></span>
         </Col>
       </Row>
 
@@ -45,11 +48,11 @@ function InnerApp() {
             <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
               <Row>
                 <Col md={4}>
-                  <img src="/logo.jpg" alt="Logo" className='logo' style={{ marginLeft: '3.5rem' }} />
+                  <img src="/logo.jpg" alt="Грб Градске библиотеке Рума" className='logo' style={{ marginLeft: '3.5rem' }} />
                 </Col>
                 <Col md={4} className='mt-3'>
                   <p className='container-text fw-bold' style={{ marginLeft: '1.5rem' }}>
-                    Градска библиотека „Атанасије Стојковић” Рума
+                    Градска библиотека "Атанасије Стојковић" Рума
                   </p>
                 </Col>
               </Row>
@@ -59,32 +62,32 @@ function InnerApp() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto fs-5 mt-5">
 
-                <NavDropdown title="О НАМА" id="about-dropdown">
-                  <NavDropdown.Item as={Link} to="/istorija" onClick={() => setExpanded(false)}>Историјат библиотеке</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/zaposleni" onClick={() => setExpanded(false)}>Запослени</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/misijaIvizija" onClick={() => setExpanded(false)}>Визија и мисија</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/projekat" onClick={() => setExpanded(false)}>Пројекат</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/konkurs" onClick={() => setExpanded(false)}>Конкурс</NavDropdown.Item>
+                <NavDropdown title="О БИБЛИОТЕЦИ" id="about-dropdown">
+                  <NavDropdown.Item as={Link} to="/o-biblioteci" onClick={() => setExpanded(false)}>Историјат библиотеке</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/zaposleni-biblioteke" onClick={() => setExpanded(false)}>Запослени</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/vizija-misija-biblioteke" onClick={() => setExpanded(false)}>Визија и мисија</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/projekti-biblioteke" onClick={() => setExpanded(false)}>Пројекат</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/konkurs-biblioteke" onClick={() => setExpanded(false)}>Конкурс</NavDropdown.Item>
                 </NavDropdown>
 
                 <NavDropdown title="ФОНД" id="fund-dropdown">
-                 <NavDropdown.Item as={Link} to="/preporuke" onClick={()=>setExpanded(false)}>Препорука библиотекара</NavDropdown.Item> 
-                  <NavDropdown.Item as={Link} to="/nasaIzdanja" onClick={() => setExpanded(false)}>Наша издања</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/digitalna" onClick={() => setExpanded(false)}>Дигитална библиотека</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/pretrazivanje" onClick={() => setExpanded(false)}>Претраживање фонда</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/zavicajno/legati" onClick={() => setExpanded(false)}>Легати</NavDropdown.Item>
+                 <NavDropdown.Item as={Link} to="/preporuke-biblioteke" onClick={()=>setExpanded(false)}>Препорука библиотекара</NavDropdown.Item> 
+                  <NavDropdown.Item as={Link} to="/nasa-izdanja" onClick={() => setExpanded(false)}>Наша издања</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/digitalna-biblioteka" onClick={() => setExpanded(false)}>Дигитална библиотека</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/pretrazivanje-kataloga" onClick={() => setExpanded(false)}>Претраживање фонда</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/legati-biblioteke" onClick={() => setExpanded(false)}>Легати</NavDropdown.Item>
                 </NavDropdown>
 
                 <NavDropdown title="ОДЕЉЕЊА" id="sections-dropdown">
-                  <NavDropdown.Item as={Link} to="/decije" onClick={() => setExpanded(false)}>Одељење за децу</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/odraslo" onClick={() => setExpanded(false)}>Одељење за одрасле</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/naucno" onClick={() => setExpanded(false)}>Одељење научне и стручне литературе</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/zavicajno" onClick={() => setExpanded(false)} >Завичајна збирка</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/odeljenje-za-decu" onClick={() => setExpanded(false)}>Одељење за децу</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/odeljenje-za-odrasle" onClick={() => setExpanded(false)}>Одељење за одрасле</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/odeljenje-naucne-i-strucne-literature" onClick={() => setExpanded(false)}>Одељење научне и стручне литературе</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/zavicajna-zbirka" onClick={() => setExpanded(false)} >Завичајна збирка</NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link as={Link} to="/usluge" onClick={() => setExpanded(false)}>УСЛУГЕ</Nav.Link>
-                <Nav.Link as={Link} to="/manifestacije" onClick={() => setExpanded(false)}>МАНИФЕСТАЦИЈЕ</Nav.Link>
-                <Nav.Link as={Link} to="/kontakt" onClick={() => setExpanded(false)}>КОНТАКТ</Nav.Link>
+                <Nav.Link as={Link} to="/usluge-biblioteka-ruma" onClick={() => setExpanded(false)}>УСЛУГЕ</Nav.Link>
+                <Nav.Link as={Link} to="/manifestacije-biblioteka-ruma" onClick={() => setExpanded(false)}>МАНИФЕСТАЦИЈЕ</Nav.Link>
+                <Nav.Link as={Link} to="/kontakt-biblioteka-ruma" onClick={() => setExpanded(false)}>КОНТАКТ</Nav.Link>
 
               </Nav>
             </Navbar.Collapse>
@@ -95,23 +98,23 @@ function InnerApp() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<AnimatedPage><Home /></AnimatedPage>} />
-          <Route path='/kontakt' element={<AnimatedPage><Contact /></AnimatedPage>} />
-          <Route path='/istorija' element={<AnimatedPage><History /></AnimatedPage>} />
-          <Route path='/zaposleni' element={<AnimatedPage><Employees /></AnimatedPage>} />
-          <Route path='/usluge' element={<AnimatedPage><Services /></AnimatedPage>} />
-          <Route path='/manifestacije' element={<AnimatedPage><Events /></AnimatedPage>} />
-          <Route path='/konkurs' element={<AnimatedPage><Competition /></AnimatedPage>} />
-          <Route path='/preporuke' element={<AnimatedPage><Recommendations /></AnimatedPage>} />
-          <Route path='/nasaIzdanja' element={<AnimatedPage><OurPublic /></AnimatedPage>} />
-          <Route path='/digitalna' element={<AnimatedPage><DigitalLibrary /></AnimatedPage>} />
-          <Route path='/pretrazivanje' element={<AnimatedPage><BooksSearche /></AnimatedPage>} />
-          <Route path='/decije' element={<AnimatedPage><Kid /></AnimatedPage>} />
-          <Route path='/odraslo' element={<AnimatedPage><Adult /></AnimatedPage>} />
-          <Route path='/naucno' element={<AnimatedPage><Scientific /></AnimatedPage>} />
-          <Route path='/zavicajno' element={<AnimatedPage><Homeland /></AnimatedPage>} />
-          <Route path='/projekat' element={<AnimatedPage><Project /></AnimatedPage>} />
-          <Route path='/zavicajno/legati' element={<AnimatedPage><Legati /></AnimatedPage>} />
-          <Route path='/misijaIvizija' element={<AnimatedPage><MisionAndVision /></AnimatedPage>} />
+          <Route path='/kontakt-biblioteka-ruma' element={<AnimatedPage><Contact /></AnimatedPage>} />
+          <Route path='/o-biblioteci' element={<AnimatedPage><History /></AnimatedPage>} />
+          <Route path='/zaposleni-biblioteke' element={<AnimatedPage><Employees /></AnimatedPage>} />
+          <Route path='/usluge-biblioteka-ruma' element={<AnimatedPage><Services /></AnimatedPage>} />
+          <Route path='/manifestacije-biblioteka-ruma' element={<AnimatedPage><Events /></AnimatedPage>} />
+          <Route path='/konkurs-biblioteke' element={<AnimatedPage><Competition /></AnimatedPage>} />
+          <Route path='/preporuke-biblioteke' element={<AnimatedPage><Recommendations /></AnimatedPage>} />
+          <Route path='/nasa-izdanja' element={<AnimatedPage><OurPublic /></AnimatedPage>} />
+          <Route path='/digitalna-biblioteka' element={<AnimatedPage><DigitalLibrary /></AnimatedPage>} />
+          <Route path='/pretrazivanje-kataloga' element={<AnimatedPage><BooksSearche /></AnimatedPage>} />
+          <Route path='/odeljenje-za-decu' element={<AnimatedPage><Kid /></AnimatedPage>} />
+          <Route path='/odeljenje-za-odrasle' element={<AnimatedPage><Adult /></AnimatedPage>} />
+          <Route path='/odeljenje-naucne-i-strucne-literature' element={<AnimatedPage><Scientific /></AnimatedPage>} />
+          <Route path='/zavicajna-zbirka' element={<AnimatedPage><Homeland /></AnimatedPage>} />
+          <Route path='/projekti-biblioteke' element={<AnimatedPage><Project /></AnimatedPage>} />
+          <Route path='/legati-biblioteke' element={<AnimatedPage><Legati /></AnimatedPage>} />
+          <Route path='/vizija-misija-biblioteke' element={<AnimatedPage><MisionAndVision /></AnimatedPage>} />
 
         </Routes>
       </AnimatePresence>

@@ -1,32 +1,32 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Kandor from '../../images/Ourpublic/Kandor.jpg'
-import Nuada from '../../images/Ourpublic/Nuada.jpg'
-import Nebuditeme from '../../images/Ourpublic/Nebuditeme.jpg'
-import Knjigeizratnogperioda from '../../images/Ourpublic/Knjigeizratnogperioda.jpg'
-import Katalog from '../../images/Ourpublic/Katalog.jpg'
-import public1 from "../../images/Ourpublic/public1.jpg"
-import public2 from "../../images/Ourpublic/public2.jpg"
-import public3 from "../../images/Ourpublic/public3.jpg"
-import public4 from "../../images/Ourpublic/public4.jpg"
-import public5 from "../../images/Ourpublic/public5.jpg"
-import public6 from "../../images/Ourpublic/public6.jpg"
-import public7 from "../../images/Ourpublic/public7.jpg"
-import public8 from "../../images/Ourpublic/public8.jpg"
-import public10 from "../../images/Ourpublic/public10.jpg"
-import public11 from "../../images/Ourpublic/public11.jpg"
-import public12 from "../../images/Ourpublic/public12.jpg"
-import public13 from "../../images/Ourpublic/public13.jpg"
-import public14 from "../../images/Ourpublic/public14.jpg"
-import public15 from "../../images/Ourpublic/public15.jpg"
-import public16 from "../../images/Ourpublic/public16.jpg"
-import public17 from "../../images/Ourpublic/public17.jpg"
-import public18 from "../../images/Ourpublic/public18.jpg"
-import public19 from "../../images/Ourpublic/public19.jpg"
-import public20 from "../../images/Ourpublic/public20.jpg"
-import public21 from "../../images/Ourpublic/public21.jpg"
-import public22 from "../../images/Ourpublic/public22.jpg"
-import public23 from "../../images/Ourpublic/public23.jpg"
+import Kandor from '../../images/Ourpublic/Kandor.webp'
+import Nuada from '../../images/Ourpublic/Nuada.webp'
+import Nebuditeme from '../../images/Ourpublic/Nebuditeme.webp'
+import Knjigeizratnogperioda from '../../images/Ourpublic/Knjigeizratnogperioda.webp'
+import Katalog from '../../images/Ourpublic/Katalog.webp'
+import public1 from "../../images/Ourpublic/public1.webp"
+import public2 from "../../images/Ourpublic/public2.webp"
+import public3 from "../../images/Ourpublic/public3.webp"
+import public4 from "../../images/Ourpublic/public4.webp"
+import public5 from "../../images/Ourpublic/public5.webp"
+import public6 from "../../images/Ourpublic/public6.webp"
+import public7 from "../../images/Ourpublic/public7.webp"
+import public8 from "../../images/Ourpublic/public8.webp"
+import public10 from "../../images/Ourpublic/public10.webp"
+import public11 from "../../images/Ourpublic/public11.webp"
+import public12 from "../../images/Ourpublic/public12.webp"
+import public13 from "../../images/Ourpublic/public13.webp"
+import public14 from "../../images/Ourpublic/public14.webp"
+import public15 from "../../images/Ourpublic/public15.webp"
+import public16 from "../../images/Ourpublic/public16.webp"
+import public17 from "../../images/Ourpublic/public17.webp"
+import public18 from "../../images/Ourpublic/public18.webp"
+import public19 from "../../images/Ourpublic/public19.webp"
+import public20 from "../../images/Ourpublic/public20.webp"
+import public21 from "../../images/Ourpublic/public21.webp"
+import public22 from "../../images/Ourpublic/public22.webp"
+import public23 from "../../images/Ourpublic/public23.webp"
 import AnimatedImage from "../Department/AnimatedImage";
 import { Helmet } from 'react-helmet';
  
@@ -34,7 +34,7 @@ const OurPublic =()=>{
 
     return (<>
     <Helmet>
-        <title>Naša izdanja - Biblioteka Ruma</title>
+        <title>Наша издања - Biblioteka Ruma</title>
         <link rel="canonical" href="https://bibliotekaruma.rs/nasaIzdanja" />
       </Helmet> 
 <Container className="container-library mt-4 mb-4">
@@ -46,7 +46,8 @@ const OurPublic =()=>{
 </p>
 <br/>
 
-       <h2 className="container-title  mb-4">ПРОЗА</h2><hr/>
+<h1 className="container-title mb-4">Наша издања</h1>
+<h2 className="container-title mb-4">ПРОЗА</h2><hr/>
       <Row>
           <Col md={4} className="mb-4 ">
             <AnimatedImage

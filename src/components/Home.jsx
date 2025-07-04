@@ -1,44 +1,44 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import { Button,   Col,   Container,   Row } from 'react-bootstrap';
-import cobbis from '../images/cobbis.jpg'
-import matica from '../images/matica.jpg'
-import narodna from '../images/narodna.jpg'
-import ministarstvo from '../images/ministarstvo.jpg'
-import opstina from '../images/opstina.jpg'  
-import biblioteka from '../images/biblioteka.jpg'
-import konkurs from '../images/konkurs.jpg'
+import cobbis from '../images/cobbis.webp'
+import matica from '../images/matica.webp'
+import narodna from '../images/narodna.webp'
+import ministarstvo from '../images/ministarstvo.webp'
+import opstina from '../images/opstina.webp'  
+import biblioteka from '../images/biblioteka.webp'
+import konkurs from '../images/konkurs.webp'
 import { IoBookSharp } from "react-icons/io5";
-import muzej from '../images/muzej.jpg'
-import kc from '../images/kc.jpg'
-import turisticka from '../images/turisticka.jpg'
+import muzej from '../images/muzej.webp'
+import kc from '../images/kc.webp'
+import turisticka from '../images/turisticka.webp'
 import '@react-pdf-viewer/core/lib/styles/index.css';
-import beke from '../images/beke.jpg'
-import Frigo from '../images/Frigo.jpg'
-import Boss from '../images/Boss.jpg'
-import trkulja from '../images/trkulja.jpg'
-import books from '../images/books.jpg'
-import Panonija from '../images/Panonija.jpg'
-import karoselSlika from '../images/karoselSlika.jpg'
-import livada from '../images/livada.jpg'
-import digitalna from '../images/digitalna.jpg'
-import objava4 from '../images/objava4.jpg'
+import beke from '../images/beke.webp'
+import Frigo from '../images/Frigo.webp'
+import Boss from '../images/Boss.webp'
+import trkulja from '../images/trkulja.webp'
+import books from '../images/books.webp'
+import Panonija from '../images/Panonija.webp'
+import karoselSlika from '../images/karoselSlika.webp'
+import livada from '../images/livada.webp'
+import digitalna from '../images/digitalna.webp'
+import objava4 from '../images/objava4.webp'
 // import zahvalnica from '../images/zahvalnica.jpg'
-import objava3 from '../images/objava3.jpg'
+import objava3 from '../images/objava3.webp'
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import AnimatedImage from "./Department/AnimatedImage";
 import AnimatedCard from './Department/AnimatedCard'; 
-import psihijatri from '../images/psihijatri.jpg'
-import pokrajina from '../images/pokrajina.jpg'
+import psihijatri from '../images/psihijatri.webp'
+import pokrajina from '../images/pokrajina.webp'
 import { Helmet } from "react-helmet";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import program from '../images/program.jpg';
-import dani1 from '../images/dani1.jpg'
-import dani2 from '../images/dani2.jpg'
-import dani3 from '../images/dani3.jpg'
-import dani4 from '../images/dani4.jpg'
+import program from '../images/program.webp';
+import dani1 from '../images/dani1.webp'
+import dani2 from '../images/dani2.webp'
+import dani3 from '../images/dani3.webp'
+import dani4 from '../images/dani4.webp'
 
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
@@ -104,11 +104,14 @@ const Home =()=> {
 </script>
 
   <Helmet>
-        <title>Biblioteka Ruma</title>
-        <link rel="canonical" href="https://bibliotekaruma.rs" />
-      </Helmet>
-      
-   <Row><Col md={12}>
+    <title>Gradska biblioteka Ruma | Fond, manifestacije, digitalna biblioteka, odeljenja, konkurs i radno vreme</title>
+    <meta name="description" content="Zvanični sajt Gradske biblioteke u Rumi – informacije o knjigama, događajima, digitalnoj biblioteci, konkursima i radnom vremenu. Pronađite sve što vas zanima o našoj biblioteci!" />
+    <link rel="canonical" href="https://bibliotekaruma.rs" />
+  </Helmet>
+
+
+
+  <Row><Col md={12}>
    <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="33000" data-bs-pause="true">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>  
@@ -123,12 +126,12 @@ const Home =()=> {
 
  
       <div className="carousel-item active">
-    <img src={biblioteka} alt="Зграда библиотеке"  
+    <img src={biblioteka} alt="улаз у Градску библиотеку Рума"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
 
       <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
+        <p style={{padding:'2.5%'}} >Зграда Градске библиотеке "Атанасије Стојковић" представља пример јединственог архитектонског 
           стваралаштва.
         <Button
     href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/ " 
@@ -144,7 +147,7 @@ const Home =()=> {
 
     <div  className="carousel-item">
   
-<img src={digitalna}  alt="Атанасије Стојковић"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+<img src={digitalna}  alt="дигитална библиотека у Руми"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
 />
       <div  className="carousel-caption ">
     
@@ -163,7 +166,7 @@ const Home =()=> {
       <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
    />
       <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}}>Пројекат „КУЛТУРА ЗА СВЕ“ представља јачање техничких капацитета наше установе.
+        <p style={{padding:'2.5%'}}>Пројекат "КУЛТУРА ЗА СВЕ" представља јачање техничких капацитета наше установе.
         <Button
     href="https://sremskevesti.rs/sva-odeljenja-rumske-gradske-biblioteke-atanasije-stojkovic-dostupna-ljudima-ostecenog-sluha-slepim-i-slabovidim-osobama/" 
       target="_blank"
@@ -217,12 +220,12 @@ const Home =()=> {
   <Col xs={12} sm={12} md={8} lg={8} xl={8} className="mt-4">
  
 
-<p className="container-text">Роман „Психијатри, психолози и други болесници“ Родрига Муњоса Авие је духовита и иронична прича која ће вас у исто време насмејати и растужити. Кроз занимљив, једноставан, али снажан наратив провлачи се лајтмотив овог романа, а то је страх од смрти – универзално осећање које не познаје разлике у занимању, образовању, ни у друштвеном статусу.
+<p className="container-text">Роман "Психијатри, психолози и други болесници" Родрига Муњоса Авие је духовита и иронична прича која ће вас у исто време насмејати и растужити. Кроз занимљив, једноставан, али снажан наратив провлачи се лајтмотив овог романа, а то је страх од смрти – универзално осећање које не познаје разлике у занимању, образовању, ни у друштвеном статусу.
 
 Управо тај страх изазива код главног јунака поремећај говора који је осликан хумором кроз апсурдне ситуације, па је и сам егзистенцијални немир на крају дао простор оптимизму:
 
 <hr/>
-„Онда, не знам зашто, али тако ми је дошло — почео сам ненормално да се смејем, тако дубоко и дуго да је тај смех одзвањао све до краја нашег насеља... Потапшао сам психијатра по леђима и вратио се у нашу кућу не престајући да се смејем.“
+"Онда, не знам зашто, али тако ми је дошло — почео сам ненормално да се смејем, тако дубоко и дуго да је тај смех одзвањао све до краја нашег насеља... Потапшао сам психијатра по леђима и вратио се у нашу кућу не престајући да се смејем."
    </p></Col>
 
   <Col md={4} > 
@@ -242,14 +245,14 @@ const Home =()=> {
 
 <Col md={12}>
 <h3 className='text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ
-„Дани словенске писмености и културе”</h3>
+"Дани словенске писмености и културе"</h3>
 <hr/>
 </Col>
 
 <Col md={4}>
 <AnimatedImage className='container-image' src={dani1}/>
 <p>
-  ,,Вивкови виолинисти”, квартет виолина.
+  ,,Вивкови виолинисти", квартет виолина.
 </p>
 </Col>
 
@@ -261,7 +264,7 @@ const Home =()=> {
 
 <Col md={4}>
 <AnimatedImage className='container-image' src={dani3}/><p>
-Изложба икона и калиграфских радова ученика 5 основних школа и ССШ „Бранко Радичевић“.
+Изложба икона и калиграфских радова ученика 5 основних школа и ССШ "Бранко Радичевић".
 </p>
 </Col>
 
@@ -273,7 +276,7 @@ const Home =()=> {
     <Row className='text-center mt-5'>
       <Col md={12} className=' text-center '>
      <h1 className='container-title'> На данашњи дан рођен је Винсент ван Гог </h1><hr/>
-     <p className='container-text'>Ван Гог је био холандски сликар, један од најзначајнијих и најпознатијих уметника постимпресионизма. Његова дела су дубоко утицала на развој модерне уметности. Познат је по својим јарким бојама, експресивним четкицама и дубоком емоционалном изразу. Његове најпознатије слике укључују „Звездану ноћ“, „Сунцокрете“ и „Портрет доктора Гаше“. </p>
+     <p className='container-text'>Ван Гог је био холандски сликар, један од најзначајнијих и најпознатијих уметника постимпресионизма. Његова дела су дубоко утицала на развој модерне уметности. Познат је по својим јарким бојама, експресивним четкицама и дубоком емоционалном изразу. Његове најпознатије слике укључују "Звездану ноћ", "Сунцокрете" и "Портрет доктора Гаше". </p>
      <AnimatedImage className='container-image' src={vanGog} alt='Ван Гогове слике'/>
 
       </Col>
@@ -318,7 +321,7 @@ const Home =()=> {
               Наш дигитални<br/> фонд </h6></a>
                <br/><img 
      src="/logo.jpg"
-      alt="Грб библиотеке" 
+      alt="Грб Градске библиотеке Рума" 
       className='container-image'
       style={{border:'none', width:'33%'}}
       /> </AnimatedCard>
@@ -410,7 +413,7 @@ className='btn btn-secondary'
 >
 ДЕТАЉНИЈЕ
 </Button><hr/>
-<p className='container-text'>Статут установе Градске библиотеке „Атанасије Стојковић“ Рума </p>
+<p className='container-text'>Статут установе Градске библиотеке "Атанасије Стојковић" Рума </p>
         <Button
   onClick={() => window.open('/Statut.pdf', '_blank')}
 className='btn btn-secondary'
@@ -429,18 +432,18 @@ className='btn btn-secondary'
       <div  style={{backgroundColor:'rgba(0, 0, 0, 0.1)'}} >
      < Row>
           <Col md={12} className='text-center' > 
-        <img style={{width:'13%' }} src={ministarstvo} alt='Министарство културе'/>
+        <img style={{width:'13%' }} src={ministarstvo} alt='Министарство културе Србије' />
 <img style={{width:'18%'}}  src={opstina} alt='Општина Рума'/>     
-<img src={pokrajina} style={{width:'10%'}} alt='Покрајина' />
+<img src={pokrajina} style={{width:'10%'}} alt='Покрајински секретаријат за културу' />
     </Col></Row>
       
           <hr/> 
           <Col md={12} className='text-center'>
           <img style={{width:'15%'}}  src={matica} alt='Матица српска' />  
 <img style={{width:'10%'}}  alt='Народна библиотека Србије' src={narodna}/> 
-       <img style={{width:'25%', marginTop:'1em', marginLeft:'1rem'}} src={muzej} alt='Музеј'/>
-          <img style={{width:'15%',marginLeft:'1rem' }} src={turisticka} alt='Туристичка'/>
-          <img  style={{width:'10%', marginLeft:'1rem'}}  src={kc} alt="Културни центар"  />
+       <img style={{width:'25%', marginTop:'1em', marginLeft:'1rem'}} src={muzej} alt='Музеј у Руми'/>
+          <img style={{width:'15%',marginLeft:'1rem' }} src={turisticka} alt='Туристичка организација Рума'/>
+          <img  style={{width:'10%', marginLeft:'1rem'}}  src={kc} alt="Културни центар Рума"  />
          </Col>
           </div>
       </div>     
@@ -463,27 +466,27 @@ className='btn btn-secondary'
     <img
       style={{ width: '15%', marginRight:'1rem' }}
       src={Panonija}
-      alt="Панонија књижара"
+      alt="Панонија књижара у Руми"
     />
     <img
       style={{ width: '15%' }}
       src={Boss}
-      alt="Босс"
+      alt="Босс компанија Рума"
     />
     <img
       style={{ width: '20%' }}
       src={trkulja}
-      alt="Тркуља керамика"
+      alt="Тркуља керамика Рума"
     />
     <img
       style={{ width: '10%' }}
       src={Frigo}
-      alt="Фриго Жика"
+      alt="Фриго Жика Рума"
     />
     <img
       style={{ width: '15%', marginLeft:'1rem' }}
       src={beke}
-      alt="Беке"
+      alt="Беке компанија Рума"
     />
   </div>
 </div><hr/>

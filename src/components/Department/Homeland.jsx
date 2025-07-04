@@ -1,8 +1,7 @@
-
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { LiaBookSolid } from "react-icons/lia";
-import zavicajno from '../../images/zavicajno.jpg'
+import zavicajno from '../../images/zavicajno.webp'
 import AnimatedImage from "./AnimatedImage";
 import { Helmet } from 'react-helmet';
 const Homlend =()=>{
@@ -15,7 +14,7 @@ return (<>
  <Container  className="container-library mt-4 mb-4">
  <div className="container-frame">
 
- <Row>          <h1 className="container-title" >ЗАВИЧАЈНА ЗБИРКА</h1> 
+ <Row>          <h1 className="container-title">Завичајна збирка</h1> 
   <div className="container-icon">
                <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div><hr/>
    
