@@ -39,6 +39,8 @@ import dani1 from '../images/dani1.webp'
 import dani2 from '../images/dani2.webp'
 import dani3 from '../images/dani3.webp'
 import dani4 from '../images/dani4.webp'
+import KulturoLetoProgram from '../images/KulturoLetoProgram.webp';
+
 
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
@@ -61,47 +63,14 @@ const Home =()=> {
   const onChange= date =>{
     setDate(date);
   }
-  const book = [
-    { id: 1, title: 'Писма брату', genre: 'Биографија' },
-    { id: 2, title: 'Хајдегер о сликарству: Франц Марк, Винсент Ван Гог, Пол Сезан, Паул Кле', genre: 'Филозофија' },
-    {id: 3, title: 'Жудња за животом', genre:'Роман'},
-    {id: 4, title:'Винсет Бан Гог: 1853-1890. :између визије и стварности', genre:'Сликарство'}
-  ];
 
 
-  const [showBooks, setShowBooks] = useState(false);
 
-
-  const handleClick = () => {
-    setShowBooks(!showBooks); 
-  };
-  
-  useEffect(() => {
-    const myCarousel = document.querySelector('#demo');
-    if (myCarousel) {
-      new Carousel(myCarousel, {
-        interval: 10000,
-        ride: 'carousel',
-      });
-    }
-  }, []);
-  const videoSchema = {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    "name": "Назив видеа",
-    "description": "Кратак опис видеа",
-    "thumbnailUrl": "https://img.youtube.com/vi/0Ay8XmhQHSI/maxresdefault.jpg",
-    "uploadDate": "2025-03-12",
-    "contentUrl": "https://www.bibliotekaruma.rs/",
-    "embedUrl": "https://www.youtube.com/embed/0Ay8XmhQHSI"
-  };
   
   
   return (
     <>
-    <script type="application/ld+json">
-  {JSON.stringify(videoSchema)}
-</script>
+  
 
   <Helmet>
     <title>Gradska biblioteka Ruma | Fond, manifestacije, digitalna biblioteka, odeljenja, konkurs i radno vreme</title>
@@ -236,67 +205,42 @@ const Home =()=> {
   </Container>
 
 
-<Container className='container-library ms-auto mt-4 mb-4'>
+
+        <Container className='container-library ms-auto mt-4 mb-4'>
   <Row>
-  <Col md={12} className='text-center'>
-<img className='container-image' src={program}/>
-</Col></Row>
-  <Row>
-
-<Col md={12}>
-<h3 className='text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ
-"Дани словенске писмености и културе"</h3>
-<hr/>
-</Col>
-
-<Col md={4}>
-<AnimatedImage className='container-image' src={dani1}/>
-<p>
-  ,,Вивкови виолинисти", квартет виолина.
-</p>
-</Col>
-
-<Col md={4}>
-<AnimatedImage className='container-image' src={dani2}/><p>Архијерејски намесник румски протојереј Сретен Лазаревић.</p>
-<AnimatedImage className='container-image' src={dani4}/>
-
-</Col>
-
-<Col md={4}>
-<AnimatedImage className='container-image' src={dani3}/><p>
-Изложба икона и калиграфских радова ученика 5 основних школа и ССШ "Бранко Радичевић".
-</p>
-</Col>
-
+    <Col md={12} className='text-center'>
+      <h2 className='container-title'>Програм културног лета</h2>
+      <img className='container-image' src={KulturoLetoProgram} alt="Културно лето 2025"/>
+    </Col>
   </Row>
 </Container>
+  
+        <Container className='container-library ms-auto mt-4 mb-4'>
+  <Row>
+    <Col md={12}>
+      <h3 className='text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ<br/>„Дани словенске писмености и културе“</h3>
+      <hr/>
+    </Col>
+  </Row>
+  <Row>
+    <Col md={4}>
+      <AnimatedImage className='container-image' src={dani1}/>
+      <p>,,Вивкови виоoliniсти", квартет виолина.</p>
+    </Col>
+    <Col md={4}>
+      <AnimatedImage className='container-image' src={dani2}/>
+      <p>Архијерејски намесник румски протојереј Сретен Лазаревић.</p>
+      <AnimatedImage className='container-image' src={dani4}/>
+    </Col>
+    <Col md={4}>
+      <AnimatedImage className='container-image' src={dani3}/>
+      <p>Изложба икона и калиграфских радова ученика 5 основних школа и ССШ "Бранко Радичевић".</p>
+    </Col>
+  </Row>
+</Container>
+  
 
 
-  {/* <Container  className='container-day'>
-    <Row className='text-center mt-5'>
-      <Col md={12} className=' text-center '>
-     <h1 className='container-title'> На данашњи дан рођен је Винсент ван Гог </h1><hr/>
-     <p className='container-text'>Ван Гог је био холандски сликар, један од најзначајнијих и најпознатијих уметника постимпресионизма. Његова дела су дубоко утицала на развој модерне уметности. Познат је по својим јарким бојама, експресивним четкицама и дубоком емоционалном изразу. Његове најпознатије слике укључују "Звездану ноћ", "Сунцокрете" и "Портрет доктора Гаше". </p>
-     <AnimatedImage className='container-image' src={vanGog} alt='Ван Гогове слике'/>
-
-      </Col>
-      <Col md={12}>
-
-      <Button  type="button" class="btn btn-secondary" onClick={handleClick}>Кликните за приказ књига о Ван Гогу које поседује наша библиотека:</Button>
-
-      {showBooks && ( 
-        <div>
-          {book.map((book) => (
-            <li key={book.id}>
-              {book.title} — {book.genre}
-            </li>
-          ))}
-        </div>
-      )}
-
-      </Col>
-    </Row>
-  </Container> */}
 
         <Container className='container-library ms-auto mt-4 mb-4'>
         
