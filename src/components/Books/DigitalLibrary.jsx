@@ -36,7 +36,25 @@ const DigitalLibrary =()=>{
             }}  />
             <Card.Body>
            
-              <Button style={{width:'100%'}} href="https://www.digitalna.bibliotekaruma.rs" target="_blank" rel="noopener noreferrer"  variant="outline-secondary" >
+              <Button 
+                style={{
+                  width: '200px',
+                  marginTop: '16px',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                  backgroundColor: '#6c757d',
+                  color: 'white',
+                  border: 'none',
+                }}
+                href="https://www.digitalna.bibliotekaruma.rs" 
+                target="_blank" 
+                rel="noopener noreferrer"  
+                onMouseOver={e => { e.target.style.backgroundColor = '#6c757d'; e.target.style.color = 'white'; }}
+                onFocus={e => { e.target.style.backgroundColor = '#6c757d'; e.target.style.color = 'white'; }}
+                onMouseOut={e => { e.target.style.backgroundColor = '#6c757d'; e.target.style.color = 'white'; }}
+                onBlur={e => { e.target.style.backgroundColor = '#6c757d'; e.target.style.color = 'white'; }}
+              >
                 Посетите нашу дигиталну библиотеку
               </Button>
             </Card.Body>

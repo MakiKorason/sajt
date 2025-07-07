@@ -70,7 +70,7 @@ const Events = () => {
                 </h2>
               
                 <Card.Img style={{width:'140px', borderRadius:'50%'}} src={Atanasije} />
-                <p className='container-text'><br/>„Дани Атанасија Стојковића традиционално се одржавају током недеље у којој се обележава датум његовог рођења – 20. септембар.“</p>
+                <p className='container-text'><br/>Дани Атанасија Стојковића традиционално се одржавају током недеље у којој се обележава датум његовог рођења – 20. септембар.</p>
              <Button className='btn btn-secondary ' onClick={handleShowEvent2}>Детаљније</Button>
               </Card.Body>
             </ AnimatedCard >
@@ -95,11 +95,11 @@ const Events = () => {
             < AnimatedCard  className='events-card'>
               <Card.Body>
                 <h2 className="container-title">
-                  Румско културно лето <BsCalendar2Heart />
+                  Румско културно лето <br/><BsCalendar2Heart />
                 </h2>
                 <br/><Card.Img style={{width:'240px', borderRadius:'50%'}}  src={kulturnoLeto}/>
               <p className='container-text'> <br/>Традиционална манифестација која се одржава од 28. јуна до 31. августа. <BsCalendar2Heart /> </p>
-               <br/><Button className='btn btn-secondary' onClick={handleShowEvent4}>Детаљније</Button>
+               <Button className='btn btn-secondary mt-4' onClick={handleShowEvent4}>Детаљније</Button>
               </Card.Body>
             </AnimatedCard >
           </Col>

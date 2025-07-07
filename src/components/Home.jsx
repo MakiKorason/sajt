@@ -100,7 +100,7 @@ const Home =()=> {
 />
 
       <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}} >Зграда Градске библиотеке "Атанасије Стојковић" представља пример јединственог архитектонског 
+        <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
           стваралаштва.
         <Button
     href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/ " 
@@ -354,7 +354,7 @@ className='btn btn-secondary'
 >
 ДЕТАЉНИЈЕ
 </Button><hr/>
-<p className='container-text'>Статут установе Градске библиотеке "Атанасије Стојковић" Рума </p>
+<p className='container-text'>Статут установе Градске библиотеке „Атанасије Стојковић“ Рума </p>
         <Button
   onClick={() => window.open('/Statut.pdf', '_blank')}
 className='btn btn-secondary'

@@ -38,6 +38,7 @@ const OurPublic =()=>{
         <link rel="canonical" href="https://bibliotekaruma.rs/nasaIzdanja" />
       </Helmet> 
 <Container className="container-library mt-4 mb-4">
+<h1 className="container-title mb-4">Издавачка делатност Градске библиотеке „Атанасије Стојковић“</h1>
 <p  className="container-text">
 Током три деценије постојања издавачке
 делатности, наша библиотека је издала више од
@@ -46,7 +47,6 @@ const OurPublic =()=>{
 </p>
 <br/>
 
-<h1 className="container-title mb-4">Наша издања</h1>
 <h2 className="container-title mb-4">ПРОЗА</h2><hr/>
       <Row>
           <Col md={4} className="mb-4 ">
