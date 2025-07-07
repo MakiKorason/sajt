@@ -52,7 +52,7 @@ function InnerApp() {
                 </Col>
                 <Col md={4} className='mt-3'>
                   <p className='container-text fw-bold' style={{ marginLeft: '1.5rem' }}>
-                    Градска библиотека "Атанасије Стојковић" Рума
+                    Градска библиотека „Атанасије Стојковић“ Рума
                   </p>
                 </Col>
               </Row>
