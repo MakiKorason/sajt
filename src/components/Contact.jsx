@@ -110,7 +110,7 @@ const Contact = () => {
         {/* Novi red ispod forme: mail, adresa, društvene mreže */}
         <Col xs={12}>
           <Row className="mt-4 g-2">
-            <Col md={4} className="text-center">
+            <Col md={3} className="text-center">
               <Card className="p-3 shadow-sm h-100">
                 <Card.Body className="text-center">
                   <h4 className="container-title">E-mail</h4>
@@ -120,7 +120,7 @@ const Contact = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={4} className="text-center">
+            <Col md={3} className="text-center">
               <Card className="p-3 shadow-sm h-100">
                 <Card.Body className="text-center">
                   <h4 className="container-title">Адреса</h4>
@@ -130,7 +130,7 @@ const Contact = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={4} className="text-center">
+            <Col md={5} className="text-center">
               <Card className="p-3 shadow-sm h-100">
                 <Card.Body className="text-center">
                   <h4 className="container-title">Друштвене мреже</h4>
