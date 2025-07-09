@@ -50,28 +50,40 @@ const Events = () => {
           <Col md={6} xs={12} sm={12} lg={6} xl={6} className='text-center'>
           
             < AnimatedCard  className='events-card' >
-              <Card.Body>
-                 <h2 className="container-title">
-                  Дани словенске писмености и културе <BsCalendar2Heart />
-                </h2>
-                <Card.Img style={{width:'205px'}}  src={daniSlovensk} />
-                <p className='container-text'><br/>Дани словенске писмености и културе обележавају се у недељи када се прославља дан Светих
-                   Ћирила и Методија, 24. мај.</p>
-              <Button className='btn btn-secondary ' onClick={handleShowEvent1}>Детаљније</Button>
-            </Card.Body>
+              <Card.Body className="d-flex flex-column">
+                <Row className="align-items-center">
+                  <Col xs={12} md={5} className="text-center mb-3 mb-md-0">
+                    <Card.Img style={{width:'205px'}} className="mx-auto d-block" src={daniSlovensk} />
+                  </Col>
+                  <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
+                    <h2 className="container-title d-inline-block">
+                      Дани словенске писмености и културе <BsCalendar2Heart />
+                    </h2>
+                    <br/><br/>
+                    <p className='container-text mt-3'>Дани словенске писмености и културе обележавају се у недељи када се прославља дан Светих Ћирила и Методија, 24. мај.</p>
+                    <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent1}>Детаљније</Button>
+                  </Col>
+                </Row>
+              </Card.Body>
             </ AnimatedCard >
           </Col>
 
           <Col md={6} xs={12} sm={12}  lg={6} xl={6} className='text-center'>
             < AnimatedCard  className='events-card' >
-              <Card.Body>
-                <h2 className="container-title">
-                  Дани Атанасија Стојковића <BsCalendar2Heart />
-                </h2>
-              
-                <Card.Img style={{width:'140px', borderRadius:'50%'}} src={Atanasije} />
-                <p className='container-text'><br/>Дани Атанасија Стојковића традиционално се одржавају током недеље у којој се обележава датум његовог рођења – 20. септембар.</p>
-             <Button className='btn btn-secondary ' onClick={handleShowEvent2}>Детаљније</Button>
+              <Card.Body className="d-flex flex-column">
+                <Row className="align-items-center">
+                  <Col xs={12} md={5} className="text-center mb-3 mb-md-0">
+                    <Card.Img style={{width:'140px', borderRadius:'50%'}} className="mx-auto d-block" src={Atanasije} />
+                  </Col>
+                  <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
+                    <h2 className="container-title d-inline-block">
+                      Дани Атанасија Стојковића<br/> <BsCalendar2Heart />
+                    </h2>
+                    <br/><br/>
+                    <p className='container-text mt-3'>Дани Атанасија Стојковића традиционално се одржавају током недеље у којој се обележава датум његовог рођења – 20. септембар.</p>
+                    <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent2}>Детаљније</Button>
+                  </Col>
+                </Row>
               </Card.Body>
             </ AnimatedCard >
           </Col>
@@ -80,26 +92,40 @@ const Events = () => {
           <Row>
           <Col md={6} xs={12} sm={12} lg={6} xl={6} className='text-center'>
             < AnimatedCard  className='events-card'>
-              <Card.Body>
-                <h2 className="container-title">
-                  Румска књижевна колонија <BsCalendar2Heart />
-                </h2>
-              <br/>  <Card.Img style={{width:'188px', borderRadius:'50%' }} src={knjizevnaKolonija}/>
-              <p className='container-text'> <br/> Румска књижевна колонија традиционално се одржава сваке године у децембру.</p>
-                <br/><Button className='btn btn-secondary' onClick={handleShowEvent3}>Детаљније</Button>
+              <Card.Body className="d-flex flex-column">
+                <Row className="align-items-center">
+                  <Col xs={12} md={5} className="text-center mb-3 mb-md-0">
+                    <Card.Img style={{width:'188px', borderRadius:'50%' }} className="mx-auto d-block" src={knjizevnaKolonija}/>
+                  </Col>
+                  <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
+                    <h2 className="container-title d-inline-block">
+                      Румска књижевна колонија <BsCalendar2Heart />
+                    </h2>
+                    <br/><br/>
+                    <p className='container-text mt-3'>Румска књижевна колонија традиционално се одржава сваке године у децембру.</p>
+                    <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent3}>Детаљније</Button>
+                  </Col>
+                </Row>
               </Card.Body>
             </ AnimatedCard >
           </Col>
         
           <Col md={6} xs={12} sm={12} lg={6} xl={6} className='text-center'>
             < AnimatedCard  className='events-card'>
-              <Card.Body>
-                <h2 className="container-title">
-                  Румско културно лето <br/><BsCalendar2Heart />
-                </h2>
-                <br/><Card.Img style={{width:'240px', borderRadius:'50%'}}  src={kulturnoLeto}/>
-              <p className='container-text'> <br/>Традиционална манифестација која се одржава од 28. јуна до 31. августа. <BsCalendar2Heart /> </p>
-               <Button className='btn btn-secondary mt-4' onClick={handleShowEvent4}>Детаљније</Button>
+              <Card.Body className="d-flex flex-column">
+                <Row className="align-items-center">
+                  <Col xs={12} md={5} className="text-center mb-3 mb-md-0">
+                    <Card.Img style={{width:'240px', borderRadius:'50%'}} className="mx-auto d-block" src={kulturnoLeto}/>
+                  </Col>
+                  <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
+                    <h2 className="container-title d-inline-block">
+                      Румско културно лето <BsCalendar2Heart />
+                    </h2>
+                    <br/><br/>
+                    <p className='container-text mt-3'>Традиционална манифестација која се одржава од 28. јуна до 31. августа. <BsCalendar2Heart /> </p>
+                    <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent4}>Детаљније</Button>
+                  </Col>
+                </Row>
               </Card.Body>
             </AnimatedCard >
           </Col>

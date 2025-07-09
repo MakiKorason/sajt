@@ -48,15 +48,15 @@ const Contact = () => {
         {/* Kartica telefoni */}
         <Col xs={12}>
           <Card className="p-1 shadow-sm h-100">
-            <Card.Body>
+       <Card.Body>
               <h4 className="container-title text-center mb-3">Телефони</h4>
               <Row>
                 <Col xs={12} className="container-text text-center mb-3">
                   <FaPhone className="container-icon" />
                   <hr />
                   <h6>Дечије одељење</h6>
-                  <p>022/495-047</p>
-                </Col>
+             <p>022/495-047</p>
+              </Col>
                 <Col xs={12} className="container-text text-center mb-3">
                   <FaPhone className="container-icon" />
                   <hr />
@@ -67,19 +67,19 @@ const Contact = () => {
                   <FaPhone className="container-icon" />
                   <hr />
                   <h6>Одрасло одељење</h6>
-                  <p>022/478-920</p>
-                </Col>
+             <p>022/478-920</p>
+           </Col>
                 <Col xs={12} className="container-text text-center">
                   <FaPhone className="container-icon" />
                   <hr />
                   <h6>Администрација</h6>
-                  <p>022/215-65-63</p>
-                </Col>
-              </Row>
+             <p>022/215-65-63</p>
+           </Col>
+           </Row> 
             </Card.Body>
           </Card>
-        </Col>
-      </Row>
+       </Col>     
+        </Row>
     </Col>
     {/* Desna strana: Forma + Email + Društvene mreže ispod */}
     <Col md={8} className="mb-4">
@@ -139,30 +139,30 @@ const Contact = () => {
                       <a href="https://youtube.com/@gradskabibliotekaruma" target="_blank" rel="noopener noreferrer">
                         <FaYoutube style={{ fontSize: '2em', color: '#ff0000', margin: '0 8px' }} />
                         <div style={{ fontSize: '0.95em', color: '#3b5998', textDecoration: 'underline', fontWeight: 600, cursor: 'pointer' }}>YouTube</div>
-                      </a>
-                    </Col>
+             </a>
+           </Col>
                     <Col xs={4} className="text-center">
                       <a href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma" target="_blank" rel="noopener noreferrer">
                         <FaFacebook style={{ fontSize: '2em', color: '#3b5998', margin: '0 8px' }} />
                         <div style={{ fontSize: '0.95em', color: '#3b5998', textDecoration: 'underline', fontWeight: 600, cursor: 'pointer' }}>Facebook</div>
-                      </a>
-                    </Col>
+             </a>
+           </Col>
                     <Col xs={4} className="text-center">
                       <a href="https://www.instagram.com/gradska_biblioteka_ruma" target="_blank" rel="noopener noreferrer">
                         <FaInstagram style={{ fontSize: '2em', color: '#e4405f', margin: '0 8px' }} />
                         <div style={{ fontSize: '0.95em', color: '#3b5998', textDecoration: 'underline', fontWeight: 600, cursor: 'pointer' }}>Instagram</div>
-                      </a>
-                    </Col>
-                  </Row>
-                </Card.Body>
+             </a>
+           </Col>
+         </Row>
+       </Card.Body>
               </Card>
             </Col>
           </Row>
         </Col>
       </Row>
-    </Col>
-  </Row>
-</Container>
+         </Col>
+         </Row>
+     </Container>
 {/* Mapa ispod containera, preko cele širine */}
 <div style={{ width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw', background: '#fff', padding: 0 }}>
   <iframe

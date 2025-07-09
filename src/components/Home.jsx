@@ -34,7 +34,7 @@ import pokrajina from '../images/pokrajina.webp'
 import { Helmet } from "react-helmet";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import program from '../images/program.webp';
+
 import dani1 from '../images/dani1.webp'
 import dani2 from '../images/dani2.webp'
 import dani3 from '../images/dani3.webp'
@@ -97,6 +97,10 @@ const Home =()=> {
       <div className="carousel-item active">
     <img src={biblioteka} alt="улаз у Градску библиотеку Рума"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+  loading="eager"
+  fetchpriority="high"
+  width={1200}
+  height={600}
 />
 
       <div  className="carousel-caption ">
@@ -117,6 +121,7 @@ const Home =()=> {
     <div  className="carousel-item">
   
 <img src={digitalna}  alt="дигитална библиотека у Руми"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+  loading="lazy"
 />
       <div  className="carousel-caption ">
     
@@ -133,7 +138,8 @@ const Home =()=> {
 
     <div className="carousel-item">
       <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-   />
+  loading="lazy"
+  />
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}}>Пројекат "КУЛТУРА ЗА СВЕ" представља јачање техничких капацитета наше установе.
         <Button
@@ -149,7 +155,8 @@ const Home =()=> {
  
     <div className="carousel-item">
       <img src={books} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-   />
+  loading="lazy"
+  />
       <div  className="carousel-caption ">
         <p style={{padding:'1.5%'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
         <Button
@@ -206,8 +213,7 @@ const Home =()=> {
         <Container className='container-library ms-auto mt-4 mb-4'>
   <Row>
     <Col md={12} className='text-center'>
-  
-      <img className='container-image' src={KulturoLetoProgram} alt="Културно лето 2025"/>
+      {/* <img className='container-image' src={KulturoLetoProgram} alt="Културно лето 2025"/> */}
     </Col>
   </Row>
 </Container>

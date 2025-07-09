@@ -91,7 +91,7 @@ const Project =()=>{
 родила се идеја да кроз пројекат „КУЛТУРА ЗА СВЕ“
 покушамо заједничким снагама да одштампамо и
 проспект о нашој установи на Брајевом писму.
-<br/><AnimatedImage className="container-image"src={kulturaZaSve2} alt='Култура за све' /><br/><hr/>
+<br/><AnimatedImage className="container-image mx-auto d-block" src={kulturaZaSve2} alt='Култура за све' /><br/><hr/>
 Проспект има 4 странице на Брајевом писму и
 формата је А4. Штампан је у 30 примерака, који су
 
