@@ -206,13 +206,7 @@ const Home =()=> {
 <br/>
 
   </Container>
-        <Container className='container-library ms-auto mt-4 mb-4'>
-  <Row>
-    <Col md={12} className='text-center'>
-      {/* <img className='container-image' src={KulturoLetoProgram} alt="Културно лето 2025"/> */}
-    </Col>
-  </Row>
-</Container>
+      
   
         <Container className='container-library ms-auto mt-4 mb-4'>
   <Row>
