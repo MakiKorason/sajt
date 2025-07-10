@@ -105,7 +105,7 @@ const Services =()=>{
         </Table><br/>
 
         <AnimatedCard className="cobiss-card mt-5">    
-          <Card.Title ><h1 className='container-title'>Међубиблиотечка<br/> позајмица</h1><hr/></Card.Title>
+          <Card.Title ><h2 className='container-title'>Међубиблиотечка<br/> позајмица</h2><hr/></Card.Title>
           <Card.Body> 
           
             <div>

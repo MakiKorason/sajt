@@ -57,14 +57,14 @@ const Events = () => {
                   </Col>
                   <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
                     <h2 className="container-title d-inline-block">
-                      Дани словенске писмености и културе <BsCalendar2Heart />
-                    </h2>
+                  Дани словенске писмености и културе <BsCalendar2Heart />
+                </h2>
                     <br/><br/>
                     <p className='container-text mt-3'>Дани словенске писмености и културе обележавају се у недељи када се прославља дан Светих Ћирила и Методија, 24. мај.</p>
                     <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent1}>Детаљније</Button>
                   </Col>
                 </Row>
-              </Card.Body>
+            </Card.Body>
             </ AnimatedCard >
           </Col>
 
@@ -78,7 +78,7 @@ const Events = () => {
                   <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
                     <h2 className="container-title d-inline-block">
                       Дани Атанасија Стојковића<br/> <BsCalendar2Heart />
-                    </h2>
+                </h2>
                     <br/><br/>
                     <p className='container-text mt-3'>Дани Атанасија Стојковића традиционално се одржавају током недеље у којој се обележава датум његовог рођења – 20. септембар.</p>
                     <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent2}>Детаљније</Button>
@@ -99,8 +99,8 @@ const Events = () => {
                   </Col>
                   <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
                     <h2 className="container-title d-inline-block">
-                      Румска књижевна колонија <BsCalendar2Heart />
-                    </h2>
+                  Румска књижевна колонија <BsCalendar2Heart />
+                </h2>
                     <br/><br/>
                     <p className='container-text mt-3'>Румска књижевна колонија традиционално се одржава сваке године у децембру.</p>
                     <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent3}>Детаљније</Button>
@@ -119,8 +119,8 @@ const Events = () => {
                   </Col>
                   <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
                     <h2 className="container-title d-inline-block">
-                      Румско културно лето <BsCalendar2Heart />
-                    </h2>
+                  Румско културно лето <BsCalendar2Heart />
+                </h2>
                     <br/><br/>
                     <p className='container-text mt-3'>Традиционална манифестација која се одржава од 28. јуна до 31. августа. <BsCalendar2Heart /> </p>
                     <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent4}>Детаљније</Button>

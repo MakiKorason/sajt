@@ -16,9 +16,9 @@ const BooksSearche = () => {
     <Container className="container-library ms-auto mt-4 mb-4">
       <Row>
         <Col xs={12} md={12} >
-          <h2 className="container-title" >
+          <h1 className="container-title" >
             Шта је COBISS?
-          </h2>
+          </h1>
           <p className="container-text">
           У савременом друштву модерне библиотеке као
 важни центри знања захтевају и савремену
@@ -62,7 +62,7 @@ Bibliographic System and Services).
           <AnimatedCard className="cobiss-card">
             <Card.Body>
               <Card.Text>
-                <h1 className='container-title'>  MCOBISS</h1>
+                <h2 className='container-title'>  MCOBISS</h2>
            <p className="container-text">
            • Корисницима је на располагању прилагођена
 верзија mcobiss преко мобилних уређаја.
@@ -74,9 +74,9 @@ web продавници - Google play: MCOBISS. <a href='https://play.google.co
 
           <Row>
         <Col xs={12} md={12} className="border-end">
-          <h1 className="container-title">
+          <h2 className="container-title">
          <br/> Упутство за коришћење COBISS-а
-          </h1>
+          </h2>
                 <br/><p className="container-text">
                   
                 • Посетите платформу:

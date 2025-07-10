@@ -12,7 +12,7 @@ const Kid =()=>{
          <link rel="canonical" href="https://bibliotekaruma.rs/decije" />
        </Helmet> 
     <Container className="container-library mt-4 mb-4">
-         <div className="container-frame"><h2 className="container-title" > ОДЕЉЕЊЕ ЗА ДЕЦУ</h2><div className="container-icon">
+         <div className="container-frame"><h1 className="container-title" > ОДЕЉЕЊЕ ЗА ДЕЦУ</h1><div className="container-icon">
           <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>   <hr/><br/>
       <Row>
         <Col md={12} >
@@ -45,7 +45,7 @@ const Kid =()=>{
           
       </Row>
     
-      <Row>       <br/><h1 className="container-title" > <br/>Културни кутак </h1>  <br/><hr/>
+      <Row>       <br/><h2 className="container-title" > <br/>Културни кутак </h2>  <br/><hr/>
         <Col md={6}>
       <br/><p className="container-text">На Одељењу за децу наше библиотеке одржавали
 су се бројни литерарни конкурси поводом

@@ -40,6 +40,7 @@ const Contact = () => {
     <link rel="canonical" href="https://www.bibliotekaruma.rs/kontakt" />
     <link rel="alternate" hreflang="sr" href="https://www.bibliotekaruma.rs/kontakt" />
   </Helmet>
+  <h1 className="container-title text-center mb-4 mt-5">Контакти библиотеке</h1>
     <Container className="container-library mt-4 mb-4">
   <Row>
     {/* Leva strana: Adresa i telefoni bez naslova */}
@@ -49,7 +50,7 @@ const Contact = () => {
         <Col xs={12}>
           <Card className="p-1 shadow-sm h-100">
        <Card.Body>
-              <h4 className="container-title text-center mb-3">Телефони</h4>
+              <h2 className="container-title text-center mb-3">Телефони</h2>
               <Row>
                 <Col xs={12} className="container-text text-center mb-3">
                   <FaPhone className="container-icon" />
@@ -87,7 +88,7 @@ const Contact = () => {
         <Col xs={12}>
           <Card className="p-4 shadow-sm h-100">
             <Card.Body>
-              <CardTitle className="container-title mb-3 text-center">Питајте библиотекара</CardTitle>
+              <CardTitle className="container-title mb-3 text-center" as="h2">Питајте библиотекара</CardTitle>
               <Form onSubmit={onSubmit}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInputName">
                   <Form.Label>Име и презиме</Form.Label>
@@ -113,7 +114,7 @@ const Contact = () => {
             <Col md={3} className="text-center">
               <Card className="p-3 shadow-sm h-100">
                 <Card.Body className="text-center">
-                  <h4 className="container-title">E-mail</h4>
+                  <h2 className="container-title">E-mail</h2>
                   <FaEnvelope className="container-icon" style={{ fontSize: '2em' }} />
                   <hr />
                   <h5>gbasruma@gmail.com</h5>
@@ -123,7 +124,7 @@ const Contact = () => {
             <Col md={3} className="text-center">
               <Card className="p-3 shadow-sm h-100">
                 <Card.Body className="text-center">
-                  <h4 className="container-title">Адреса</h4>
+                  <h2 className="container-title">Адреса</h2>
                   <FaMapMarkerAlt className="container-icon" />
                   <hr />
                   <h5>Главна 114, Рума</h5>
@@ -133,7 +134,7 @@ const Contact = () => {
             <Col md={5} className="text-center">
               <Card className="p-3 shadow-sm h-100">
                 <Card.Body className="text-center">
-                  <h4 className="container-title">Друштвене мреже</h4>
+                  <h2 className="container-title">Друштвене мреже</h2>
                   <Row className="justify-content-center">
                     <Col xs={4} className="text-center">
                       <a href="https://youtube.com/@gradskabibliotekaruma" target="_blank" rel="noopener noreferrer">

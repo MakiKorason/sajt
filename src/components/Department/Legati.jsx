@@ -52,7 +52,7 @@ const Legati= ()=>{
       <br/><LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div></Col></Row>
 
   <Col  md={12}>
-    <br/><hr/> <h3 className="container-title">Легат Николе Дреновца</h3>    
+    <br/><hr/> <h2 className="container-title">Легат Николе Дреновца</h2>    
   <p className='container-text'> Никола Дреновац, свештеник, књижевник и
 преводилац, рођен је у Руми 17. децембра 1907.
 године. У Словенији и Срему је радио као свештено
@@ -85,7 +85,7 @@ const Legati= ()=>{
     </Col> 
     <hr/>
 
-          <h3 className="container-title">Легат Милутина Стојковића</h3> 
+          <h2 className="container-title">Легат Милутина Стојковића</h2> 
   
          <Col md={12}>
 
@@ -116,7 +116,7 @@ const Legati= ()=>{
         </Col>
          
       <hr/>
-      <h3 className="container-title" >Легат Оливере Шијачки</h3>
+      <h2 className="container-title" >Легат Оливере Шијачки</h2>
         <Col md={12}> 
    
     <p className='container-text'>  

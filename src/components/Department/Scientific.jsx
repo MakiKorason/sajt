@@ -14,7 +14,7 @@ const Scientific =()=>{
 <link rel="canonical" href="https://bibliotekaruma.rs/naucno" />
 </Helmet> 
       <Container className="container-library mt-4 mb-4">
-      <div className="container-frame"><h2 className="container-title" >ОДЕЉЕЊЕ НАУЧНЕ<br/> И СТРУЧНЕ ЛИТЕРАТУРЕ</h2><div className="container-icon">
+      <div className="container-frame"><h1 className="container-title" >ОДЕЉЕЊЕ НАУЧНЕ<br/> И СТРУЧНЕ ЛИТЕРАТУРЕ</h1><div className="container-icon">
                    <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>  <hr/>
       <Row>   
         <Col md={8} >

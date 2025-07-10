@@ -157,7 +157,7 @@ const Recommendations =()=>{
                  <title>Preporuke bibliotekara - Biblioteka Ruma</title>
                  <link rel="canonical" href="https://bibliotekaruma.rs/preporuke" />
                </Helmet> 
-          <Container className='container-library  mb-4 mt-4 ms-auto '>
+          <Container className='container-library mb-4 mt-4 ms-auto' style={{ padding: '2.5rem' }}>
            
             <Row className="mb-4">
                    
@@ -165,7 +165,7 @@ const Recommendations =()=>{
                     <h3 className='container-title' >Књиге за одрасле</h3><br/> <a className='container-text' href='https://www.instagram.com/reel/C6Vmssjsa3s/' target='_blank' rel="noreferrer">Препоручујемо вам! 📚</a> 
                     {knjigeZaOdrasle.map((knjiga, index) => (
                         <Row key={index} className="mb-4 align-items-center">
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={4} style={{ padding: '1.5rem' }}>
                             <a  href={knjiga.link} target="_blank" rel="noopener noreferrer">
                                <br/> <AnimatedImage
                                     src={knjiga.slika}
@@ -174,7 +174,7 @@ const Recommendations =()=>{
                                 /></a>
                                 
                             </Col>
-                            <Col xs={12} md={8}>
+                            <Col xs={12} md={8} className="text-end" style={{ padding: '1.5rem' }}>
                                 <p className='container-text'>{knjiga.opis}</p>
                                 <p>
                                 <a  href={knjiga.link} target="_blank" rel="noopener noreferrer">
@@ -198,7 +198,7 @@ const Recommendations =()=>{
                                     className="container-image"
                                 /></a>      
                             </Col>
-                            <Col xs={12} md={8}>
+                            <Col xs={12} md={8} className="text-end">
                                 <p className='container-text'>{knjiga.opis}</p>
                                 <p>
                                 <a href={knjiga.link} target="_blank" rel="noopener noreferrer" style={{ color: '#007bff' }}>
@@ -221,7 +221,7 @@ const Recommendations =()=>{
                                     className="container-image"
                                 /></a>
                             </Col>
-                            <Col xs={12} md={8}>
+                            <Col xs={12} md={8} className="text-end">
                                 <p className='container-text'>{knjiga.opis}</p>
                                 <p>
                                 <a href={knjiga.link} target="_blank" rel="noopener noreferrer" style={{ color: '#007bff' }}>

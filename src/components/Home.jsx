@@ -64,9 +64,9 @@ const Home =()=> {
     setDate(date);
   }
 
+  const [showFriends, setShowFriends] = useState(false);
 
 
-  
   
   return (
     <>
@@ -97,14 +97,13 @@ const Home =()=> {
       <div className="carousel-item active">
     <img src={biblioteka} alt="улаз у Градску библиотеку Рума"  
   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-  loading="eager"
-  fetchpriority="high"
-  width={1200}
-  height={600}
+    loading="eager"
+    fetchpriority="high"
+    width={1200}
+    height={600}
 />
-
       <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
+    <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
           стваралаштва.
         <Button
     href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/ " 
@@ -114,7 +113,6 @@ const Home =()=> {
  ДЕТАЉНИЈЕ
   </Button>
         </p>
-  
       </div>
     </div> 
 
@@ -138,8 +136,8 @@ const Home =()=> {
 
     <div className="carousel-item">
       <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-  loading="lazy"
-  />
+    loading="lazy"
+   />
       <div  className="carousel-caption ">
         <p style={{padding:'2.5%'}}>Пројекат "КУЛТУРА ЗА СВЕ" представља јачање техничких капацитета наше установе.
         <Button
@@ -156,7 +154,7 @@ const Home =()=> {
     <div className="carousel-item">
       <img src={books} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" 
   loading="lazy"
-  />
+   />
       <div  className="carousel-caption ">
         <p style={{padding:'1.5%'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
         <Button
@@ -202,11 +200,9 @@ const Home =()=> {
 
 <hr/>
 "Онда, не знам зашто, али тако ми је дошло — почео сам ненормално да се смејем, тако дубоко и дуго да је тај смех одзвањао све до краја нашег насеља... Потапшао сам психијатра по леђима и вратио се у нашу кућу не престајући да се смејем."
-   </p></Col>
-
-  <Col md={4} > 
-
-</Col></Row>
+   </p>
+    </Col>
+  </Row>
 <br/>
 
   </Container>
@@ -221,7 +217,7 @@ const Home =()=> {
         <Container className='container-library ms-auto mt-4 mb-4'>
   <Row>
     <Col md={12}>
-      <h3 className='text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ<br/>„Дани словенске писмености и културе“</h3>
+      <h2 className='text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ<br/>„Дани словенске писмености и културе“</h2>
       <hr/>
     </Col>
   </Row>
@@ -306,8 +302,8 @@ const Home =()=> {
        </Container>
 
     <br/><hr/>
-  <h1 className= "container-title"  
-       >ОГЛАСНА ТАБЛА</h1>
+  <h2 className= "container-title"  
+       >ОГЛАСНА ТАБЛА</h2>
        <hr style={{margin: '0 auto', width: '50%' ,border: '1px solid' }} />
    
     <Container  className=" container-library ms-auto mt-4 mb-4 ">
@@ -352,7 +348,7 @@ const Home =()=> {
     <Row>
 
   <Col md={12}>
-        <h1 className='container-title'>Званични документи</h1><br/>
+        <h2 className='container-title'>Званични документи</h2><br/>
         <p className='container-text'>Правилник о условима и начину коришћења библиотечке грађе</p>
         <Button
   onClick={() => window.open('/Pravilnik.pdf', '_blank')}
@@ -373,7 +369,7 @@ className='btn btn-secondary'
 </AnimatedCard>
     <br/><hr/>
 
-<h1 className='container-title'>Пријатељи и сарадници </h1>
+<h2 className='container-title'>Пријатељи и сарадници </h2>
 <Row className='image-background '>
     <div className="carousel-item active">
       <div  style={{backgroundColor:'rgba(0, 0, 0, 0.1)'}} >
@@ -401,41 +397,52 @@ className='btn btn-secondary'
   className="container mt-3"
 >
   <h2 style={{marginLeft:'26rem'}}>Пријатељи библиотеке</h2>
-  <button
-    type="button"
-    className="btn btn-secondary"
-    data-bs-toggle="collapse"
-    data-bs-target="#friends-demo"
-  >
-    Пријатељи библиотеке
-  </button>
-  <div id="friends-demo" className="collapse text-center">
-    <img
-      style={{ width: '15%', marginRight:'1rem' }}
-      src={Panonija}
-      alt="Панонија књижара у Руми"
-    />
-    <img
-      style={{ width: '15%' }}
-      src={Boss}
-      alt="Босс компанија Рума"
-    />
-    <img
-      style={{ width: '20%' }}
-      src={trkulja}
-      alt="Тркуља керамика Рума"
-    />
-    <img
-      style={{ width: '10%' }}
-      src={Frigo}
-      alt="Фриго Жика Рума"
-    />
-    <img
-      style={{ width: '15%', marginLeft:'1rem' }}
-      src={beke}
-      alt="Беке компанија Рума"
-    />
-  </div>
+  {!showFriends && (
+    <button
+      type="button"
+      className="btn btn-secondary"
+      onClick={() => setShowFriends(true)}
+    >
+      Пријатељи библиотеке
+    </button>
+  )}
+  {showFriends && (
+    <div className="text-center" style={{position: 'relative'}}>
+      <button
+        type="button"
+        className="btn mb-3"
+        style={{ position: 'absolute', top: 0, left: 0, backgroundColor: '#343a40', color: 'white', border: 'none' }}
+        onClick={() => setShowFriends(false)}
+      >
+        Затвори
+      </button>
+      <img
+        style={{ width: '15%', marginRight:'1rem' }}
+        src={Panonija}
+        alt="Панонија књижара у Руми"
+      />
+      <img
+        style={{ width: '15%' }}
+        src={Boss}
+        alt="Босс компанија Рума"
+      />
+      <img
+        style={{ width: '20%' }}
+        src={trkulja}
+        alt="Тркуља керамика Рума"
+      />
+      <img
+        style={{ width: '10%' }}
+        src={Frigo}
+        alt="Фриго Жика Рума"
+      />
+      <img
+        style={{ width: '15%', marginLeft:'1rem' }}
+        src={beke}
+        alt="Беке компанија Рума"
+      />
+    </div>
+  )}
 </div><hr/>
 
 

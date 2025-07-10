@@ -42,21 +42,21 @@ COBISS програмском окружењу. Библиотека
           <Col xs={12} sm={12} md={12} lg={12} xl={12} >    
            <AnimatedCard className="employee-card  mb-4 shadow-sm">
              <Card.Body>
-             <br/> <h4 className="text-center employees-text">Одрасло одељење</h4><hr/>
+             <br/> <h2 className="text-center employees-text">Одељење за одрасле</h2><hr/>
                <p className="employees">Библиотекар: Марина Крањчевић </p>
                <p className="employees">Библиотекар: Софија Лакетић Рибић</p> 
-               <br/><h4 className="text-center employees-text">Дечије одељење</h4><hr/>
+               <br/><h2 className="text-center employees-text">Одељење за децу</h2><hr/>
                <p className=" employees">Библиотекар: Ивана Костадиновић</p>
                <p className=" employees ">Библиотекар: Маријана Бизумић</p>     
                <GiBookshelf className="container-icon"/>              
                  <IoBookSharp className="container-icon"/><LiaUserEditSolid className="container-icon" /><br/><br/>            
-               <br/><h4 className="text-center employees-text">Научно одељење</h4><hr/>
+               <br/><h2 className="text-center employees-text">Одељење научне и стручне литературе</h2><hr/>
                <p className=" employees">Библиотекар: Јелена Видаковић</p>
                <p className="employees">Библиотекар: Маја Зорић</p>
                <p className="employees ">Библиотекар: Алекса Кондић</p>    
-              <br/>   <h4 className="text-center employees-text">Завичајно одељење</h4><hr/>
+              <br/>   <h2 className="text-center employees-text">Завичајна збирка</h2><hr/>
                <p className="text-center employees">Виши библиотекар:<br/> Драгана Ђорђевић</p>      <br/> 
-               <br/>  <h4 className="text-center employees-text" >Читаоница</h4><hr/>
+               <br/>  <h2 className="text-center employees-text" >Читаоница</h2><hr/>
                <p className="employees">Књижничар: Јулка Јанић </p>
                <p className="employees">Књижничар: Драган Јанковић </p>
              </Card.Body>
