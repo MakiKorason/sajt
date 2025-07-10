@@ -48,7 +48,7 @@ function InnerApp() {
             <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
               <Row>
                 <Col md={4}>
-                  <img src="/logo.jpg" alt="Грб Градске библиотеке Рума" className='logo' style={{ marginLeft: '2.5rem' }} />
+                  <img src="/logo.jpg" alt="Грб Градске библиотеке Рума" className='logo' style={{ marginLeft: '4rem' }} />
                 </Col>
                 <Col md={4} className='mt-3'>
                   <p className='container-text fw-bold' style={{ marginLeft: '1.5rem' }}>
