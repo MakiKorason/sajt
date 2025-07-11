@@ -8,7 +8,7 @@ const Competition =()=>{
     return (<>
      
           <Helmet>
-            <title>Konkurs - Biblioteka Ruma</title>
+            <title>Конкурс – Библиотека Рума</title>
             <link rel="canonical" href="https://bibliotekaruma.rs/konkurs" />
           </Helmet>  
      <Container className="container-library mt-4 mb-4 ">

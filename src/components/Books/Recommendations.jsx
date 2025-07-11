@@ -154,7 +154,7 @@ const Recommendations =()=>{
 
             <>
                  <Helmet>
-                 <title>Preporuke bibliotekara - Biblioteka Ruma</title>
+                 <title>Препоруке библиотекара – Библиотека Рума</title>
                  <link rel="canonical" href="https://bibliotekaruma.rs/preporuke" />
                  <meta name="description" content="Упутство за коришћење COBISS система за претрагу књига у Градској библиотеци у Руми." />
                  <script type="application/ld+json">{`

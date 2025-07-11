@@ -66,14 +66,14 @@ const Home =()=> {
 
   const [showFriends, setShowFriends] = useState(false);
 
-
+  
   
   return (
     <>
   
 
   <Helmet>
-    <title>Gradska biblioteka Ruma | Fond, manifestacije, digitalna biblioteka, odeljenja, konkurs i radno vreme</title>
+    <title>Градска библиотека „Атанасије Стојковић“ Рума | Фонд, манифестације, дигитална библиотека, одељења, конкурс и радно време</title>
     <meta name="description" content="Zvanični sajt Gradske biblioteke u Rumi – informacije o knjigama, događajima, digitalnoj biblioteci, konkursima i radnom vremenu. Pronađite sve što vas zanima o našoj biblioteci!" />
     <link rel="canonical" href="https://bibliotekaruma.rs" />
   </Helmet>
@@ -179,6 +179,7 @@ const Home =()=> {
 
 
  <Container className='container-library mt-2 mb-2'>
+   <h2 className="container-title mb-2">Препорука романа за месец јул</h2><hr/>
         <Row>
             <Col xs={12} sm={12} md={4} lg={4} xl={4} className=" text-center mt-4"> 
   <AnimatedImage className="container-image" alt='књиге' src={psihijatri} />
@@ -192,7 +193,6 @@ const Home =()=> {
     </Button>
   </Col>    
   <Col xs={12} sm={12} md={8} lg={8} xl={8} className="mt-4">
- 
 
 <p className="container-text">Роман "Психијатри, психолози и други болесници" Родрига Муњоса Авие је духовита и иронична прича која ће вас у исто време насмејати и растужити. Кроз занимљив, једноставан, али снажан наратив провлачи се лајтмотив овог романа, а то је страх од смрти – универзално осећање које не познаје разлике у занимању, образовању, ни у друштвеном статусу.
 
@@ -206,19 +206,19 @@ const Home =()=> {
 <br/>
 
   </Container>
-      
+  
   
         <Container className='container-library ms-auto mt-4 mb-4'>
   <Row>
     <Col md={12}>
-      <h2 className='text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ<br/>„Дани словенске писмености и културе“</h2>
+      <h2 className='container-title text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ<br/>„Дани словенске писмености и културе“</h2>
       <hr/>
     </Col>
   </Row>
   <Row>
     <Col md={4}>
       <AnimatedImage className='container-image' src={dani1}/>
-      <p>,,Вивкови виоoliniсти", квартет виолина.</p>
+      <p>„Вивкови виолинисти“, квартет виолина.</p>
     </Col>
     <Col md={4}>
       <AnimatedImage className='container-image' src={dani2}/>
@@ -392,51 +392,53 @@ className='btn btn-secondary'
 >
   <h2 style={{marginLeft:'26rem'}}>Пријатељи библиотеке</h2>
   {!showFriends && (
-    <button
-      type="button"
-      className="btn btn-secondary"
+  <button
+    type="button"
+    className="btn btn-secondary"
       onClick={() => setShowFriends(true)}
-    >
-      Пријатељи библиотеке
-    </button>
+  >
+    Пријатељи библиотеке
+  </button>
   )}
   {showFriends && (
     <div className="text-center" style={{position: 'relative'}}>
       <button
         type="button"
         className="btn mb-3"
-        style={{ position: 'absolute', top: 0, left: 0, backgroundColor: '#343a40', color: 'white', border: 'none' }}
+        style={{ backgroundColor: '#343a40', color: 'white', border: 'none', position: 'absolute', top: '-1.5rem', left: '0.5rem', zIndex: 2 }}
         onClick={() => setShowFriends(false)}
       >
         Затвори
       </button>
-      <img
-        style={{ width: '15%', marginRight:'1rem' }}
-        src={Panonija}
-        alt="Панонија књижара у Руми"
-      />
-      <img
-        style={{ width: '15%' }}
-        src={Boss}
-        alt="Босс компанија Рума"
-      />
-      <img
-        style={{ width: '20%' }}
-        src={trkulja}
-        alt="Тркуља керамика Рума"
-      />
-      <img
-        style={{ width: '10%' }}
-        src={Frigo}
-        alt="Фриго Жика Рума"
-      />
-      <img
-        style={{ width: '15%', marginLeft:'1rem' }}
-        src={beke}
-        alt="Беке компанија Рума"
-      />
+      <div className="d-flex justify-content-center align-items-center flex-wrap" style={{marginTop: '2.5rem'}}>
+        <img
+          style={{ width: '15%', marginRight:'1rem' }}
+          src={Panonija}
+          alt="Панонија књижара у Руми"
+        />
+        <img
+          style={{ width: '15%' }}
+          src={Boss}
+          alt="Босс компанија Рума"
+        />
+        <img
+          style={{ width: '20%' }}
+          src={trkulja}
+          alt="Тркуља керамика Рума"
+        />
+        <img
+          style={{ width: '10%' }}
+          src={Frigo}
+          alt="Фриго Жика Рума"
+        />
+        <img
+          style={{ width: '15%', marginLeft:'1rem' }}
+          src={beke}
+          alt="Беке компанија Рума"
+        />
+      </div>
     </div>
-  )}
+    )}
 </div><hr/>
 
 

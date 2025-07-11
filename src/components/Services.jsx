@@ -15,6 +15,7 @@ const Services =()=>{
         <meta name="description" content="Погледајте све услуге које нуди Градска библиотека Рума: читаоница, издавање књига, дигитална библиотека и још много тога!" />
         <link rel="canonical" href="https://bibliotekaruma.rs/usluge" />
       </Helmet>
+      <h1 className="container-title text-center mt-4 mb-4">Услуге</h1>
       <Container className=" container-library mb-4 mt-4 ms-auto">
         <AnimatedContainer className='cobiss-card'>
           <p className='container-title'>
@@ -57,7 +58,6 @@ const Services =()=>{
 
         </AnimatedContainer>
         <br/><br/>
-        <h2 className="container-title">Услуге</h2>
 
         
 

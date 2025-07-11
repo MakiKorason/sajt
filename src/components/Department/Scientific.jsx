@@ -10,7 +10,7 @@ import { Helmet } from 'react-helmet';
 const Scientific =()=>{
     return(<>
     <Helmet>
-<title>Odeljenje naučne i stručne literature - Biblioteka Ruma</title>
+<title>Одељење научне и стручне литературе – Библиотека Рума</title>
 <link rel="canonical" href="https://bibliotekaruma.rs/naucno" />
 </Helmet> 
       <Container className="container-library mt-4 mb-4">
@@ -43,7 +43,7 @@ const Scientific =()=>{
   </p>
   <p className="container-text">
     Одељење научне и стручне литературе нуди богату ризницу знања и право је место где наши корисници могу да се едукују, истражују и прошире своје знање.
-  </p>
+          </p>
         </Col>
         <br/>
       

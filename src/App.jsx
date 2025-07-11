@@ -84,7 +84,7 @@ function InnerApp() {
               <Nav className="ms-auto fs-5 mt-5">
 
                 <NavDropdown title="О БИБЛИОТЕЦИ" id="about-dropdown">
-                  <NavDropdown.Item as={Link} to="/о-библиотеци" onClick={() => setExpanded(false)}>Историјат библиотеке</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/историјат-библиотеке" onClick={() => setExpanded(false)}>Историјат библиотеке</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/запослени-библиотеке" onClick={() => setExpanded(false)}>Запослени</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/визија-мисија-библиотеке" onClick={() => setExpanded(false)}>Визија и мисија</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/пројекти-библиотеке" onClick={() => setExpanded(false)}>Пројекат</NavDropdown.Item>
@@ -92,10 +92,10 @@ function InnerApp() {
                 </NavDropdown>
 
                 <NavDropdown title="ФОНД" id="fund-dropdown">
-                 <NavDropdown.Item as={Link} to="/препоруке-библиотеке" onClick={()=>setExpanded(false)}>Препорука библиотекара</NavDropdown.Item> 
+                 <NavDropdown.Item as={Link} to="/препоруке-библиотекара" onClick={()=>setExpanded(false)}>Препорука библиотекара</NavDropdown.Item> 
                   <NavDropdown.Item as={Link} to="/наша-издања" onClick={() => setExpanded(false)}>Наша издања</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/дигитална-библиотека" onClick={() => setExpanded(false)}>Дигитална библиотека</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/претраживање-каталога" onClick={() => setExpanded(false)}>Претраживање фонда</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/претраживање-фонда" onClick={() => setExpanded(false)}>Претраживање фонда</NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/легати-библиотеке" onClick={() => setExpanded(false)}>Легати</NavDropdown.Item>
                 </NavDropdown>
 
@@ -116,21 +116,19 @@ function InnerApp() {
         </Navbar>
       </header>
 
-      <h1 className="container-title text-center my-4">Gradska biblioteka Atanasije Stojkovic</h1>
-
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<AnimatedPage><Home /></AnimatedPage>} />
           <Route path='/контакт-библиотека-рума' element={<AnimatedPage><Contact /></AnimatedPage>} />
-          <Route path='/о-библиотеци' element={<AnimatedPage><History /></AnimatedPage>} />
+          <Route path='/историјат-библиотеке' element={<AnimatedPage><History /></AnimatedPage>} />
           <Route path='/запослени-библиотеке' element={<AnimatedPage><Employees /></AnimatedPage>} />
           <Route path='/услуге-библиотека-рума' element={<AnimatedPage><Services /></AnimatedPage>} />
           <Route path='/манифестације-библиотека-рума' element={<AnimatedPage><Events /></AnimatedPage>} />
           <Route path='/конкурс-библиотеке' element={<AnimatedPage><Competition /></AnimatedPage>} />
-          <Route path='/препоруке-библиотеке' element={<AnimatedPage><Recommendations /></AnimatedPage>} />
+          <Route path='/препоруке-библиотекара' element={<AnimatedPage><Recommendations /></AnimatedPage>} />
           <Route path='/наша-издања' element={<AnimatedPage><OurPublic /></AnimatedPage>} />
           <Route path='/дигитална-библиотека' element={<AnimatedPage><DigitalLibrary /></AnimatedPage>} />
-          <Route path='/претраживање-каталога' element={<AnimatedPage><BooksSearche /></AnimatedPage>} />
+          <Route path='/претраживање-фонда' element={<AnimatedPage><BooksSearche /></AnimatedPage>} />
           <Route path='/одељење-за-децу' element={<AnimatedPage><Kid /></AnimatedPage>} />
           <Route path='/одељење-за-одрасле' element={<AnimatedPage><Adult /></AnimatedPage>} />
           <Route path='/одељење-научне-и-стручне-литературе' element={<AnimatedPage><Scientific /></AnimatedPage>} />

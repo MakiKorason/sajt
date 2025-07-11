@@ -42,7 +42,7 @@ const Events = () => {
   return (
     <>
 <Helmet>
-        <title>Manifestacije - Biblioteka Ruma</title>
+        <title>Манифестације – Библиотека Рума</title>
         <link rel="canonical" href="https://bibliotekaruma.rs/manifestacije" />
       </Helmet>
       <Container className='container-library d-flex flex-wrap justify-content-center mt-4 mb-4'>

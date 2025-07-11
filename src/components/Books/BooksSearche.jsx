@@ -9,7 +9,7 @@ const BooksSearche = () => {
   return (
     <>
       <Helmet>
-        <title>Pretraživanje fonda - Biblioteka Ruma</title>
+        <title>Претраживање фонда – Библиотека Рума</title>
         <link rel="canonical" href="https://bibliotekaruma.rs/pretraga" />
       </Helmet>  
     

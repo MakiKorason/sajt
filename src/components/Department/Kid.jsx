@@ -8,7 +8,7 @@ const Kid =()=>{
     return (<>
 
            <Helmet>
-         <title>Decije odeljenje - Biblioteka Ruma</title>
+         <title>Одељење за децу – Библиотека Рума</title>
          <link rel="canonical" href="https://bibliotekaruma.rs/decije" />
        </Helmet> 
     <Container className="container-library mt-4 mb-4">

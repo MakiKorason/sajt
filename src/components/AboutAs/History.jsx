@@ -10,9 +10,9 @@ const History = () => {
   return (
     <>
       <Helmet>
-        <title>Istorija - Biblioteka Ruma</title>
-        <link rel="canonical" href="https://bibliotekaruma.rs/istorija" />
-        <link rel="alternate" hreflang="sr" href="https://bibliotekaruma.rs/istorija" />
+        <title>Историјат – Библиотека Рума</title>
+        <link rel="canonical" href="https://bibliotekaruma.rs/историјат-библиотеке" />
+        <link rel="alternate" hreflang="sr" href="https://bibliotekaruma.rs/историјат-библиотеке" />
       </Helmet>   
     <Container className="container-library mt-4 mb-4  ">
  <div className="container-frame">

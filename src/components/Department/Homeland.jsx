@@ -9,12 +9,12 @@ const Homelend =()=>{
 return (<>
 
 <Helmet>
-         <title>Zavičajno odeljenje - Biblioteka Ruma</title>
+         <title>Завичајно одељење – Библиотека Рума</title>
          <link rel="canonical" href="https://bibliotekaruma.rs/zavicajno" />
        </Helmet> 
  <Container  className="container-library mt-4 mb-4">
   <section aria-labelledby="zavicajna-naslov">
-    <div className="container-frame">
+ <div className="container-frame">
       <Row>
         <h1 className="container-title" id="zavicajna-naslov">Завичајна збирка</h1>
   <div className="container-icon">
@@ -48,7 +48,7 @@ return (<>
         </div>
    
     </section>
-</Container>
+    </Container>
 
    
 

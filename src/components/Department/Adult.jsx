@@ -15,7 +15,7 @@ const Adult =()=>{
     return(
         <>
         <Helmet>
-         <title>Odeljenje za odrasle - Biblioteka Ruma</title>
+         <title>Одељење за одрасле – Библиотека Рума</title>
          <link rel="canonical" href="https://bibliotekaruma.rs/odraslo" />
        </Helmet> 
           <Container className="container-library mt-4 mb-4"> 
