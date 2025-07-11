@@ -60,7 +60,7 @@ function InnerApp() {
 
             {/* Hamburger meni ili X dugme */}
             {!expanded && (
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
             )}
             {expanded && (
               <button

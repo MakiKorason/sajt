@@ -411,32 +411,32 @@ className='btn btn-secondary'
         Затвори
       </button>
       <div className="d-flex justify-content-center align-items-center flex-wrap" style={{marginTop: '2.5rem'}}>
-        <img
-          style={{ width: '15%', marginRight:'1rem' }}
-          src={Panonija}
-          alt="Панонија књижара у Руми"
-        />
-        <img
-          style={{ width: '15%' }}
-          src={Boss}
-          alt="Босс компанија Рума"
-        />
-        <img
-          style={{ width: '20%' }}
-          src={trkulja}
-          alt="Тркуља керамика Рума"
-        />
-        <img
-          style={{ width: '10%' }}
-          src={Frigo}
-          alt="Фриго Жика Рума"
-        />
-        <img
-          style={{ width: '15%', marginLeft:'1rem' }}
-          src={beke}
-          alt="Беке компанија Рума"
-        />
-      </div>
+    <img
+      style={{ width: '15%', marginRight:'1rem' }}
+      src={Panonija}
+      alt="Панонија књижара у Руми"
+    />
+    <img
+      style={{ width: '15%' }}
+      src={Boss}
+      alt="Босс компанија Рума"
+    />
+    <img
+      style={{ width: '20%' }}
+      src={trkulja}
+      alt="Тркуља керамика Рума"
+    />
+    <img
+      style={{ width: '10%' }}
+      src={Frigo}
+      alt="Фриго Жика Рума"
+    />
+    <img
+      style={{ width: '15%', marginLeft:'1rem' }}
+      src={beke}
+      alt="Беке компанија Рума"
+    />
+  </div>
     </div>
     )}
 </div><hr/>

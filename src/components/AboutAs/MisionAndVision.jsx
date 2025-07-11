@@ -30,7 +30,7 @@ const MisionAndVision=()=>{
             </Card>
           </Col>
           <Col md={6} className="text-center">
-            <AnimatedImage className="container-image" alt='књиге' src={stiven}/>
+<AnimatedImage className="container-image" alt='књиге' src={stiven}/>
           </Col>
         </Row>
         <Row className="align-items-center mb-4 flex-md-row-reverse">
@@ -39,7 +39,7 @@ const MisionAndVision=()=>{
               <h2 className="container-title text-center" style={{ fontSize: '1.5rem' }}>***</h2>
               <p className="container-text text-center mt-3">
                 Мисија наше библиотеке је да пружи приступ информацијама, књигама и образовним ресурсима свим нашим корисницима. Библиотека је место инклузије, међусобног учења и размене идеја, зато је наш основни задатак да код деце развијемо и подстичемо навике читања. Циљ нам је да подржимо целоживотно учење, културну размену и развој критичког размишљања.
-              </p>
+</p>
             </Card>
           </Col>
           <Col md={6} className="text-center">
@@ -51,11 +51,11 @@ const MisionAndVision=()=>{
             <Card className="p-3" style={{ background: '#f5ede2', border: 'none', borderRadius: '1rem' }}>
               <Button onClick={shoot} className="btn btn-secondary" style={{ background: '#b5a999', border: 'none', color: '#fff' }} id="toastbtn">Број корисника!</Button>
             </Card>
-          </Col>
-        </Row>
+  </Col>
+</Row>  
       </Card>
-      <hr/>
-    </Container>
+<hr/>
+  </Container>
   </>
   )
 
