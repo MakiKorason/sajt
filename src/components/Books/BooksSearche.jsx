@@ -10,7 +10,7 @@ const BooksSearche = () => {
     <>
       <Helmet>
         <title>Pretraživanje fonda - Biblioteka Ruma</title>
-        <link rel="canonical" href="https://bibliotekaruma.rs/preporuke" />
+        <link rel="canonical" href="https://bibliotekaruma.rs/pretraga" />
       </Helmet>  
     
     <Container className="container-library ms-auto mt-4 mb-4">

@@ -91,7 +91,7 @@ COBISS/OPAC окружење и све услуге корисницима
           /> <br/> <br/></Col>
          </Row>
           
-          <Row>    <br/><h2 className='container-title'>Архитектонски опис</h2><hr/>
+          <Row>    <br/><h3 className='container-title'>Архитектонски опис</h3><hr/>
      <Col xs={12} sm={12} md={6} lg={6} xl={6} >
           <p className='container-text'>На југозападном углу раскрснице Главне и улице
 Владимира Назора је двоспратна зграда,

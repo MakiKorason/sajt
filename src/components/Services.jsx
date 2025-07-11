@@ -36,7 +36,7 @@ const Services =()=>{
               </li> 
             </ul>
 
-            <div class="tab-content" >
+            <div className="tab-content" >
               <div id="home" className="container tab-pane active"><br/>
                 <p className='container-text'>Правилник о раду са корисницима и начину коришћења библиотечке грађе.</p>
               </div>

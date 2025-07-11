@@ -116,6 +116,8 @@ function InnerApp() {
         </Navbar>
       </header>
 
+      <h1 className="container-title text-center my-4">Gradska biblioteka Atanasije Stojkovic</h1>
+
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<AnimatedPage><Home /></AnimatedPage>} />

@@ -113,6 +113,16 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
  text-align: center;
 }
 
+.container-icon.left-align {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5em;
+  margin-right: 1em;
+  text-align: left;
+}
+
 .container-text {
  color: #3f2c11;
  font-size: 25px;

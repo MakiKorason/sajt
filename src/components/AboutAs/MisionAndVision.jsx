@@ -44,7 +44,7 @@ const MisionAndVision=()=>{
 <br/>
 <Row><Col xs={12} sm={12} md={6} lg={6} xl={6}>
        <br/> <hr/>
-<Button onClick={shoot}  class="btn-library" id="toastbtn">Број корисника!</Button>  </Col></Row>
+<Button onClick={shoot}  className="btn-library" id="toastbtn">Број корисника!</Button>  </Col></Row>
 <hr/>
 
   </Container>

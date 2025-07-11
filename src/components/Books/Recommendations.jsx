@@ -156,18 +156,31 @@ const Recommendations =()=>{
                  <Helmet>
                  <title>Preporuke bibliotekara - Biblioteka Ruma</title>
                  <link rel="canonical" href="https://bibliotekaruma.rs/preporuke" />
+                 <meta name="description" content="Упутство за коришћење COBISS система за претрагу књига у Градској библиотеци у Руми." />
+                 <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Preporuke bibliotekara - Biblioteka Ruma",
+      "description": "Препоруке књига за читање које предлажу библиотекари Градске библиотеке у Руми.",
+      "url": "https://bibliotekaruma.rs/preporuke"
+    }
+  `}</script>
                </Helmet> 
           <Container className='container-library mb-4 mt-4 ms-auto' style={{ padding: '2.5rem' }}>
+            <h1 className='container-title mb-4'>Препоруке библиотекара</h1>
+            <hr/>
            
             <Row className="mb-4">
                    
                  <Col xs={12} md={12} >
-                    <h3 className='container-title' >Књиге за одрасле</h3><br/> <a className='container-text' href='https://www.instagram.com/reel/C6Vmssjsa3s/' target='_blank' rel="noreferrer">Препоручујемо вам! 📚</a> 
+                    <h2 className='container-title'>Књиге за одрасле</h2><br/> <a className='container-text' href='https://www.instagram.com/reel/C6Vmssjsa3s/' target='_blank' rel="noreferrer">Препоручујемо вам! 📚</a> 
                     {knjigeZaOdrasle.map((knjiga, index) => (
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4} style={{ padding: '1.5rem' }}>
                             <a  href={knjiga.link} target="_blank" rel="noopener noreferrer">
                                <br/> <AnimatedImage
+                                    loading="lazy"
                                     src={knjiga.slika}
                                     alt={knjiga.naslov}
                                     className="container-image"
@@ -178,7 +191,7 @@ const Recommendations =()=>{
                                 <p className='container-text'>{knjiga.opis}</p>
                                 <p>
                                 <a  href={knjiga.link} target="_blank" rel="noopener noreferrer">
-                                    Извор:{knjiga.link}
+                                    Погледај књигу
                                 </a></p>
                             </Col>     
                         </Row>
@@ -187,12 +200,13 @@ const Recommendations =()=>{
                
                 <Col xs={12} md={12}>
                    
-                    <br/><h3 className='container-title' >Научне књиге</h3><br/><a className='container-text' href='https://www.instagram.com/reel/C33Aqkysm9H/' target='_blank'  rel="noreferrer">Препоручујемо вам! 📚</a>
+                    <br/><h2 className='container-title'>Научне књиге</h2><br/><a className='container-text' href='https://www.instagram.com/reel/C33Aqkysm9H/' target='_blank'  rel="noreferrer">Препоручујемо вам! 📚</a>
                     {naucneKnjige.map((knjiga, index) => ( 
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4} >
                             <a href={knjiga.link} target="_blank" rel="noopener noreferrer">
                                 <AnimatedImage
+                                    loading="lazy"
                                     src={knjiga.slika}
                                     alt={knjiga.naslov}
                                     className="container-image"
@@ -202,7 +216,7 @@ const Recommendations =()=>{
                                 <p className='container-text'>{knjiga.opis}</p>
                                 <p>
                                 <a href={knjiga.link} target="_blank" rel="noopener noreferrer" style={{ color: '#007bff' }}>
-                                    Извор:{knjiga.link}
+                                    Погледај књигу
                                 </a></p>
                             </Col>
                         </Row>
@@ -210,12 +224,13 @@ const Recommendations =()=>{
                 </Col>
                
                 <Col xs={12} md={12}>
-                    <br/><h3 className='container-title'>Књиге за децу</h3><br/>
+                    <br/><h2 className='container-title'>Књиге за децу</h2><br/>
                     {knjigeZaDecu.map((knjiga, index) => (
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4} >
                             <a href={knjiga.link} target="_blank" rel="noopener noreferrer">
                                 <AnimatedImage
+                                    loading="lazy"
                                     src={knjiga.slika}
                                     alt={knjiga.naslov}
                                     className="container-image"
@@ -225,7 +240,7 @@ const Recommendations =()=>{
                                 <p className='container-text'>{knjiga.opis}</p>
                                 <p>
                                 <a href={knjiga.link} target="_blank" rel="noopener noreferrer" style={{ color: '#007bff' }}>
-                                    Извор:<br/>{knjiga.link}
+                                    Погледај књигу
                                 </a></p>
                             </Col>
                         </Row>

@@ -6,7 +6,7 @@ const DigitalLibrary =()=>{
     return (<>
 
         <Helmet>
-         <title>Digitalna biblioteka - Biblioteka Ruma</title>
+         <title>Digitalna biblioteka - Gradska biblioteka „Атанасије Стојковић“ Ruma</title>
          <link rel="canonical" href="https://bibliotekaruma.rs/digitalna" />
        </Helmet> 
      <Container className='container-library mt-4 mb-4' >
@@ -23,6 +23,7 @@ const DigitalLibrary =()=>{
 културног значаја за локалну средину.
 
       </p>
+      <h2 className="container-title mb-5">Приступите дигитализованој грађи</h2>
 
       <Row className="mb-5">
         <Col md={12} className="mb-4">

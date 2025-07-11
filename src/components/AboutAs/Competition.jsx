@@ -23,7 +23,7 @@ const Competition =()=>{
         <Col md={12} className='text-center'> <AnimatedCard><img  src={konkurs} alt='конкурс' style={{width:'20%'}}/></AnimatedCard> </Col>
 
 
-            <div class="container mt-3">
+            <div className="container mt-3">
   <h2 className='container-title'>Конкурс се односи:</h2>
 </div>
 <AnimatedCard>
@@ -44,14 +44,14 @@ const Competition =()=>{
                   податке се доставља у засебној (малој) коверти.</li>
     <li className="list-group-item container-text">   Пристигле рукописе оцењиваће трочлани жири састављен од једног књижевника, једног
                   књижевног критичара и једног представника Градске библиотеке „Атанасије Стојковић”.</li>
-    <li class="list-group-item container-text">          Градска библиотека „Атанасије Стојковић” сноси сву одговорност око лектуре и коректуре
+    <li className="list-group-item container-text">          Градска библиотека „Атанасије Стојковић” сноси сву одговорност око лектуре и коректуре
                   награђеног романа, око уређења издања и техничке опремљености награђеног романа. </li>
-    <li class="list-group-item container-text">      Радове слати на адресу:
+    <li className="list-group-item container-text">      Радове слати на адресу:
 Градска библиотека „Атанасије  Стојковић“
 (за Конкурс „Атанасије Стојковић“)
 Главна 114,
 22400 Рума </li>
-<li class="list-group-item container-text">     Додатне информације можете добити на тел. 060/505-39-23 (Ивана Костадиновић) или на
+<li className="list-group-item container-text">     Додатне информације можете добити на тел. 060/505-39-23 (Ивана Костадиновић) или на
                   мејл адресу: gbasruma@gmail.com       </li>
   </ul>
 </div>
