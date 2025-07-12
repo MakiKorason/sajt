@@ -74,7 +74,7 @@ const Home =()=> {
 
   <Helmet>
     <title>Градска библиотека „Атанасије Стојковић“ Рума | Фонд, манифестације, дигитална библиотека, одељења, конкурс и радно време</title>
-    <meta name="description" content="Zvanični sajt Gradske biblioteke u Rumi – informacije o knjigama, događajima, digitalnoj biblioteci, konkursima i radnom vremenu. Pronađite sve što vas zanima o našoj biblioteci!" />
+    <meta name="description" content="Званични сајт Градске библиотеке у Руми – информације о књигама, догађајима, дигиталној библиотеци, конкурсима и радном времену. Пронађите све што вас занима о нашој библиотеци!"/>
     <link rel="canonical" href="https://bibliotekaruma.rs" />
   </Helmet>
 
@@ -91,19 +91,12 @@ const Home =()=> {
   </div>
  
   <div className="carousel-inner">   
-
-
  
       <div className="carousel-item active">
-    <img src={biblioteka} alt="улаз у Градску библиотеку Рума"  
-  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
-    loading="eager"
-    fetchpriority="high"
-    width={1200}
-    height={600}
-/>
-      <div  className="carousel-caption ">
-    <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић“ представља пример јединственог архитектонског 
+        <img src={biblioteka}  alt=" библиотека у Руми"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+  loading="lazy"/
+>      <div  className="carousel-caption ">
+    <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић" представља пример јединственог архитектонског 
           стваралаштва.
         <Button
     href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/ " 
@@ -118,7 +111,7 @@ const Home =()=> {
 
     <div  className="carousel-item">
   
-<img src={digitalna}  alt="дигитална библиотека у Руми"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+<img src={digitalna}  alt="Атансије Стојковић"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
   loading="lazy"
 />
       <div  className="carousel-caption ">
