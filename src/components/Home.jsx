@@ -95,11 +95,11 @@ const Home =()=> {
       <div className="carousel-item active">
         <img src={biblioteka}  alt=" библиотека у Руми"  className="d-block w-100 image-carousel img-thumbnail img-fluid" 
   loading="lazy"/
->      <div  className="carousel-caption ">
-    <p style={{padding:'2.5%'}} >Зграда Градске библиотеке „Атанасије Стојковић" представља пример јединственог архитектонског 
-          стваралаштва.
+>
+<div  className="carousel-caption ">
+        <p style={{padding:'2.5%'}}> Зграда Градске библиотеке „Атанасије Стојковић" представља пример јединственог архитектонског стваралаштва.
         <Button
-    href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/ " 
+     href="https://www.facebook.com/watch/?v=1235424304400303" 
       target="_blank"
  className="btn btn-light container-button"
   >
@@ -149,7 +149,7 @@ const Home =()=> {
   loading="lazy"
    />
       <div  className="carousel-caption ">
-        <p style={{padding:'1.5%'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
+        <p style={{padding:'1.5%', color:'black'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
         <Button
     href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma/videos/967554408223187?locale=sr_RS" 
       target="_blank"
