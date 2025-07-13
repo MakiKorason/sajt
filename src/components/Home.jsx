@@ -97,11 +97,12 @@ const Home =()=> {
   loading="lazy"/
 >
 <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}}> Зграда Градске библиотеке „Атанасије Стојковић" представља пример јединственог архитектонског стваралаштва.
+        <p className="carousel-caption-text" style={{padding:'2.5%'}}> Зграда Градске библиотеке „Атанасије Стојковић" представља пример јединственог архитектонског стваралаштва.
         <Button
      href="https://www.gradnja.rs/rekonstrukcija-dom-vojske-jna-ruma/ "
       target="_blank"
  className="btn btn-light container-button"
+      style={{textShadow: 'none'}}
   >
  ДЕТАЉНИЈЕ
   </Button>
@@ -116,11 +117,12 @@ const Home =()=> {
 />
       <div  className="carousel-caption ">
     
-        <p style={{padding:'1.5%'}} >  Румљанин Атанасије Стојковић био је најобразованији Србин<br/> прве трећине 19. века.
+        <p className="carousel-caption-text" style={{padding:'1.5%'}} >  Румљанин Атанасије Стојковић био је најобразованији Србин<br/> прве трећине 19. века.
          <Button
     href="https://www.facebook.com/watch/?v=1235424304400303" 
       target="_blank"
  className="btn btn-light container-button btn-lg"
+      style={{textShadow: 'none'}}
   >
  ДЕТАЉНИЈЕ
   </Button> </p>
@@ -132,11 +134,12 @@ const Home =()=> {
     loading="lazy"
    />
       <div  className="carousel-caption ">
-        <p style={{padding:'2.5%'}}>Пројекат "КУЛТУРА ЗА СВЕ" представља јачање техничких капацитета наше установе.
+        <p className="carousel-caption-text" style={{padding:'2.5%'}}>Пројекат "КУЛТУРА ЗА СВЕ" представља јачање техничких капацитета наше установе.
         <Button
     href="https://sremskevesti.rs/sva-odeljenja-rumske-gradske-biblioteke-atanasije-stojkovic-dostupna-ljudima-ostecenog-sluha-slepim-i-slabovidim-osobama/" 
       target="_blank"
  className="btn btn-light container-button"
+      style={{textShadow: 'none'}}
   >
  ДЕТАЉНИЈЕ
   </Button>
@@ -149,11 +152,12 @@ const Home =()=> {
   loading="lazy"
    />
       <div  className="carousel-caption ">
-        <p style={{padding:'1.5%', color:'black'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
+        <p style={{padding:'1.5%', color:'black', fontWeight: 'bold', textShadow: 'none'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
         <Button
     href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma/videos/967554408223187?locale=sr_RS" 
       target="_blank"
  className="btn btn-light container-button"
+      style={{textShadow: 'none', backgroundColor: 'gray', color: 'white', border: 'none'}}
   >
  ДЕТАЉНИЈЕ
   </Button>
