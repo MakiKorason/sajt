@@ -176,7 +176,7 @@ const Home =()=> {
 
 
  <Container className='container-library mt-2 mb-2'>
-   <h2 className="container-title mb-2">Препорука романа за месец јул</h2><hr/>
+   <h2 className="container-title mb-2">Препорука романа за месец-јул</h2><hr/>
         <Row>
             <Col xs={12} sm={12} md={4} lg={4} xl={4} className=" text-center mt-4"> 
   <AnimatedImage className="container-image" alt='књиге' src={psihijatri} />
