@@ -208,12 +208,15 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 .react-calendar {
- background-color: #f4f4f4;
- border-radius: 10px;
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
- padding: 10px;
- position: relative;
-
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 24px;
+  position: relative;
+  font-size: 1.3rem;
+  width: 100%;
+  max-width: 420px;
+  margin-left: 2rem;
 }
 
 

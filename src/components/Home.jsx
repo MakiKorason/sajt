@@ -172,6 +172,35 @@ const Home =()=> {
 
 </Row>
 
+<Container  className=" container-library ms-auto mt-4 mb-4 ">
+ 
+<h2 className= "container-title"  >ОГЛАСНА ТАБЛА</h2>
+<hr style={{margin: '0 auto', width: '50%' ,border: '1px solid' }} /> <Row>
+    <Col md={4} className='mt-3 mb-3 text-center '>
+    
+        <Calendar  onChange={onChange} value={date}  tileClassName={tileClassName}  />
+   
+    </Col>  
+    <Col md={4} className='mt-3 mb-3 text-center'>
+
+        <AnimatedImage
+          src={predavanjeVizeti}
+          alt="Предавање Витези"
+          className="container-image"
+        />
+    
+    </Col>
+    <Col md={4} className='mt-3 mb-3 text-center'>
+ 
+        <AnimatedImage
+          src={poetskoVece}
+          alt="Поетско вече"
+          className="container-image"
+        />
+
+    </Col>
+  </Row>
+</Container>
 
  <Container className='container-library mt-2 mb-2'>
    <h2 className="container-title mb-2">Препорука романа за месец</h2><hr/>
@@ -313,35 +342,6 @@ const Home =()=> {
        </Col></Row>
        </Container>
 
-<h2 className= "container-title"  >ОГЛАСНА ТАБЛА</h2>
-<hr style={{margin: '0 auto', width: '50%' ,border: '1px solid' }} />
-<Container  className=" container-library ms-auto mt-4 mb-4 ">
-  <Row>
-    <Col md={4} className='mt-3 mb-3  '>
-      <AnimatedCard>
-        <Calendar  onChange={onChange} value={date}  tileClassName={tileClassName}  />
-      </AnimatedCard>
-    </Col>  
-    <Col md={4} className='mt-3 mb-3'>
-      <AnimatedCard>
-        <AnimatedImage
-          src={predavanjeVizeti}
-          alt="Предавање Витези"
-          className="image-event"
-        />
-      </AnimatedCard>
-    </Col>
-    <Col md={4} className='mt-3 mb-3'>
-      <AnimatedCard>
-        <AnimatedImage
-          src={poetskoVece}
-          alt="Поетско вече"
-          className="image-event"
-        />
-      </AnimatedCard>
-    </Col>
-  </Row>
-</Container>
 
 <Container className='container-library ms-auto mt-4 mb-4'>
   <Row>
