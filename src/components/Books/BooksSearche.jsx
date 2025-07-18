@@ -43,7 +43,7 @@ Bibliographic System and Services).
 <AnimatedCard className="cobiss-card">
             <Card.Body>
               <Card.Text>
-                <p className="container-text"><a href='https://plus.cobiss.net/cobiss/sr/sr/bib/search' rel="noreferrer"   target="_blank" alt='линк ка MCOBISS'>COBISS+</a>
+                <p className="container-text"><a href='https://plus.cobiss.net/cobiss/sr/sr/bib/search' rel="noopener noreferrer"   target="_blank" alt='линк ка MCOBISS'>COBISS+</a>
 <br/>•	Web апликација која библиотекарима и
 корисницима омогућава приступ претраживању
 различитих база података (апликација је
@@ -67,7 +67,7 @@ Bibliographic System and Services).
            • Корисницима је на располагању прилагођена
 верзија mcobiss преко мобилних уређаја.
 <br/>• Апликација је бесплатна и може се преузети у
-web продавници - Google play: MCOBISS. <a href='https://play.google.com/store/apps/details?id=si.izum.mcobiss&hl=sr&pli=1' rel="noreferrer"   target="_blank" alt='линк ка MCOBISS'>MCOBISS.</a>  </p>
+web продавници - Google play: MCOBISS. <a href='https://play.google.com/store/apps/details?id=si.izum.mcobiss&hl=sr&pli=1' rel="noopener noreferrer"   target="_blank" alt='линк ка MCOBISS'>MCOBISS.</a>  </p>
               </Card.Text>
             </Card.Body>
           </AnimatedCard>

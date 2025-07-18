@@ -233,3 +233,36 @@ font-size: 1.2rem;
 font-weight: bold;
 color: #333;
 }
+
+/* Custom stil za vertikalni meni preporuka */
+.nav-pills .nav-link {
+  background-color: #f3f2ee;
+  color: #3f2c11;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  border: 1px solid #b5a999;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #f3e9d2;
+  color: #3f2c11;
+  border: 2px solid #b5a999;
+}
+
+/* Veće slike u oglasnoj tabli */
+.container-library .image-event {
+  width: 100%;
+  height: 480px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+/* Smanjen razmak između kalendara i slike u oglasnoj tabli */
+.container-library .row > .col-md-4:first-child {
+  padding-right: 0.3rem;
+}
+.container-library .row > .col-md-4:nth-child(2) {
+  padding-left: 0.3rem;
+}

@@ -31,7 +31,7 @@ const Competition =()=>{
   <ul className="list-group list-group-flush " >
     <li className="list-group-item container-text">  На први, до сада необјављени роман написан на српском језику.</li>
     <li className="list-group-item container-text">  Право учешћа на Конкурсу имају аутори из Србије и расејања.</li>
-    <li className="list-group-item container-text">   Конкурс је отворен од 7. јуна до 1. новембра сваке године.</li>
+    <li className="list-group-item container-text">   Конкурс је отворен од 21.7. до 15.11. 2025. године.</li>
     <li className="list-group-item container-text">    Уз откуцане примерке доставити текст романа у PDF или WORD формату заједно са попуњеним обрасцем за пријаву.
                    <br/>Образац можете преузети овде: 
                     <br/><Button
