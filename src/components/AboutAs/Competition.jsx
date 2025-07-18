@@ -31,8 +31,10 @@ const Competition =()=>{
   <ul className="list-group list-group-flush " >
     <li className="list-group-item container-text">  На први, до сада необјављени роман написан на српском језику.</li>
     <li className="list-group-item container-text">  Право учешћа на Конкурсу имају аутори из Србије и расејања.</li>
-    <li className="list-group-item container-text">   Конкурс је отворен од 21.7. до 15.11. 2025. године.</li>
-    <li className="list-group-item container-text">    Уз откуцане примерке доставити текст романа у PDF или WORD формату заједно са попуњеним обрасцем за пријаву.
+    <li className="list-group-item container-text">   Конкурс је отворен од 7. јуна до 1. новембра сваке године.</li>
+    <li className="list-group-item container-text"> 
+
+Рукописе на конкурс треба доставити у 3 машински или компјутерски откуцана примерка у PDF или WORD формату заједно са попуњеним обрасцем за пријаву.
                    <br/>Образац можете преузети овде: 
                     <br/><Button
   onClick={() => window.open('/Конкурс.pdf', '_blank')}
@@ -40,7 +42,7 @@ const Competition =()=>{
 >
 Образац за пријаву
 </Button></li>
-    <li className="list-group-item container-text">   Рукописи се потписију шифром (спаковати у велику коверту), а разрешење шифре уз личне
+    <li className="list-group-item container-text"> Рукописи се потписију шифром (спаковати у велику коверту), а разрешење шифре уз личне
                   податке се доставља у засебној (малој) коверти.</li>
     <li className="list-group-item container-text">   Пристигле рукописе оцењиваће трочлани жири састављен од једног књижевника, једног
                   књижевног критичара и једног представника Градске библиотеке „Атанасије Стојковић”.</li>

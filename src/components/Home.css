@@ -269,3 +269,12 @@ color: #333;
 .container-library .row > .col-md-4:nth-child(2) {
   padding-left: 0.3rem;
 }
+
+@media (max-width: 768px) {
+  .react-calendar {
+    padding: 6px;
+    font-size: 1rem;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
