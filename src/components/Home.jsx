@@ -21,9 +21,9 @@ import trkulja from '../images/trkulja.webp'
 import books from '../images/books.webp'
 import Panonija from '../images/Panonija.webp'
 import karoselSlika from '../images/karoselSlika.webp'
-import livada from '../images/livada.webp'
+
 import digitalna from '../images/digitalna.webp'
-import objava4 from '../images/objava4.webp'
+
 // import zahvalnica from '../images/zahvalnica.jpg'
 import objava3 from '../images/objava3.webp'
 import Calendar from 'react-calendar';
@@ -40,7 +40,6 @@ import dani1 from '../images/dani1.webp'
 import dani2 from '../images/dani2.webp'
 import dani3 from '../images/dani3.webp'
 import dani4 from '../images/dani4.webp'
-import KulturoLetoProgram from '../images/KulturoLetoProgram.webp';
 import smrtniIshod from '../images/smrtniIshod.webp';
 import predavanjeVizeti from '../images/predavanjeVizeti.webp';
 import poetskoVece from '../images/poetskoVece.webp';
@@ -313,10 +312,11 @@ const Home =()=> {
       </Col> 
          <Col  md={4}  className='mt-4'>
                  <AnimatedCard>
-            <h6 className="container-title">
-              Књижевни <br/>конкурс
-            </h6>
-            <p className="container-text" style={{fontSize: '1.2rem', marginBottom: '0.5rem'}}>Конкурс је отворен од 21.7. до 15.11. 2025. године.</p>
+            <a href="https://www.facebook.com/photo/?fbid=1326535312805422&set=a.512519967540298" target="_blank" rel="noopener noreferrer" className="konkurs-link">
+              <h6 className="container-title mb-0" style={{textDecoration: 'underline', color: '#3f2c11'}}>
+                Књижевни <br/>конкурс
+              </h6>
+            </a>
             <img 
               src={konkurs}
               alt="Конкурс" 
