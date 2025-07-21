@@ -181,8 +181,8 @@ const Recommendations =()=>{
         },
         "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
         "telephone": "022/490-047"
-      }
-    `}</script>
+    }
+  `}</script>
                </Helmet> 
           <Container className='container-library mb-4 mt-4 ms-auto' style={{ padding: '2.5rem' }}>
             <h1 className='container-title mb-4'>Препоруке библиотекара</h1>

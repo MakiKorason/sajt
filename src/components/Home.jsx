@@ -21,7 +21,7 @@ import Panonija from '../images/Panonija.webp';
 import karoselSlika from '../images/karoselSlika.webp';
 import digitalna from '../images/digitalna.webp';
 import 'react-calendar/dist/Calendar.css';
-import AnimatedCard from './Department/AnimatedCard';
+import AnimatedCard from './Department/AnimatedCard'; 
 import psihijatri from '../images/psihijatri.webp';
 import pokrajina from '../images/pokrajina.webp';
 import { Helmet } from "react-helmet";
@@ -119,7 +119,7 @@ const Home =()=> {
           height="675"
         />
         <div className="carousel-caption ">
-          <h5 className="carousel-caption-text" style={{padding:'2.5%'}}>Књижевни конкурс „Атанасије Стојковић“</h5>
+        
           <Button
             href="https://www.instagram.com/p/DMQRMyhI5wg/"
             target="_blank"

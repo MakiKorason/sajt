@@ -6,7 +6,7 @@ import AnimatedContainer from '../AnimatedContainer';
 import { Helmet } from 'react-helmet';
 
 const Services =()=>{
-  
+
   return (
     <>
       <Helmet>

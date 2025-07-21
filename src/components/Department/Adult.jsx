@@ -19,60 +19,60 @@ const Adult =()=>{
          <title>Одељење за одрасле – Библиотека Рума</title>
          <link rel="canonical" href="https://www.bibliotekaruma.rs/odraslo" />
        </Helmet> 
-       <Container className="container-library mt-4 mb-4">
-         <div className="container-frame">
-            <Row>
+          <Container className="container-library mt-4 mb-4"> 
+       <div className="container-frame">
+      <Row>         
               <Col xs={12} sm={12} md={8} lg={8} xl={8}>
                 <h1 className="container-title">ОДЕЉЕЊЕ ЗА ОДРАСЛЕ</h1>
                 <div className="container-icon">
                   <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/>
                 </div>
                 <hr/>
-                <p className="container-text">
-                  Одељење за одрасле је наше највеће одељење, са 38.000 књига, активног фонда и мањим делом депозита. Ово одељење је организовано у две просторије.
-                </p>
-                <p className="container-text">
-                  У првој просторији се налази изложбени део са књигама и место за рад са корисницима, а у другој просторији од скоро 200 метара квадратних, фонд је смештен у пет редова двостраних полица.
-                </p>
-                <p className="container-text">
-                  Фонд је распоређен по УДК систему, а између фонда и Читаонице су полице у којима се налазе књиге на страном језику.
-                </p>
-                <p className="container-text">
-                  У другој половини ове просторије се налази поменута Читаоница капацитета до двадесет места за учење и рад. Она је и простор за одржавање свих културних и уметничких дешавања, дечијих радионица, изложби, предавања, књижевних промоција, представа или мањих концерата.
-                </p>
-                <p className="container-text">
-                  У ту сврху у Читаоницу се постављају столице и она тада може да прими до 70 људи.
-                </p>
-                <p className="container-text">
-                  Специфичност овог простора је што он има бину и излаз на двориште, где се одржавају културни догађаји на отвореном, у оквиру Румског културног лета и организације наше библиотеке.
-                </p>
-                <div className="container-icon">
-                  <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/>
-                </div>
-              </Col>
+          <p className="container-text">
+            Одељење за одрасле је наше највеће одељење, са 38.000 књига, активног фонда и мањим делом депозита. Ово одељење је организовано у две просторије.
+          </p>
+          <p className="container-text">
+            У првој просторији се налази изложбени део са књигама и место за рад са корисницима, а у другој просторији од скоро 200 метара квадратних, фонд је смештен у пет редова двостраних полица.
+          </p>
+          <p className="container-text">
+            Фонд је распоређен по УДК систему, а између фонда и Читаонице су полице у којима се налазе књиге на страном језику.
+          </p>
+          <p className="container-text">
+            У другој половини ове просторије се налази поменута Читаоница капацитета до двадесет места за учење и рад. Она је и простор за одржавање свих културних и уметничких дешавања, дечијих радионица, изложби, предавања, књижевних промоција, представа или мањих концерата.
+          </p>
+          <p className="container-text">
+            У ту сврху у Читаоницу се постављају столице и она тада може да прими до 70 људи.
+          </p>
+          <p className="container-text">
+            Специфичност овог простора је што он има бину и излаз на двориште, где се одржавају културни догађаји на отвореном, у оквиру Румског културног лета и организације наше библиотеке.
+          </p>
+          <div className="container-icon">
+            <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/>
+          </div>
+        </Col>
               <Col xs={12} sm={12} md={4} lg={4} xl={4}>
                 <AnimatedImage src={odraslo} alt="Одрасло одељење" />
                 <hr/>
                 <AnimatedImage src={koncertNaOdraslom} alt="Концерт на Одраслом одељењу" />
-              </Col>
+      </Col> 
             </Row>
-
+ 
             <Row>
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                 <h2 className="container-title">Културни кутак</h2>
                 <hr/>
               </Col>
-            </Row>
+      </Row> 
 
-            <Row>
+       <Row>
               <Col xs={12} sm={12} md={8} lg={8} xl={8}>
                 <p className="container-text">
                   Владимирa Пишталa, тренутнoг управника Народне библиотеке Србије, и једног од најзначајних савремених српских писаца угостили смо 19. априла 2024. године. Промоција његове књиге „Песма о три света", изазвала је велико интересовање код љубитеља лепе књижевности, па је завршетак вечери испраћен аплаузом. У разговору са аутором учествовали су Ненад Шапоња, директор Културног центра Војводине „Милош Црњански", и Селимир Радуловић, награђивани српски песник и управник Библиотеке Матице српске.
                 </p>
               </Col>
               <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mt-5">
-                <AnimatedImage src={pesmaOTriSveta} alt="Књига: Песма о три света" />
-              </Col>
+<AnimatedImage src={pesmaOTriSveta} alt="Књига: Песма о три света" />
+</Col>
             </Row>
 
             <Row>
@@ -84,18 +84,18 @@ const Adult =()=>{
               </Col>
               <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mt-4">
                 <AnimatedImage src={cudoUBanatu} alt="Чудо у Банату" className="container-image"/>
-              </Col>
-            </Row>
+</Col>
+</Row>
 
             <Row>
               <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                 <p className="container-text">
                   Поводом Дана жена, 8. марта 2021. године, у холу наше библиотеке постављена је изложба ликовних радова румских гимназијалаца на тему „Женски ликови у књижевности".
                 </p>
-              </Col>
+</Col>
             </Row>
 
-            <Row>
+<Row>
               <Col xs={12} sm={12} md={4} lg={4} xl={4}>
                 <AnimatedImage src={likovniKonkurs1} alt="Женски ликови из књижевности" className="container-image2"/>
               </Col>
@@ -104,24 +104,24 @@ const Adult =()=>{
               </Col>
               <Col xs={12} sm={12} md={4} lg={4} xl={4}>
                 <AnimatedImage src={likovniKonkurs3} alt="Женски ликови из књижевности" className="container-image2"/>
-              </Col>
+</Col>
             </Row>
 
-            <Row>
+<Row>
               <Col xs={12} sm={12} md={8} lg={8} xl={8}>
                 <p className="container-text">
                   <br/><br/>
                   Три године касније на исти дан Александра Ћирић Бошковић, тадашња председница Општине Рума, одржала је предавање под називом „Знамените Румљанке". Након што је директор библиотеке Дамир Васиљевић Тоскић поздравио присутне, имали смо прилику да чујемо изузетно излагање о улози и значају жена у нашем друштву.
                 </p>
-                <div className="container-icon">
+<div className="container-icon">
                   <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/>
                 </div>
-              </Col>
+</Col>
               <Col xs={12} sm={12} md={4} lg={4} xl={4}>
                 <AnimatedImage src={osmiMart} alt="Предавање: Знамените Румљанке" className="container-image3"/>
-              </Col>
+</Col>
             </Row>
-          </div>
+     </div>
         </Container>
         </>
     );

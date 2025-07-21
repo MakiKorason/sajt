@@ -54,7 +54,7 @@ const OurPublic =()=>{
         <h1 className="container-title text-center">Наша издања</h1>
         <p className="container-text">
           Током три деценије постојања издавачке делатности, наша библиотека је издала више од 120 наслова, међу којима се посебно истичу књиге које је написао Атанасије Стојковић.
-        </p>
+</p>
       </Col>
     </Row>
 
@@ -65,137 +65,137 @@ const OurPublic =()=>{
       </Col>
     </Row>
 
-    <Row>
+      <Row>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage
-          src={Kandor}
-          alt="Кандор" 
-          className="container-image"
+            <AnimatedImage
+              src={Kandor}
+              alt="Кандор" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage 
-          src={Nuada}
-          alt="Нуада" 
-          className="container-image"
+            <AnimatedImage 
+              src={Nuada}
+              alt="Нуада" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage 
-          src={public2}
-          alt="Зврј упразно" 
-          className="container-image"
+            <AnimatedImage 
+              src={public2}
+              alt="Зврј упразно" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
     </Row>
 
     <Row>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage
-          src={public3}
-          alt="Балкански мол" 
-          className="container-image"
+            <AnimatedImage
+              src={public3}
+              alt="Балкански мол" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage
-          src={public4}
-          alt="Аристид и Наталија" 
-          className="container-image"
+            <AnimatedImage
+              src={public4}
+              alt="Аристид и Наталија" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage
-          src={public12}
-          alt="Озбиљне приче Сањалице Маштарић" 
-          className="container-image"
+            <AnimatedImage
+              src={public12}
+              alt="Озбиљне приче Сањалице Маштарић" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
     </Row>
 
     <Row>
       <Col xs={12} sm={12} md={12} lg={12} xl={12}>
         <h2 className="container-title mb-4">ПОЕЗИЈА</h2>
         <hr/>
-      </Col>
-    </Row>
+          </Col>
+        </Row>
 
     <Row>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage
-          src={Nebuditeme}
-          alt="Не будите ме" 
-          className="container-image"
+            <AnimatedImage
+              src={Nebuditeme}
+              alt="Не будите ме" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage 
-          src={public5}
-          alt="У тишини лудака" 
-          className="container-image"
+            <AnimatedImage 
+              src={public5}
+              alt="У тишини лудака" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage 
-          src={public10}
-          alt="Пехар, ране" 
-          className="container-image"
+            <AnimatedImage 
+              src={public10}
+              alt="Пехар, ране" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
     </Row>
-
+          
     <Row>
       <Col xs={12} sm={12} md={12} lg={12} xl={12}>
         <h2 className="container-title mb-4">ДЕЧИЈЕ КЊИГЕ</h2>
         <hr/>
       </Col>
-    </Row>
+        </Row>
 
     <Row>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public13}
-          alt="Песме снохватице" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public13}
+              alt="Песме снохватице" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public14}
-          alt="Како спава сунце" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public14}
+              alt="Како спава сунце" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public15}
-          alt="Петнаест црвених ружа" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public15}
+              alt="Петнаест црвених ружа" 
+              className="container-image"
           width="300"
           height="400"
-        />
+            />
       </Col>
     </Row>
 
@@ -203,33 +203,33 @@ const OurPublic =()=>{
       <hr style={{color:'#f3f2ee'}}/>
       <br/>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public17}
-          alt="Добро јутро, цветићи" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public17}
+              alt="Добро јутро, цветићи" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public16}
-          alt="Дечак и звезде" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public16}
+              alt="Дечак и звезде" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public18}
-          alt="Дугино бих клупко" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public18}
+              alt="Дугино бих клупко" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
-    </Row>
+            />
+          </Col>
+        </Row>
 
     <Row>
       <Col xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -240,65 +240,65 @@ const OurPublic =()=>{
 
     <Row>
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4">
-        <AnimatedImage 
-          src={Knjigeizratnogperioda}
-          alt="Књиге из ратног периода-каталог" 
-          className="container-image"
+            <AnimatedImage 
+              src={Knjigeizratnogperioda}
+              alt="Књиге из ратног периода-каталог" 
+              className="container-image"
           width="300"
           height="400"
         />
       </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={Katalog}
-          alt="Каталог књига манастира Гргетег" 
-          className="container-image"
+                       <AnimatedImage 
+              src={Katalog}
+              alt="Каталог књига манастира Гргетег" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public11}
-          alt="Примери личних имена у Руми" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public11}
+              alt="Примери личних имена у Руми" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
     </Row>
 
     <Row>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public6}
-          alt="Пут до крста Светог Владимира" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public6}
+              alt="Пут до крста Светог Владимира" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public7}
-          alt="Рума" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public7}
+              alt="Рума" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
+            />
+          </Col>
       <Col xs={12} sm={12} md={4} lg={4} xl={4}>
-        <AnimatedImage 
-          src={public8}
-          alt="социјални аспекти квалитета живота особа са телесним инвалидитетом" 
-          className="container-image"
+                       <AnimatedImage 
+              src={public8}
+              alt="социјални аспекти квалитета живота особа са телесним инвалидитетом" 
+              className="container-image"
           width="300"
           height="400"
-        />
-      </Col>
-    </Row>
+            />
+          </Col>
+        </Row>
   </div>
-</Container>
+      </Container>
     </>);
 }
 
