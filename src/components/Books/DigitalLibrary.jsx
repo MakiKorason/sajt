@@ -7,7 +7,24 @@ const DigitalLibrary =()=>{
 
         <Helmet>
          <title>Дигитална библиотека - Градска библиотека „Атанасије Стојковић“ Рума</title>
-         <link rel="canonical" href="https://bibliotekaruma.rs/digitalna" />
+         <link rel="canonical" href="https://www.bibliotekaruma.rs/digitalna" />
+         <script type="application/ld+json">{`
+      {
+        "@context": "https://schema.org",
+        "@type": "Library",
+        "name": "Градска библиотека „Атанасије Стојковић" Рума",
+        "url": "https://www.bibliotekaruma.rs/digitalna",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Главна 114",
+          "addressLocality": "Рума",
+          "postalCode": "22400",
+          "addressCountry": "RS"
+        },
+        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
+        "telephone": "022/490-047"
+      }
+    `}</script>
        </Helmet> 
      <Container className='container-library mt-4 mb-4' >
       <h1 className="container-title mb-4">Наш дигитални фонд</h1>

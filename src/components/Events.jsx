@@ -43,10 +43,10 @@ const Events = () => {
     <>
 <Helmet>
         <title>Манифестације – Библиотека Рума</title>
-        <link rel="canonical" href="https://bibliotekaruma.rs/manifestacije" />
+        <link rel="canonical" href="https://www.bibliotekaruma.rs/manifestacije" />
       </Helmet>
       <Container className='container-library d-flex flex-wrap justify-content-center mt-4 mb-4'>
-        <h1 className="container-title text-center mb-4">Манифестације и догађаји</h1>
+        <h1 className="container-title text-center mb-4">Манифестације</h1>
         <Row> 
           <Col md={6} xs={12} sm={12} lg={6} xl={6} className='text-center'>
           

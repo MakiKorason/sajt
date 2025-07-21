@@ -1,89 +1,97 @@
-import React, { useEffect, useState } from 'react';
-import './Home.css'
-import { Button,   Col,   Container,   Row, Nav } from 'react-bootstrap';
-import { Accordion } from 'react-bootstrap';
-import cobbis from '../images/cobbis.webp'
-import matica from '../images/matica.webp'
-import narodna from '../images/narodna.webp'
-import ministarstvo from '../images/ministarstvo.webp'
-import opstina from '../images/opstina.webp'  
-import biblioteka from '../images/biblioteka.webp'
-import konkurs from '../images/konkurs.webp'
-import { IoBookSharp } from "react-icons/io5";
-import muzej from '../images/muzej.webp'
-import kc from '../images/kc.webp'
-import turisticka from '../images/turisticka.webp'
+import React, { useState, useCallback, useMemo, Suspense } from 'react';
+import './Home.css';
+import { Button, Col, Container, Row, Nav } from 'react-bootstrap';
+import cobbis from '../images/cobbis.webp';
+import matica from '../images/matica.webp';
+import narodna from '../images/narodna.webp';
+import ministarstvo from '../images/ministarstvo.webp';
+import opstina from '../images/opstina.webp';
+import biblioteka from '../images/biblioteka.webp';
+import konkurs from '../images/konkurs.webp';
+import muzej from '../images/muzej.webp';
+import kc from '../images/kc.webp';
+import turisticka from '../images/turisticka.webp';
 import '@react-pdf-viewer/core/lib/styles/index.css';
-import beke from '../images/beke.webp'
-import Frigo from '../images/Frigo.webp'
-import Boss from '../images/Boss.webp'
-import trkulja from '../images/trkulja.webp'
-import books from '../images/books.webp'
-import Panonija from '../images/Panonija.webp'
-import karoselSlika from '../images/karoselSlika.webp'
-
-import digitalna from '../images/digitalna.webp'
-
-// import zahvalnica from '../images/zahvalnica.jpg'
-import objava3 from '../images/objava3.webp'
-import Calendar from 'react-calendar';
+import beke from '../images/beke.webp';
+import Frigo from '../images/Frigo.webp';
+import Boss from '../images/Boss.webp';
+import trkulja from '../images/trkulja.webp';
+import books from '../images/books.webp';
+import Panonija from '../images/Panonija.webp';
+import karoselSlika from '../images/karoselSlika.webp';
+import digitalna from '../images/digitalna.webp';
 import 'react-calendar/dist/Calendar.css';
-import AnimatedImage from "./Department/AnimatedImage";
-import AnimatedCard from './Department/AnimatedCard'; 
-import psihijatri from '../images/psihijatri.webp'
-import pokrajina from '../images/pokrajina.webp'
+import AnimatedCard from './Department/AnimatedCard';
+import psihijatri from '../images/psihijatri.webp';
+import pokrajina from '../images/pokrajina.webp';
 import { Helmet } from "react-helmet";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { Carousel } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { Dropdown, Card, Modal } from 'react-bootstrap';
-import dani1 from '../images/dani1.webp'
-import dani2 from '../images/dani2.webp'
-import dani3 from '../images/dani3.webp'
-import dani4 from '../images/dani4.webp'
+import dani1 from '../images/dani1.webp';
+import dani2 from '../images/dani2.webp';
+import dani3 from '../images/dani3.webp';
+import dani4 from '../images/dani4.webp';
 import smrtniIshod from '../images/smrtniIshod.webp';
 import predavanjeVizeti from '../images/predavanjeVizeti.webp';
 import poetskoVece from '../images/poetskoVece.webp';
 import karizi from '../images/karizi.webp';
+import konkursAtanasije from '../images/konkursAtanasije.webp';
+
+// Lazy imports (moraju biti posle svih import linija)
+const Calendar = React.lazy(() => import('react-calendar'));
+const AnimatedImage = React.lazy(() => import('./Department/AnimatedImage'));
 
 
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
   const [activeKey, setActiveKey] = useState('jul');
-  const markedDates = [
+  const markedDates = useMemo(() => [
     new Date(new Date().getFullYear(), 5, 6), // 6. jun tekuće godine (meseci su 0-indeksirani)
     new Date(2025, 1, 20), 
     new Date(new Date().getFullYear(), 6, 22), // 22. jul
     new Date(new Date().getFullYear(), 6, 24), // 24. jul
+  ], []);
 
-  ];
+  const [showFriends, setShowFriends] = useState(false);
 
 
-
-  const tileClassName = ({ date, view }) => {
+  const tileClassName = useCallback(({ date, view }) => {
 
     if (markedDates.some(d => d.getDate() === date.getDate() && d.getMonth() === date.getMonth() && d.getFullYear() === date.getFullYear())) {
       return 'marked-date';
     }
-  };
+  }, [markedDates]);
 
 
-  const onChange= date =>{
+  const onChange = useCallback(date =>{
     setDate(date);
-  }
-
-  const [showFriends, setShowFriends] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [modalImage, setModalImage] = useState(null);
-
+  }, []);
+  
   
   return (
     <>
   
 
   <Helmet>
-    <title>Градска библиотека Рума | Званични сајт</title>
-    <meta name="description" content="Званични сајт Градске библиотеке у Руми – информације о књигама, догађајима, дигиталној библиотеци, конкурсима и радном времену. Пронађите све што вас занима о нашој библиотеци!"/>
-    <link rel="canonical" href="https://bibliotekaruma.rs" />
+    <title>Градска библиотека Рума | Књиге, манифестације и услуге</title>
+    <meta name="description" content="Званични сајт Градске библиотеке у Руми – каталог књига, новости, догађаји, манифестације и радно време. Посетите нас и будите у току!"/>
+    <link rel="canonical" href="https://www.bibliotekaruma.rs" />
+    <script type="application/ld+json">{`
+      {
+        "@context": "https://schema.org",
+        "@type": "Library",
+        "name": "Градска библиотека „Атанасије Стојковић" Рума",
+        "url": "https://www.bibliotekaruma.rs",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Главна 114",
+          "addressLocality": "Рума",
+          "postalCode": "22400",
+          "addressCountry": "RS"
+        },
+        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
+        "telephone": "022/490-047"
+      }
+    `}</script>
   </Helmet>
 
 
@@ -95,12 +103,50 @@ const Home =()=> {
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> 
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> 
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+
+
   </div>
  
   <div className="carousel-inner">   
-  
       <div className="carousel-item active">
-        <img src={biblioteka}  alt=" библиотека у Руми"  className="d-block w-100 image-carousel img-thumbnail img-fluid" loading="lazy"/>
+        <img 
+          src={konkursAtanasije} 
+          alt="Књижевни конкурс Атанасије Стојковић" 
+          className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+          loading="lazy"
+          width="1200"
+          height="675"
+        />
+        <div className="carousel-caption ">
+          <h5 className="carousel-caption-text" style={{padding:'2.5%'}}>Књижевни конкурс „Атанасије Стојковић“</h5>
+          <Button
+            href="https://www.instagram.com/p/DMQRMyhI5wg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-light container-button"
+            style={{
+              textShadow: 'none',
+              backgroundColor: '#f3f2ee',
+              color: '#3f2c11',
+              border: 'none',
+              marginTop: '1rem',
+              fontWeight: 'bold'
+            }}
+          >
+            ДЕТАЉНИЈЕ
+          </Button>
+      </div>
+      </div>
+      <div className="carousel-item">
+        <img 
+          src={biblioteka}  
+          alt="библиотека у Руми"  
+          className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+          loading="lazy"
+          width="1200"
+          height="675"
+        />
 <div  className="carousel-caption ">
         <p className="carousel-caption-text" style={{padding:'2.5%'}}> Зграда Градске библиотеке „Атанасије Стојковић" представља пример јединственог архитектонског стваралаштва.
         <Button
@@ -115,7 +161,7 @@ const Home =()=> {
         </p>
       </div>
     </div> 
-    <div  className="carousel-item">
+      <div className="carousel-item">
 <img src={digitalna}  alt="Атансије Стојковић"  className="d-block w-100 image-carousel img-thumbnail img-fluid" loading="lazy"/>
       <div  className="carousel-caption ">
         <p className="carousel-caption-text" style={{padding:'1.5%'}} >  Румљанин Атанасије Стојковић био је најобразованији Србин<br/> прве трећине 19. века.
@@ -147,9 +193,9 @@ const Home =()=> {
       </div>
     </div> 
     <div className="carousel-item">
-      <img src={books} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" loading="lazy"/>
+      <img src={books} alt="ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА" className="d-block w-100 image-carousel img-thumbnail img-fluid" loading="lazy"/>
       <div className="carousel-caption ">
-        <p className="carousel-caption-text" style={{padding:'1.5%', textShadow: '2px 2px 8px #000, 0 0 10px #000'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
+        <p className="carousel-caption-text" style={{padding:'1.5%'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
         <Button
     href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma/videos/967554408223187?locale=sr_RS" 
       target="_blank"
@@ -177,29 +223,37 @@ const Home =()=> {
 <hr style={{margin: '0 auto', width: '50%' ,border: '1px solid' }} /> <Row>
     <Col md={4} className='mt-3 mb-3 text-center '>
     
-        <Calendar  onChange={onChange} value={date}  tileClassName={tileClassName}  />
+        <Suspense fallback={<div>Loading Calendar...</div>}>
+          <Calendar  onChange={onChange} value={date}  tileClassName={tileClassName}  />
+        </Suspense>
    
     </Col>  
     <Col md={4} className='mt-3 mb-3 text-center'>
 
-        <AnimatedImage
+        <Suspense fallback={<div>Loading AnimatedImage...</div>}>
+          <AnimatedImage
           src={predavanjeVizeti}
           alt="Предавање Витези"
           className="container-image"
         />
+        </Suspense>
     
     </Col>
     <Col md={4} className='mt-3 mb-3 text-center'>
  
-        <AnimatedImage
+        <Suspense fallback={<div>Loading AnimatedImage...</div>}>
+          <AnimatedImage
           src={poetskoVece}
           alt="Поетско вече"
           className="container-image"
         />
+        </Suspense>
 
     </Col>
   </Row>
 </Container>
+
+
 
  <Container className='container-library mt-2 mb-2'>
    <h2 className="container-title mb-2">Препорука романа за месец</h2><hr/>
@@ -296,6 +350,8 @@ const Home =()=> {
       alt="COBISS" 
       className='container-image'
       style={{border:'none', width: "85%"}}
+      width="400"
+      height="150"
       />
   </AnimatedCard> 
      </Col>
@@ -308,20 +364,25 @@ const Home =()=> {
       alt="Грб Градске библиотеке Рума" 
       className='container-image'
       style={{border:'none', width:'33%'}}
+      width="200"
+      height="200"
       /> </AnimatedCard>
       </Col> 
          <Col  md={4}  className='mt-4'>
                  <AnimatedCard>
             <a href="https://www.facebook.com/photo/?fbid=1326535312805422&set=a.512519967540298" target="_blank" rel="noopener noreferrer" className="konkurs-link">
-              <h6 className="container-title mb-0" style={{textDecoration: 'underline', color: '#3f2c11'}}>
+              <h6 className="container-title mb-0">
                 Књижевни <br/>конкурс
               </h6>
             </a>
             <img 
-              src={konkurs}
-              alt="Конкурс" 
-              className='container-image'
-              style={{border:'none', width:'48%'}}
+      src={konkurs}
+      alt="Конкурс" 
+      className='container-image'
+      style={{border:'none', width:'48%'}}
+              width="300"
+              height="200"
+              loading="lazy"
             />
           </AnimatedCard>
         </Col></Row>
@@ -342,30 +403,30 @@ const Home =()=> {
        </Col></Row>
        </Container>
 
-
+   
 <Container className='container-library ms-auto mt-4 mb-4'>
-  <Row>
+ <Row>
     <Col md={12}>
       <h2 className='container-title text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ<br/>„Дани словенске писмености и културе“</h2>
       <hr/>
-    </Col>
+      </Col>  
   </Row>
   <Row>
     <Col md={4}>
       <AnimatedImage className='container-image' src={dani1}/>
       <p>„Вивкови виолинисти“, квартет виолина.</p>
-    </Col>
+        </Col>
     <Col md={4}>
       <AnimatedImage className='container-image' src={dani2}/>
       <p>Архијерејски намесник румски протојереј Сретен Лазаревић.</p>
       <AnimatedImage className='container-image' src={dani4}/>
-    </Col>
+</Col>         
     <Col md={4}>
       <AnimatedImage className='container-image' src={dani3}/>
       <p>Изложба икона и калиграфских радова ученика 5 основних школа и ССШ "Бранко Радичевић".</p>
-    </Col>
-  </Row>
-</Container>
+         </Col>
+        </Row>         
+        </Container>
 
         <br/><hr/>
    <AnimatedCard>
@@ -448,26 +509,41 @@ className='btn btn-secondary'
       style={{ width: '15%', marginRight:'1rem' }}
       src={Panonija}
       alt="Панонија књижара у Руми"
+      width="180"
+      height="90"
+      loading="lazy"
     />
     <img
       style={{ width: '15%' }}
       src={Boss}
       alt="Босс компанија Рума"
+      width="180"
+      height="90"
+      loading="lazy"
     />
     <img
       style={{ width: '20%' }}
       src={trkulja}
       alt="Тркуља керамика Рума"
+      width="240"
+      height="120"
+      loading="lazy"
     />
     <img
       style={{ width: '10%' }}
       src={Frigo}
       alt="Фриго Жика Рума"
+      width="120"
+      height="60"
+      loading="lazy"
     />
     <img
       style={{ width: '15%', marginLeft:'1rem' }}
       src={beke}
       alt="Беке компанија Рума"
+      width="180"
+      height="90"
+      loading="lazy"
     />
   </div>
     </div>
@@ -478,4 +554,4 @@ className='btn btn-secondary'
   );
 }
 
-export default Home;
+export default React.memo(Home);

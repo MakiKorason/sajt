@@ -7,6 +7,7 @@ const AnimatedImage = ({ src, alt, className, style, ...rest }) => {
       src={src}
       alt={alt}
       style={style}
+      loading="lazy"
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1.5 }}

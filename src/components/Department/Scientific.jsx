@@ -11,7 +11,7 @@ const Scientific =()=>{
     return(<>
     <Helmet>
 <title>Одељење научне и стручне литературе – Библиотека Рума</title>
-<link rel="canonical" href="https://bibliotekaruma.rs/naucno" />
+<link rel="canonical" href="https://www.bibliotekaruma.rs/naucno" />
 </Helmet> 
       <Container className="container-library mt-4 mb-4">
       <div className="container-frame"><h1 className="container-title" >ОДЕЉЕЊЕ НАУЧНЕ<br/> И СТРУЧНЕ ЛИТЕРАТУРЕ</h1><div className="container-icon">

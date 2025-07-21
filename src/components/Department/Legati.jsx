@@ -14,7 +14,7 @@ const Legati= ()=>{
        
          <Helmet>
          <title>Легати – Библиотека Рума</title>
-         <link rel="canonical" href="https://bibliotekaruma.rs/zavicajno/legati" />
+         <link rel="canonical" href="https://www.bibliotekaruma.rs/zavicajno/legati" />
        </Helmet> 
      <Container className='container-library mt-4 mb-4 '>
         <div className="container-frame">

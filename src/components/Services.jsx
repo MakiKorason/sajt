@@ -6,14 +6,13 @@ import AnimatedContainer from '../AnimatedContainer';
 import { Helmet } from 'react-helmet';
 
 const Services =()=>{
-
   
   return (
     <>
       <Helmet>
         <title>Услуге – Библиотека Рума</title>
         <meta name="description" content="Погледајте све услуге које нуди Градска библиотека Рума: читаоница, издавање књига, дигитална библиотека и још много тога!" />
-        <link rel="canonical" href="https://bibliotekaruma.rs/usluge" />
+        <link rel="canonical" href="https://www.bibliotekaruma.rs/usluge" />
       </Helmet>
       <h1 className="container-title text-center mt-4 mb-4">Услуге</h1>
       <Container className=" container-library mb-4 mt-4 ms-auto">
@@ -122,7 +121,7 @@ const Services =()=>{
 позајмљују на период од 15 дана, а услуге
 међубиблиотечке позајмице се наплаћују према
 утврђеном Ценовнику Градске библиотеке
-„Атанасије Стојковић“. </p></div>
+„Атанасије Стојковић". </p></div>
         
             <div >
            <p className='container-text text-center'> Упутство за кориснике<hr/></p>

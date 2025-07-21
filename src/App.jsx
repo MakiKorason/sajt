@@ -25,6 +25,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { useState } from "react";
 import AnimatedPage from './components/Department/AnimatedPage';
 import { AnimatePresence } from 'framer-motion';
+import NotFound from './components/NotFound';
 
 function InnerApp() {
   const location = useLocation();
@@ -136,7 +137,7 @@ function InnerApp() {
           <Route path='/пројекти-библиотеке' element={<AnimatedPage><Project /></AnimatedPage>} />
           <Route path='/легати-библиотеке' element={<AnimatedPage><Legati /></AnimatedPage>} />
           <Route path='/визија-мисија-библиотеке' element={<AnimatedPage><MisionAndVision /></AnimatedPage>} />
-
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
 
