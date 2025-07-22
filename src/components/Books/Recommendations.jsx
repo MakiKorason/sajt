@@ -152,38 +152,31 @@ const Recommendations =()=>{
  
     return (
 
-            <>
-                 <Helmet>
-                 <title>Препоруке за читање – Библиотека Рума</title>
-                 <link rel="canonical" href="https://www.bibliotekaruma.rs/preporuke" />
-                 <meta name="description" content="Упутство за коришћење COBISS система за претрагу књига у Градској библиотеци у Руми." />
-                 <script type="application/ld+json">{`
+            <><Helmet>
+  <title>Препоруке библиотекара - Библиотека Рума</title>
+  <meta name="description" content="Издвојене препоруке библиотекара Градске библиотеке 'Атанасије Стојковић' у Руми. Препоручујемо најзанимљивија и најчитанија дела за све узрасте." />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/препоруке-библиотекара" />
+  <script type="application/ld+json">
+    {`
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Preporuke bibliotekara - Biblioteka Ruma",
-      "description": "Препоруке књига за читање које предлажу библиотекари Градске библиотеке у Руми.",
-      "url": "https://www.bibliotekaruma.rs/preporuke"
+      "name": "Препоруке библиотекара - Библиотека Рума",
+      "url": "https://www.bibliotekaruma.rs/препоруке-библиотекара",
+      "description": "Издвојене препоруке библиотекара Градске библиотеке 'Атанасије Стојковић' у Руми. Препоручујемо најзанимљивија и најчитанија дела за све узрасте.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Градска библиотека 'Атанасије Стојковић'",
+        "url": "https://www.bibliotekaruma.rs/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bibliotekaruma.rs/logo.png"
+        }
+      }
     }
-  `}</script>
-  <script type="application/ld+json">{`
-      {
-        "@context": "https://schema.org",
-        "@type": "Library",
-        "name": "Градска библиотека „Атанасије Стојковић" Рума",
-        "url": "https://www.bibliotekaruma.rs/preporuke",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Главна 114",
-          "addressLocality": "Рума",
-          "postalCode": "22400",
-          "addressCountry": "RS"
-        },
-        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
-        "telephone": "022/490-047"
-    }
-  `}</script>
-               </Helmet> 
+    `}
+  </script>
+</Helmet>
           <Container className='container-library mb-4 mt-4 ms-auto' style={{ padding: '2.5rem' }}>
             <h1 className='container-title mb-4'>Препоруке библиотекара</h1>
             <hr/>

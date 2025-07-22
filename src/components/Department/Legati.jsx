@@ -13,9 +13,80 @@ const Legati= ()=>{
     <>
        
          <Helmet>
-         <title>Легати – Библиотека Рума</title>
-         <link rel="canonical" href="https://www.bibliotekaruma.rs/zavicajno/legati" />
-       </Helmet> 
+  <title>Легати – Библиотека Рума</title>
+  <meta
+    name="description"
+    content="Колекција легата Николе Дреновца, Милутина Стојковића и Оливере Шијачки у Градској библиотеци Рума."
+  />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/легати-библиотеке" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Легати – Библиотека Рума" />
+  <meta
+    property="og:description"
+    content="Колекција легата Николе Дреновца, Милутина Стојковића и Оливере Шијачки у Градској библиотеци Рума."
+  />
+  <meta property="og:url" content="https://www.bibliotekaruma.rs/легати-библиотеке" />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Легати – Библиотека Рума",
+      "description": "Колекција легата Николе Дреновца, Милутина Стојковића и Оливере Шијачки у Градској библиотеци Рума.",
+      "url": "https://www.bibliotekaruma.rs/легати-библиотеке",
+      "inLanguage": "sr",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Почетна",
+            "item": "https://www.bibliotekaruma.rs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Завичајно",
+            "item": "https://www.bibliotekaruma.rs/zavicajno"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Легати",
+            "item": "https://www.bibliotekaruma.rs/легати-библиотеке"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "Library",
+        "@id": "https://www.bibliotekaruma.rs/#organization",
+        "name": "Градска библиотека „Атанасије Стојковић“ Рума",
+        "url": "https://www.bibliotekaruma.rs/",
+        "logo": "https://www.bibliotekaruma.rs/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/BibliotekaRuma",
+          "https://www.instagram.com/bibliotekaruma",
+          "https://www.youtube.com/channel/CHANNEL_ID"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Трг Слободе 1",
+          "addressLocality": "Рума",
+          "postalCode": "22400",
+          "addressCountry": "RS"
+        },
+        "telephone": "+381 22 424-501",
+        "email": "info@bibliotekaruma.rs"
+      }
+    }
+    `}
+  </script>
+</Helmet>
+
      <Container className='container-library mt-4 mb-4 '>
         <div className="container-frame">
     <Row> <h1 className="container-title" >Легати</h1> 

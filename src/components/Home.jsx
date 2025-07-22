@@ -69,32 +69,31 @@ const Home =()=> {
   
   return (
     <>
-  
-
   <Helmet>
-    <title>Градска библиотека Рума | Књиге, манифестације и услуге</title>
-    <meta name="description" content="Званични сајт Градске библиотеке у Руми – каталог књига, новости, догађаји, манифестације и радно време. Посетите нас и будите у току!"/>
-    <link rel="canonical" href="https://www.bibliotekaruma.rs" />
-    <script type="application/ld+json">{`
+  <title>Почетна - Библиотека Рума</title>
+  <meta name="description" content="Званична почетна страница Градске библиотеке Атанасије Стојковић у Руми. Овде можете пронаћи најновије вести, препоруке романа, догађаје и више." />
+  <meta name="keywords" content="библиотека, Рума, књиге, догађаји, препоруке, Атанасије Стојковић" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/" />
+  <script type="application/ld+json">
+    {`
       {
         "@context": "https://schema.org",
-        "@type": "Library",
-        "name": "Градска библиотека „Атанасије Стојковић" Рума",
-        "url": "https://www.bibliotekaruma.rs",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Главна 114",
-          "addressLocality": "Рума",
-          "postalCode": "22400",
-          "addressCountry": "RS"
-        },
-        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
-        "telephone": "022/490-047"
+        "@type": "WebSite",
+        "url": "https://www.bibliotekaruma.rs/",
+        "name": "Почетна - Библиотека Рума",
+        "description": "Званична почетна страница Градске библиотеке Атанасије Стојковић у Руми. Овде можете пронаћи најновије вести, препоруке романа, догађаје и више.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Градска библиотека Атанасије Стојковић Рума",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bibliotekaruma.rs/logo.jpg"
+          }
+        }
       }
-    `}</script>
-  </Helmet>
-
-
+    `}
+  </script>
+</Helmet>
 
   <Row><Col md={12}>
    <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="33000" data-bs-pause="false">
@@ -118,7 +117,7 @@ const Home =()=> {
           width="1200"
           height="675"
         />
-        <div className="carousel-caption ">
+        <div className="carousel-caption">
         
           <Button
             href="https://www.instagram.com/p/DMQRMyhI5wg/"
@@ -554,4 +553,4 @@ className='btn btn-secondary'
   );
 }
 
-export default React.memo(Home);
+export default Home;

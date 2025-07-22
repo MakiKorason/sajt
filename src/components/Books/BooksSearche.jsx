@@ -9,26 +9,32 @@ const BooksSearche = () => {
   return (
     <>
       <Helmet>
-        <title>Претраживање фонда – Библиотека Рума</title>
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/pretraga" />
-        <script type="application/ld+json">{`
+  <title>Претраживање фонда – Библиотека Рума</title>
+  <meta name="description" content="Претражите библиотечки фонд преко COBISS+ и MCOBISS апликације. Прегледајте књиге, ауторе и доступност у Градској библиотеци 'Атанасије Стојковић' Рума." />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/претраживање-фонда" />
+  
+  <script type="application/ld+json">
+    {`
       {
         "@context": "https://schema.org",
-        "@type": "Library",
-        "name": "Градска библиотека „Атанасије Стојковић" Рума",
-        "url": "https://www.bibliotekaruma.rs/pretraga",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Главна 114",
-          "addressLocality": "Рума",
-          "postalCode": "22400",
-          "addressCountry": "RS"
-        },
-        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
-        "telephone": "022/490-047"
+        "@type": "WebPage",
+        "name": "Претраживање фонда – Библиотека Рума",
+        "url": "https://www.bibliotekaruma.rs/претраживање-фонда",
+        "description": "Претражите библиотечки фонд преко COBISS+ и MCOBISS апликације. Прегледајте књиге, ауторе и доступност у Градској библиотеци 'Атанасије Стојковић' Рума.",
+        "inLanguage": "sr-Cyrl",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Градска библиотека 'Атанасије Стојковић'",
+          "url": "https://www.bibliotekaruma.rs/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bibliotekaruma.rs/logo192.png"
+          }
+        }
       }
-    `}</script>
-      </Helmet>  
+    `}
+  </script>
+</Helmet> 
     
     <Container className="container-library ms-auto mt-4 mb-4">
       <Row>

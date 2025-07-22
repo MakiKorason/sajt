@@ -26,27 +26,30 @@ import { Helmet } from 'react-helmet';
  
 const OurPublic =()=>{
     return (<>
-    <Helmet>
-        <title>Наша издања – Библиотека Рума</title>
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/nasa-izdanja" />
-        <script type="application/ld+json">{`
-      {
-        "@context": "https://schema.org",
-        "@type": "Library",
-        "name": "Градска библиотека „Атанасије Стојковић" Рума",
-        "url": "https://www.bibliotekaruma.rs/nasa-izdanja",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Главна 114",
-          "addressLocality": "Рума",
-          "postalCode": "22400",
-          "addressCountry": "RS"
-        },
-        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
-        "telephone": "022/490-047"
+<Helmet>
+  <title>Наша издања – Библиотека Рума</title>
+  <meta name="description" content="Издања Градске библиотеке 'Атанасије Стојковић' у Руми. Погледајте наслове из области прозе, поезије, дечије и научне литературе." />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/наша-издања" />
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Наша издања – Библиотека Рума",
+      "url": "https://www.bibliotekaruma.rs/наша-издања",
+      "description": "Издања Градске библиотеке 'Атанасије Стојковић' у Руми. Погледајте наслове из области прозе, поезије, дечије и научне литературе.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Градска библиотека 'Атанасије Стојковић'",
+        "url": "https://www.bibliotekaruma.rs/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bibliotekaruma.rs/logo.png"
+        }
       }
-    `}</script>
-      </Helmet> 
+    }
+  `}</script>
+</Helmet>
+
 <Container className="container-library mt-4 mb-4">
   <div className="container-frame">
     <Row>

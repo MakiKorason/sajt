@@ -8,9 +8,80 @@ const Kid =()=>{
     return (<>
 
            <Helmet>
-         <title>Одељење за децу – Библиотека Рума</title>
-         <link rel="canonical" href="https://www.bibliotekaruma.rs/decije" />
-       </Helmet> 
+  <title>Одељење за децу – Библиотека Рума</title>
+  <meta
+    name="description"
+    content="Одељење за децу Градске библиотеке Рума броји око 18.000 публикација и организује радионице, литерарне конкурсе и културне догађаје."
+  />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/одељење-за-децу" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Одељење за децу – Библиотека Рума" />
+  <meta
+    property="og:description"
+    content="Одељење за децу Градске библиотеке Рума броји око 18.000 публикација и организује радионице, литерарне конкурсе и културне догађаје."
+  />
+  <meta property="og:url" content="https://www.bibliotekaruma.rs/одељење-за-децу" />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Одељење за децу – Библиотека Рума",
+      "description": "Одељење за децу Градске библиотеке Рума броји око 18.000 публикација и организује радионице, литерарне конкурсе и културне догађаје.",
+      "url": "https://www.bibliotekaruma.rs/одељење-за-децу",
+      "inLanguage": "sr",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Почетна",
+            "item": "https://www.bibliotekaruma.rs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Одељења",
+            "item": "https://www.bibliotekaruma.rs/odeljenja"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Одељење за децу",
+            "item": "https://www.bibliotekaruma.rs/одељење-за-децу"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "Library",
+        "@id": "https://www.bibliotekaruma.rs/#organization",
+        "name": "Градска библиотека „Атанасије Стојковић“ Рума",
+        "url": "https://www.bibliotekaruma.rs/",
+        "logo": "https://www.bibliotekaruma.rs/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/BibliotekaRuma",
+          "https://www.instagram.com/bibliotekaruma",
+          "https://www.youtube.com/channel/CHANNEL_ID"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Трг Слободе 1",
+          "addressLocality": "Рума",
+          "postalCode": "22400",
+          "addressCountry": "RS"
+        },
+        "telephone": "+381 22 424-501",
+        "email": "info@bibliotekaruma.rs"
+      }
+    }
+    `}
+  </script>
+</Helmet>
+
     <Container className="container-library mt-4 mb-4">
          <div className="container-frame"><h1 className="container-title" > ОДЕЉЕЊЕ ЗА ДЕЦУ</h1><div className="container-icon">
           <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>   <hr/><br/>

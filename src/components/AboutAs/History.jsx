@@ -9,11 +9,33 @@ const History = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Историјат – Библиотека Рума</title>
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/историјат-библиотеке" />
-        <link rel="alternate" hreflang="sr" href="https://bibliotekaruma.rs/историјат-библиотеке" />
-      </Helmet>   
+     <Helmet>
+  <title>Историјат – Библиотека Рума</title>
+  <meta
+    name="description"
+    content="Историјат Градске библиотеке „Атанасије Стојковић“ у Руми, њена зграда и значај у локалној заједници."
+  />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/историјат-библиотеке" />
+  <link rel="alternate" hreflang="sr" href="https://www.bibliotekaruma.rs/историјат-библиотеке" />
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "Library",
+      "name": "Градска библиотека „Атанасије Стојковић "Рума",
+      "url": "https://www.bibliotekaruma.rs/историјат-библиотеке",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Главна 114",
+        "addressLocality": "Рума",
+        "postalCode": "22400",
+        "addressCountry": "RS"
+      },
+      "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
+      "telephone": "022/490-047"
+    }
+  `}</script>
+</Helmet>
+
     <Container className="container-library mt-4 mb-4  ">
  <div className="container-frame">
       <Row>     

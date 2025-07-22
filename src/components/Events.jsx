@@ -42,9 +42,74 @@ const Events = () => {
   return (
     <>
 <Helmet>
-        <title>Манифестације – Библиотека Рума</title>
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/manifestacije" />
-      </Helmet>
+  <title>Манифестације – Библиотека Рума</title>
+  <meta
+    name="description"
+    content="Сазнајте све о манифестацијама које организује Градска библиотека у Руми: Дани словенске писмености и културе, Дани Атанасија Стојковића, Румска књижевна колонија и Румско културно лето."
+  />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/манифестације-библиотека-рума" />
+  <meta property="og:title" content="Манифестације – Градска библиотека Рума" />
+  <meta property="og:description" content="Пратите најновије културне догађаје и манифестације у Градској библиотеци Рума." />
+  <meta property="og:url" content="https://www.bibliotekaruma.rs/манифестације-библиотека-рума" />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.bibliotekaruma.rs/#organization",
+            "name": "Градска библиотека Атанасије Стојковић Рума",
+            "url": "https://www.bibliotekaruma.rs/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.bibliotekaruma.rs/logo.jpg",
+              "width": 512,
+              "height": 512
+            },
+            "sameAs": [
+              "https://www.facebook.com/bibliotekaatanasijestojkovic.ruma",
+              "https://www.instagram.com/bibliotekaruma/",
+              "https://www.youtube.com/@bibliotekaruma"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.bibliotekaruma.rs/манифестације-библиотека-рума#webpage",
+            "url": "https://www.bibliotekaruma.rs/манифестације-библиотека-рума",
+            "name": "Манифестације – Библиотека Рума",
+            "isPartOf": {
+              "@id": "https://www.bibliotekaruma.rs/#website"
+            },
+            "inLanguage": "sr",
+            "datePublished": "2011-05-21",
+            "dateModified": "2024-07-22"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://www.bibliotekaruma.rs/манифестације-библиотека-рума#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Почетна",
+                "item": "https://www.bibliotekaruma.rs/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Манифестације",
+                "item": "https://www.bibliotekaruma.rs/манифестације-библиотека-рума"
+              }
+            ]
+          }
+        ]
+      }
+    `}
+  </script>
+</Helmet>
+
       <Container className='container-library d-flex flex-wrap justify-content-center mt-4 mb-4'>
         <h1 className="container-title text-center mb-4">Манифестације</h1>
         <Row> 

@@ -9,11 +9,111 @@ const Services =()=>{
 
   return (
     <>
-      <Helmet>
-        <title>Услуге – Библиотека Рума</title>
-        <meta name="description" content="Погледајте све услуге које нуди Градска библиотека Рума: читаоница, издавање књига, дигитална библиотека и још много тога!" />
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/usluge" />
-      </Helmet>
+     <Helmet>
+  <title>Услуге – Библиотека Рума</title>
+  <meta
+    name="description"
+    content="Погледајте све услуге које нуди Градска библиотека Рума: читаоница, издавање књига, дигитална библиотека и још много тога!"
+  />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/услуге-библиотека-рума" />
+  <link rel="alternate" hreflang="sr" href="https://www.bibliotekaruma.rs/услуге-библиотека-рума" />
+  
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Library",
+      "name": "Градска библиотека „Атанасије Стојковић\" Рума",
+      "url": "https://www.bibliotekaruma.rs/услуге-библиотека-рума",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Главна 114",
+        "addressLocality": "Рума",
+        "postalCode": "22400",
+        "addressCountry": "RS"
+      },
+      "telephone": "022/490-047",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Услуге библиотеке",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Чланарина за средњошколце, студенте, запослене и незапослене"
+            },
+            "price": "700",
+            "priceCurrency": "RSD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Чланарина за пензионере"
+            },
+            "price": "300",
+            "priceCurrency": "RSD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Дупликат чланске карте"
+            },
+            "price": "50",
+            "priceCurrency": "RSD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Пенал (по дану кашњења)"
+            },
+            "price": "5",
+            "priceCurrency": "RSD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Накнада за изгубљену грађу"
+            },
+            "price": "600",
+            "priceCurrency": "RSD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Накнада за оштећену грађу"
+            },
+            "price": "400",
+            "priceCurrency": "RSD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Трошкови опомене"
+            },
+            "price": "40",
+            "priceCurrency": "RSD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Међубиблиотечка позајмица"
+            },
+            "price": "700",
+            "priceCurrency": "RSD"
+          }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
+
       <h1 className="container-title text-center mt-4 mb-4">Услуге</h1>
       <Container className=" container-library mb-4 mt-4 ms-auto">
         <AnimatedContainer className='cobiss-card'>

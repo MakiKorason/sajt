@@ -9,10 +9,80 @@ import AnimatedImage from "./AnimatedImage";
 import { Helmet } from 'react-helmet';
 const Scientific =()=>{
     return(<>
-    <Helmet>
-<title>Одељење научне и стручне литературе – Библиотека Рума</title>
-<link rel="canonical" href="https://www.bibliotekaruma.rs/naucno" />
-</Helmet> 
+      <Helmet>
+        <title>Одељење научне и стручне литературе – Библиотека Рума</title>
+        <meta
+          name="description"
+          content="Фонд Одељења научне и стручне литературе Градске библиотеке Рума броји преко 22.000 публикација из разних научних области."
+        />
+        <link rel="canonical" href="https://www.bibliotekaruma.rs/одељење-научне-и-стручне-литературе" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Одељење научне и стручне литературе – Библиотека Рума" />
+        <meta
+          property="og:description"
+          content="Фонд Одељења научне и стручне литературе Градске библиотеке Рума броји преко 22.000 публикација из разних научних области."
+        />
+        <meta property="og:url" content="https://www.bibliotekaruma.rs/одељење-научне-и-стручне-литературе" />
+        <meta property="og:type" content="website" />
+
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Одељење научне и стручне литературе – Библиотека Рума",
+            "description": "Фонд Одељења научне и стручне литературе Градске библиотеке Рума броји преко 22.000 публикација из разних научних области.",
+            "url": "https://www.bibliotekaruma.rs/одељење-научне-и-стручне-литературе",
+            "inLanguage": "sr",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Почетна",
+                  "item": "https://www.bibliotekaruma.rs/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Одељења",
+                  "item": "https://www.bibliotekaruma.rs/odeljenja"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Научна и стручна литература",
+                  "item": "https://www.bibliotekaruma.rs/одељење-научне-и-стручне-литературе"
+                }
+              ]
+            },
+            "mainEntity": {
+              "@type": "Library",
+              "@id": "https://www.bibliotekaruma.rs/#organization",
+              "name": "Градска библиотека „Атанасије Стојковић“ Рума",
+              "url": "https://www.bibliotekaruma.rs/",
+              "logo": "https://www.bibliotekaruma.rs/logo.png",
+              "sameAs": [
+                "https://www.facebook.com/BibliotekaRuma",
+                "https://www.instagram.com/bibliotekaruma",
+                "https://www.youtube.com/channel/CHANNEL_ID"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Трг Слободе 1",
+                "addressLocality": "Рума",
+                "postalCode": "22400",
+                "addressCountry": "RS"
+              },
+              "telephone": "+381 22 424-501",
+              "email": "info@bibliotekaruma.rs"
+            }
+          }
+          `}
+        </script>
+      </Helmet> 
       <Container className="container-library mt-4 mb-4">
       <div className="container-frame"><h1 className="container-title" >ОДЕЉЕЊЕ НАУЧНЕ<br/> И СТРУЧНЕ ЛИТЕРАТУРЕ</h1><div className="container-icon">
                    <LiaBookSolid /><LiaBookSolid/><LiaBookSolid/></div>  <hr/>

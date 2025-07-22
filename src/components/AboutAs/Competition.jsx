@@ -7,27 +7,32 @@ const Competition =()=>{
   
     return (<>
      
-          <Helmet>
-            <title>Конкурс – Библиотека Рума</title>
-            <link rel="canonical" href="https://www.bibliotekaruma.rs/konkurs" />
-            <script type="application/ld+json">{`
-              {
-                "@context": "https://schema.org",
-                "@type": "Library",
-                "name": "Градска библиотека „Атанасије Стојковић" Рума",
-                "url": "https://www.bibliotekaruma.rs/konkurs",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Главна 114",
-                  "addressLocality": "Рума",
-                  "postalCode": "22400",
-                  "addressCountry": "RS"
-                },
-                "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
-                "telephone": "022/490-047"
-              }
-            `}</script>
-          </Helmet>  
+        <Helmet>
+  <title>Конкурс – Библиотека Рума</title>
+  <meta
+    name="description"
+    content="Конкурс за први необјављени роман на српском језику отворен од 21. јула до 15. новембра 2025."
+  />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/конкурс-библиотеке" />
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "Library",
+      "name": "Градска библиотека „Атанасије Стојковић "Рума",
+      "url": "https://www.bibliotekaruma.rs/конкурс-библиотеке",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Главна 114",
+        "addressLocality": "Рума",
+        "postalCode": "22400",
+        "addressCountry": "RS"
+      },
+      "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
+      "telephone": "022/490-047"
+    }
+  `}</script>
+</Helmet>
+
      <Container className="container-library mt-4 mb-4 ">
       <Row >
         <Col xs={12} sm={12} md={12} lg={12} xl={12} >

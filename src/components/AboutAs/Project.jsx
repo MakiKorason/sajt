@@ -7,27 +7,31 @@ import { Helmet } from 'react-helmet';
  
 const Project =()=>{
     return(
-    <><Helmet>
-  <title>Пројекат – Библиотека Рума</title>
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/projekat" />
+    <>
+
+<Helmet>
+  <title>Пројекти библиотеке – Библиотека Рума</title>
+  <meta name="description" content="Пројекти библиотеке у Руми за приступачност и унапређење културе." />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/пројекти-библиотеке" />
   <script type="application/ld+json">{`
-      {
-        "@context": "https://schema.org",
-        "@type": "Library",
-        "name": "Градска библиотека „Атанасије Стојковић" Рума",
-        "url": "https://www.bibliotekaruma.rs/projekat",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Главна 114",
-          "addressLocality": "Рума",
-          "postalCode": "22400",
-          "addressCountry": "RS"
-        },
-        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
-        "telephone": "022/490-047"
-      }
-    `}</script>
-</Helmet> 
+    {
+      "@context": "https://schema.org",
+      "@type": "Library",
+      "name": "Градска библиотека „Атанасије Стојковић "Рума",
+      "url": "https://www.bibliotekaruma.rs/пројекти-библиотеке",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Главна 114",
+        "addressLocality": "Рума",
+        "postalCode": "22400",
+        "addressCountry": "RS"
+      },
+      "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
+      "telephone": "022/490-047"
+    }
+  `}</script>
+</Helmet>
+
         <Container className='container-library mb-4 mt-4' >
        
         <div className="container-frame">   <h1 className="container-title">Култура за све</h1>

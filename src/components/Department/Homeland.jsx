@@ -7,11 +7,75 @@ import { Helmet } from 'react-helmet';
 
 const Homelend =()=>{
 return (<>
-
 <Helmet>
-         <title>Завичајно одељење – Библиотека Рума</title>
-         <link rel="canonical" href="https://www.bibliotekaruma.rs/zavicajno" />
-       </Helmet> 
+  <title>Завичајно одељење – Библиотека Рума</title>
+  <meta
+    name="description"
+    content="Завичајна збирка Градске библиотеке Рума броји преко 3.000 библиотечких јединица, укључујући монографије, периодику и некњижну грађу."
+  />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/завичајна-збирка" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Завичајно одељење – Библиотека Рума" />
+  <meta
+    property="og:description"
+    content="Завичајна збирка Градске библиотеке Рума броји преко 3.000 библиотечких јединица, укључујући монографије, периодику и некњижну грађу."
+  />
+  <meta property="og:url" content="https://www.bibliotekaruma.rs/завичајна-збирка" />
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Завичајно одељење – Библиотека Рума",
+      "description": "Завичајна збирка Градске библиотеке Рума броји преко 3.000 библиотечких јединица, укључујући монографије, периодику и некњижну грађу.",
+      "url": "https://www.bibliotekaruma.rs/завичајна-збирка",
+      "inLanguage": "sr",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Почетна",
+            "item": "https://www.bibliotekaruma.rs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Завичајна збирка",
+            "item": "https://www.bibliotekaruma.rs/завичајна-збирка"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "Library",
+        "@id": "https://www.bibliotekaruma.rs/#organization",
+        "name": "Градска библиотека „Атанасије Стојковић“ Рума",
+        "url": "https://www.bibliotekaruma.rs/",
+        "logo": "https://www.bibliotekaruma.rs/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/BibliotekaRuma",
+          "https://www.instagram.com/bibliotekaruma",
+          "https://www.youtube.com/channel/CHANNEL_ID"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Трг Слободе 1",
+          "addressLocality": "Рума",
+          "postalCode": "22400",
+          "addressCountry": "RS"
+        },
+        "telephone": "+381 22 424-501",
+        "email": "info@bibliotekaruma.rs"
+      }
+    }
+    `}
+  </script>
+</Helmet>
+
  <Container  className="container-library mt-4 mb-4">
   <section aria-labelledby="zavicajna-naslov">
  <div className="container-frame">

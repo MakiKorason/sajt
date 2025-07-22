@@ -5,27 +5,34 @@ import AnimatedCard from '../Department/AnimatedCard';     import { Helmet } fro
 const DigitalLibrary =()=>{
     return (<>
 
-        <Helmet>
-         <title>Дигитална библиотека - Градска библиотека „Атанасије Стојковић“ Рума</title>
-         <link rel="canonical" href="https://www.bibliotekaruma.rs/digitalna" />
-         <script type="application/ld+json">{`
+       <Helmet>
+  <title>Дигитална библиотека - Библиотека Рума</title>
+  <meta name="description" content="Прегледајте дигиталну библиотеку Градске библиотеке 'Атанасије Стојковић' у Руми. Бесплатан приступ дигитализованим књигама, снимцима и публикацијама." />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/дигитална-библиотека" />
+  
+
+  <script type="application/ld+json">
+    {`
       {
         "@context": "https://schema.org",
-        "@type": "Library",
-        "name": "Градска библиотека „Атанасије Стојковић" Рума",
-        "url": "https://www.bibliotekaruma.rs/digitalna",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Главна 114",
-          "addressLocality": "Рума",
-          "postalCode": "22400",
-          "addressCountry": "RS"
-        },
-        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
-        "telephone": "022/490-047"
+        "@type": "WebPage",
+        "name": "Дигитална библиотека - Библиотека Рума",
+        "url": "https://www.bibliotekaruma.rs/дигитална-библиотека",
+        "description": "Прегледајте дигиталну библиотеку Градске библиотеке 'Атанасије Стојковић' у Руми. Бесплатан приступ дигитализованим књигама, снимцима и публикацијама.",
+        "inLanguage": "sr-Cyrl",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Градска библиотека 'Атанасије Стојковић'",
+          "url": "https://www.bibliotekaruma.rs/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bibliotekaruma.rs/logo192.png"
+          }
+        }
       }
-    `}</script>
-       </Helmet> 
+    `}
+  </script>
+</Helmet>
      <Container className='container-library mt-4 mb-4' >
       <h1 className="container-title mb-4">Наш дигитални фонд</h1>
 
