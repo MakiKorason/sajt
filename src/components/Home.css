@@ -25,7 +25,7 @@ max-height: auto;
  opacity: 0;
  animation: flashEffect 10s forwards; 
  object-fit: cover;
- height: 205vh;
+ height: 215vh;
 }
 @media (max-width: 768px) {
   .image-carousel {
@@ -35,6 +35,31 @@ max-height: auto;
   .carousel-caption p {
     font-size: 14px;
     padding: 5px;
+  }
+  
+  /* Optimizacija za karusel u oglasnoj tabli na telefonima */
+  .container-image {
+    max-width: 280px !important;
+    width: 100% !important;
+  }
+  
+  /* Smanjivanje gap-a na telefonima */
+  .carousel-container {
+    gap: 10px !important;
+  }
+  
+  .carousel-images {
+    gap: 15px !important;
+  }
+  
+  /* Smanjivanje grba za digitalni fond na mobilnim uređajima */
+  .digital-logo {
+    width: 25% !important;
+  }
+  
+  /* Smanjivanje loga za književni konkurs na mobilnim uređajima */
+  .konkurs-logo {
+    width: 35% !important;
   }
 }
 

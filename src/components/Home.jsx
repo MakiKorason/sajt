@@ -302,14 +302,18 @@ const Home =()=> {
    
     </Col>  
     <Col md={8} className='mt-3 mb-3 text-center'>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '15px' }}>
-        <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+      <div className="carousel-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '15px', flexWrap: 'wrap' }}>
+        <div className="carousel-images" style={{ display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
           <Suspense fallback={<div>Loading AnimatedImage...</div>}>
             <AnimatedImage
               src={showSecondSet ? secondSetImages[0] : firstSetImages[0]}
               alt="Прва слика"
               className="container-image"
-              style={{ maxWidth: '400px', height: 'auto' }}
+              style={{ 
+                height: 'auto',
+                width: '100%',
+                maxWidth: window.innerWidth < 768 ? '280px' : '400px'
+              }}
             />
           </Suspense>
           
@@ -318,7 +322,11 @@ const Home =()=> {
               src={showSecondSet ? secondSetImages[1] : firstSetImages[1]}
               alt="Друга слика"
               className="container-image"
-              style={{ maxWidth: '400px', height: 'auto' }}
+              style={{ 
+                height: 'auto',
+                width: '100%',
+                maxWidth: window.innerWidth < 768 ? '280px' : '400px'
+              }}
             />
           </Suspense>
         </div>
@@ -328,15 +336,16 @@ const Home =()=> {
           onClick={toggleImageSet}
           style={{ 
             borderRadius: '50%',
-            width: '40px',
-            height: '40px',
+            width: window.innerWidth < 768 ? '35px' : '40px',
+            height: window.innerWidth < 768 ? '35px' : '40px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: '18px',
+            fontSize: window.innerWidth < 768 ? '16px' : '18px',
             padding: '0',
             fontWeight: 'bold',
-            marginLeft: '10px'
+            marginLeft: '10px',
+            marginTop: window.innerWidth < 768 ? '10px' : '0'
           }}
           aria-label="Пребаци скуп слика"
           title={showSecondSet ? "Врати на први скуп" : "Пребаци на други скуп"}
@@ -461,38 +470,38 @@ const Home =()=> {
       />
   </AnimatedCard> 
      </Col>
-     <Col md={4} className='mt-4'>
-              <AnimatedCard>
-               <a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer">  <h6 className='container-title'>  
-              Наш дигитални<br/> фонд </h6></a>
-               <br/><img 
-     src="/logo.jpg"
-      alt="Грб Градске библиотеке Рума" 
-      className='container-image'
-      style={{border:'none', width:'33%'}}
-      width="200"
-      height="200"
-      loading="lazy"
-      /> </AnimatedCard>
-      </Col> 
-         <Col  md={4}  className='mt-4'>
-                 <AnimatedCard>
-            <a href="https://www.facebook.com/photo/?fbid=1326535312805422&set=a.512519967540298" target="_blank" rel="noopener noreferrer" className="konkurs-link">
-              <h6 className="container-title mb-0">
-                Књижевни <br/>конкурс
-              </h6>
-            </a>
-            <img 
-      src={konkurs}
-      alt="Конкурс" 
-      className='container-image'
-      style={{border:'none', width:'48%'}}
-              width="300"
-              height="200"
-              loading="lazy"
-            />
-          </AnimatedCard>
-        </Col></Row>
+           <Col md={4} className='mt-4'>
+               <AnimatedCard>
+                <a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer">  <h6 className='container-title'>  
+               Наш дигитални<br/> фонд </h6></a>
+                <br/><img 
+      src="/logo.jpg"
+       alt="Грб Градске библиотеке Рума" 
+       className='container-image digital-logo'
+       style={{border:'none', width:'33%'}}
+       width="200"
+       height="200"
+       loading="lazy"
+       /> </AnimatedCard>
+       </Col> 
+                   <Col  md={4}  className='mt-4'>
+                  <AnimatedCard>
+             <a href="https://www.facebook.com/photo/?fbid=1326535312805422&set=a.512519967540298" target="_blank" rel="noopener noreferrer" className="konkurs-link">
+               <h6 className="container-title mb-0">
+                 Књижевни <br/>конкурс
+               </h6>
+             </a>
+             <img 
+       src={konkurs}
+       alt="Конкурс" 
+       className='container-image konkurs-logo'
+       style={{border:'none', width:'48%'}}
+               width="300"
+               height="200"
+               loading="lazy"
+             />
+           </AnimatedCard>
+         </Col></Row>
      <hr/>
            <Row>   
             <Col md={12}>
@@ -616,43 +625,43 @@ aria-label="Преузми статут установе Градске библ
       </button>
       <div className="d-flex justify-content-center align-items-center flex-wrap" style={{marginTop: '2.5rem'}}>
     <img
-      style={{ width: '8%', marginRight:'1rem', objectFit: 'contain' }}
+      style={{ width: '12%', marginRight:'1rem', objectFit: 'contain' }}
       src={Panonija}
       alt="Панонија књижара у Руми"
-      width="96"
-      height="48"
+      width="144"
+      height="72"
       loading="lazy"
     />
     <img
-      style={{ width: '8%', objectFit: 'contain' }}
+      style={{ width: '12%', objectFit: 'contain' }}
       src={Boss}
       alt="Босс компанија Рума"
-      width="96"
-      height="48"
+      width="144"
+      height="72"
+      loading="lazy"
+    />
+    <img
+      style={{ width: '15%', objectFit: 'contain' }}
+      src={trkulja}
+      alt="Тркуља керамика Рума"
+      width="180"
+      height="90"
       loading="lazy"
     />
     <img
       style={{ width: '10%', objectFit: 'contain' }}
-      src={trkulja}
-      alt="Тркуља керамика Рума"
+      src={Frigo}
+      alt="Фриго Жика Рума"
       width="120"
       height="60"
       loading="lazy"
     />
     <img
-      style={{ width: '6%', objectFit: 'contain' }}
-      src={Frigo}
-      alt="Фриго Жика Рума"
-      width="72"
-      height="36"
-      loading="lazy"
-    />
-    <img
-      style={{ width: '8%', marginLeft:'1rem', objectFit: 'contain' }}
+      style={{ width: '12%', marginLeft:'1rem', objectFit: 'contain' }}
       src={beke}
       alt="Беке компанија Рума"
-      width="96"
-      height="48"
+      width="144"
+      height="72"
       loading="lazy"
     />
   </div>
