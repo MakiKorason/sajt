@@ -11,7 +11,8 @@ html, body {
  white-space: nowrap;
 color:#f3f2ee;
   padding: 0.5% 0;
-
+  width: 100%;
+  position: relative;
 }
 
 .bar-content {
@@ -20,20 +21,55 @@ color:#f3f2ee;
   font-family: 'Arial';
   font-weight: bold;
   font-size: 1.2em;
+  white-space: nowrap;
+  text-overflow: clip;
+  overflow: visible;
+  width: max-content;
+  min-width: 100%;
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(100vw);
   }
   100% {
     transform: translateX(-100%);
   }
 }
+
+/* Tablet devices */
+@media (max-width: 768px) {  
+  .bar-content {  
+    font-size: 1.1em;    
+    animation: scroll 40s linear infinite; 
+  }  
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {  
+  .bar-content {  
+    font-size: 1em;    
+    animation: scroll 35s linear infinite; 
+  }  
+}
+
+/* Small mobile devices */
 @media (max-width: 400px) {  
   .bar-content {  
-    font-size: 1em;    animation: scroll 25s linear infinite; 
+    font-size: 0.9em;    
+    animation: scroll 30s linear infinite; 
   }  
+}
+
+/* Extra small mobile devices */
+@media (max-width: 320px) {  
+  .bar-content {  
+    font-size: 0.8em;    
+    animation: scroll 25s linear infinite; 
+  }  
+  .top-bar {
+    padding: 0.3% 0;
+  }
 }
 
 @media (max-width: 500px) {
