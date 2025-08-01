@@ -36,7 +36,7 @@ function InnerApp() {
       <Row className="top-bar">
         <Col md={12} className="bar-content">
         <span>
-Градска библиотека ће током ове недеље радити од 8 до 12 и од 16 до 20 часова.</span>
+Поштовани корисници Градска библиотека „Атанасије Стојковић“ неће радити суботом током месеца августа.</span>
           {/* <span>Адреса: Главна 114, Рума</span>
           <span> |Радно време: понедељак-петак: 08-20h и суботом: 08-13h </span>
           <span> | <a href="https://youtube.com/@gradskabibliotekaruma" target="_blank" rel="noopener noreferrer" aria-label="YouTube kanal biblioteke" style={{ marginRight: '10px', fontSize: '1em', color: 'inherit' }}><i className="fab fa-youtube"></i> YouTube</a> |
