@@ -60,6 +60,26 @@ const Home =()=> {
   const [modalImage, setModalImage] = useState(null);
   const [showSecondSet, setShowSecondSet] = useState(false);
 
+  // Ensure carousel is properly initialized
+  React.useEffect(() => {
+    // Force carousel initialization for all screen sizes
+    const carouselElement = document.getElementById('demo');
+    if (carouselElement && window.bootstrap) {
+      // Destroy existing carousel instance if it exists
+      const existingCarousel = window.bootstrap.Carousel.getInstance(carouselElement);
+      if (existingCarousel) {
+        existingCarousel.dispose();
+      }
+      
+      // Initialize new carousel instance
+      new window.bootstrap.Carousel(carouselElement, {
+        interval: 12000,
+        pause: false,
+        ride: 'carousel'
+      });
+    }
+  }, []);
+
 
   const tileClassName = useCallback(({ date, view }) => {
 
@@ -149,7 +169,7 @@ const Home =()=> {
 </Helmet>
 
   <Row><Col md={12}>
-   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="7000" data-bs-pause="false">
+   <div id="demo" className="carousel slide" data-bs-ride="carousel" data-bs-interval="12000" data-bs-pause="false">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active" aria-label="Пређи на прву слику карусела"></button>  
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Пређи на другу слику карусела"></button> 

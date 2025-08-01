@@ -27,6 +27,19 @@ max-height: auto;
  object-fit: cover;
  height: 215vh;
 }
+
+/* Ensure carousel works on all screen sizes */
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .image-carousel {
     height: 350px;
