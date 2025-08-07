@@ -36,7 +36,7 @@ function InnerApp() {
       <div className="top-bar">
         <div className="bar-content">
         <span>
-Поштовани корисници, Градска библиотека „Атанасије Стојковић" неће радити суботом током месеца августа.</span>
+Поштовани корисници, Градска библиотека „Атанасије Стојковић“ неће радити суботом током месеца августа.</span>
           {/* <span>Адреса: Главна 114, Рума</span>
           <span> |Радно време: понедељак-петак: 08-20h и суботом: 08-13h </span>
           <span> | <a href="https://youtube.com/@gradskabibliotekaruma" target="_blank" rel="noopener noreferrer" aria-label="YouTube kanal biblioteke" style={{ marginRight: '10px', fontSize: '1em', color: 'inherit' }}><i className="fab fa-youtube"></i> YouTube</a> |
