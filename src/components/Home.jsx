@@ -38,21 +38,26 @@ import konkursAtanasije from '../images/konkursAtanasije.webp';
 import romana from '../images/романа.webp';
 import promocija from '../images/ПРОМОЦИЈА.webp';
 
-// Lazy imports (moraju biti posle svih import linija)
 const Calendar = React.lazy(() => import('react-calendar'));
 const AnimatedImage = React.lazy(() => import('./Department/AnimatedImage'));
 
 
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
-  const [activeKey, setActiveKey] = useState('jul');
+  const [activeKey, setActiveKey] = useState(() => {
+    const currentMonthIndex = new Date().getMonth();
+    if (currentMonthIndex === 7) return 'avgust';
+    if (currentMonthIndex === 6) return 'jul';
+    if (currentMonthIndex === 5) return 'jun';
+    return 'avgust';
+  });
   const markedDates = useMemo(() => [
     new Date(new Date().getFullYear(), 5, 6), // 6. jun tekuće godine (meseci su 0-indeksirani)
     new Date(2025, 1, 20), 
     new Date(new Date().getFullYear(), 6, 22), // 22. jul
     new Date(new Date().getFullYear(), 6, 24), // 24. jul
     new Date(new Date().getFullYear(), 6, 29), // 29. jul
-    new Date(new Date().getFullYear(), 6, 30), // 30. jul
+    new Date(new Date().getFullYear(), 6, 30), 
   ], []);
 
   const [showFriends, setShowFriends] = useState(false);
@@ -91,7 +96,7 @@ const Home =()=> {
 
   const onChange = useCallback(date =>{
     setDate(date);
-    // Ako je kliknut 30. jul tekuće godine
+  
     if (
       date instanceof Date &&
       date.getDate() === 30 &&
@@ -129,16 +134,13 @@ const Home =()=> {
     }
   }, []);
 
-  // Karusel funkcije za oglasnu tablu
+
   const firstSetImages = [romana, promocija];
   const secondSetImages = [predavanjeVizeti, poetskoVece];
   
   const toggleImageSet = () => {
     setShowSecondSet(!showSecondSet);
   };
-
-
-  
   
   return (
     <>
