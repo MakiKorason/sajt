@@ -33,10 +33,14 @@ import dani4 from '../images/dani4.webp';
 import smrtniIshod from '../images/smrtniIshod.webp';
 import predavanjeVizeti from '../images/predavanjeVizeti.webp';
 import poetskoVece from '../images/poetskoVece.webp';
+ 
 import karizi from '../images/karizi.webp';
 import konkursAtanasije from '../images/konkursAtanasije.webp';
 import romana from '../images/романа.webp';
 import promocija from '../images/ПРОМОЦИЈА.webp';
+import sanjalica from '../images/sanjalica.webp';
+import todor from '../images/todor.webp';
+ 
 
 const Calendar = React.lazy(() => import('react-calendar'));
 const AnimatedImage = React.lazy(() => import('./Department/AnimatedImage'));
@@ -52,18 +56,19 @@ const Home =()=> {
     return 'avgust';
   });
   const markedDates = useMemo(() => [
-    new Date(new Date().getFullYear(), 5, 6), // 6. jun tekuće godine (meseci su 0-indeksirani)
-    new Date(2025, 1, 20), 
     new Date(new Date().getFullYear(), 6, 22), // 22. jul
     new Date(new Date().getFullYear(), 6, 24), // 24. jul
     new Date(new Date().getFullYear(), 6, 29), // 29. jul
-    new Date(new Date().getFullYear(), 6, 30), 
+    new Date(new Date().getFullYear(), 6, 30), // 30. jul
+    new Date(new Date().getFullYear(), 7, 22), // 22. avgust
+    new Date(new Date().getFullYear(), 7, 25), // 25. avgust
   ], []);
 
   const [showFriends, setShowFriends] = useState(false);
   const [showImage, setShowImage] = useState(false);
   const [modalImage, setModalImage] = useState(null);
-  const [showSecondSet, setShowSecondSet] = useState(false);
+  const [imageSetIndex, setImageSetIndex] = useState(0);
+  const [isForward, setIsForward] = useState(true);
 
   // Ensure carousel is properly initialized
   React.useEffect(() => {
@@ -129,17 +134,46 @@ const Home =()=> {
     ) {
       setModalImage(poetskoVece);
       setShowImage(true);
+    } else if (
+      date instanceof Date &&
+      date.getDate() === 22 &&
+      date.getMonth() === 7 &&
+      date.getFullYear() === new Date().getFullYear()
+    ) {
+      setModalImage(todor);
+      setShowImage(true);
+    } else if (
+      date instanceof Date &&
+      date.getDate() === 25 &&
+      date.getMonth() === 7 &&
+      date.getFullYear() === new Date().getFullYear()
+    ) {
+      setModalImage(sanjalica);
+      setShowImage(true);
     } else {
       setShowImage(false);
     }
   }, []);
 
-
-  const firstSetImages = [romana, promocija];
-  const secondSetImages = [predavanjeVizeti, poetskoVece];
+  const imageSets = useMemo(() => [
+    [sanjalica, todor],
+    [romana, promocija],
+    [predavanjeVizeti, poetskoVece]
+  ], []);
   
   const toggleImageSet = () => {
-    setShowSecondSet(!showSecondSet);
+    setImageSetIndex((prevIndex) => {
+      const lastIndex = imageSets.length - 1;
+      let nextIndex = prevIndex + (isForward ? 1 : -1);
+      if (nextIndex > lastIndex) {
+        setIsForward(false);
+        nextIndex = prevIndex - 1;
+      } else if (nextIndex < 0) {
+        setIsForward(true);
+        nextIndex = prevIndex + 1;
+      }
+      return nextIndex;
+    });
   };
   
   return (
@@ -328,7 +362,7 @@ const Home =()=> {
         <div className="carousel-images" style={{ display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
           <Suspense fallback={<div>Loading AnimatedImage...</div>}>
             <AnimatedImage
-              src={showSecondSet ? secondSetImages[0] : firstSetImages[0]}
+              src={imageSets[imageSetIndex][0]}
               alt="Прва слика"
               className="container-image"
               style={{ 
@@ -341,7 +375,7 @@ const Home =()=> {
           
           <Suspense fallback={<div>Loading AnimatedImage...</div>}>
             <AnimatedImage
-              src={showSecondSet ? secondSetImages[1] : firstSetImages[1]}
+              src={imageSets[imageSetIndex][1]}
               alt="Друга слика"
               className="container-image"
               style={{ 
@@ -370,9 +404,9 @@ const Home =()=> {
             marginTop: window.innerWidth < 768 ? '10px' : '0'
           }}
           aria-label="Пребаци скуп слика"
-          title={showSecondSet ? "Врати на први скуп" : "Пребаци на други скуп"}
+          title={isForward ? "Пребаци на следећи скуп" : "Врати на претходни скуп"}
         >
-          {showSecondSet ? '←' : '→'}
+          {isForward ? '→' : '←'}
         </Button>
       </div>
     </Col>
