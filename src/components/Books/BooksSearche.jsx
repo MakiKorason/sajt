@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import ImageModal from '../ImageModal';
 import cobbis from '../../images/cobbis.webp'
 import './BooksSearche.css'
 import AnimatedCard from '../Department/AnimatedCard'; 
 import { Helmet } from 'react-helmet';
  
 const BooksSearche = () => {
+  // State for image modal
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '', title: '' });
+
+  // Function to handle image click
+  const handleImageClick = (imageSrc, imageAlt, imageTitle) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt, title: imageTitle });
+    setShowImageModal(true);
+  };
+
+  const handleCloseImageModal = () => {
+    setShowImageModal(false);
+    setSelectedImage({ src: '', alt: '', title: '' });
+  };
+
   return (
     <>
       <Helmet>
@@ -53,8 +69,11 @@ Bibliographic System and Services).
           <AnimatedCard>
            <img 
                 src={cobbis}
-                alt="Претрага фонда - илустрација" loading="lazy"
-                className="cobiss-image" 
+                alt="Претрага фонда - илустрација" 
+                loading="lazy"
+                className="cobiss-image clickable-image" 
+                onClick={() => handleImageClick(cobbis, 'Претрага фонда - илустрација', 'COBISS')}
+                title="Кликните за већу слику"
                 style={{ 
                         display: 'block', 
                         margin: '0 auto', 
@@ -124,6 +143,15 @@ web продавници - Google play: MCOBISS. <a href='https://play.google.co
         </Col>
       </Row>
     </Container>
+
+      {/* Image Modal */}
+      <ImageModal
+        show={showImageModal}
+        onHide={handleCloseImageModal}
+        imageSrc={selectedImage.src}
+        imageAlt={selectedImage.alt}
+        title={selectedImage.title}
+      />
     </>
   );
 };

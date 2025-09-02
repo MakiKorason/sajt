@@ -24,24 +24,41 @@ import { FaEnvelope } from 'react-icons/fa';
 import { HelmetProvider } from "react-helmet-async";
 import { useState } from "react";
 import AnimatedPage from './components/Department/AnimatedPage';
+import ImageModal from './components/ImageModal';
 import { AnimatePresence } from 'framer-motion';
 import NotFound from './components/NotFound';
 
 function InnerApp() {
   const location = useLocation();
   const [expanded, setExpanded] = useState(false);
+  
+  // State for image modal
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '', title: '' });
+
+  // Function to handle image click
+  const handleImageClick = (imageSrc, imageAlt, imageTitle) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt, title: imageTitle });
+    setShowImageModal(true);
+  };
+
+  const handleCloseImageModal = () => {
+    setShowImageModal(false);
+    setSelectedImage({ src: '', alt: '', title: '' });
+  };
 
   return (
     <>
+     
       <div className="top-bar">
         <div className="bar-content">
-        <span>
-Поштовани корисници, Градска библиотека „Атанасије Стојковић“ неће радити суботом током месеца августа.</span>
-          {/* <span>Адреса: Главна 114, Рума</span>
+   
+
+          <span>Адреса: Главна 114, Рума</span>
           <span> |Радно време: понедељак-петак: 08-20h и суботом: 08-13h </span>
           <span> | <a href="https://youtube.com/@gradskabibliotekaruma" target="_blank" rel="noopener noreferrer" aria-label="YouTube kanal biblioteke" style={{ marginRight: '10px', fontSize: '1em', color: 'inherit' }}><i className="fab fa-youtube"></i> YouTube</a> |
           <a href="https://www.instagram.com/gradska_biblioteka_ruma" target="_blank" rel="noopener noreferrer" aria-label="Instagram biblioteke" style={{ marginRight: '10px', fontSize: '1em', color: 'inherit' }}><i className="fab fa-instagram"></i> Instagram</a> |
-          <a href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma" target="_blank" rel="noopener noreferrer" aria-label="Facebook biblioteke" style={{ fontSize: '1em', color: 'inherit' }}><i className="fab fa-facebook"></i> Facebook</a></span>  */}
+          <a href="https://www.facebook.com/bibliotekaatanasijestojkovic.ruma" target="_blank" rel="noopener noreferrer" aria-label="Facebook biblioteke" style={{ fontSize: '1em', color: 'inherit' }}><i className="fab fa-facebook"></i> Facebook</a></span> 
         </div>
       </div>
 
@@ -51,7 +68,14 @@ function InnerApp() {
             <Navbar.Brand as={Link} to="/" onClick={() => setExpanded(false)}>
               <Row>
                 <Col md={4}>
-                  <img src="/logo.jpg" alt="Грб Градске библиотеке Рума" className='logo' style={{ marginLeft: '4.5rem' }} loading="lazy" />
+                  <img 
+                    src="/logo.jpg" 
+                    alt="Грб Градске библиотеке Рума" 
+                    className='logo clickable-image' 
+                    style={{ marginLeft: '4.5rem' }} 
+                    loading="lazy"
+                    title="Кликните за већу слику"
+                  />
                 </Col>
                 <Col md={4} className='mt-3'>
                   <h1 className='container-text fw-bold' style={{ marginLeft: '1.5rem' }}>
@@ -167,6 +191,15 @@ function InnerApp() {
           </Row>
         </Container>
       </footer>
+
+      {/* Image Modal */}
+      <ImageModal
+        show={showImageModal}
+        onHide={handleCloseImageModal}
+        imageSrc={selectedImage.src}
+        imageAlt={selectedImage.alt}
+        title={selectedImage.title}
+      />
     </>
   );
 }

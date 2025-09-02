@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import ImageModal from '../ImageModal';
 import Kandor from '../../images/Ourpublic/Kandor.webp'
 import Nuada from '../../images/Ourpublic/Nuada.webp'
 import Nebuditeme from '../../images/Ourpublic/Nebuditeme.webp'
@@ -22,9 +23,25 @@ import public16 from "../../images/Ourpublic/public16.webp"
 import public17 from "../../images/Ourpublic/public17.webp"
 import public18 from "../../images/Ourpublic/public18.webp"
 import AnimatedImage from "../Department/AnimatedImage";
+import ClickableAnimatedImage from "../Department/ClickableAnimatedImage";
 import { Helmet } from 'react-helmet';
  
 const OurPublic =()=>{
+  // State for image modal
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '', title: '' });
+
+  // Function to handle image click
+  const handleImageClick = (imageSrc, imageAlt, imageTitle) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt, title: imageTitle });
+    setShowImageModal(true);
+  };
+
+  const handleCloseImageModal = () => {
+    setShowImageModal(false);
+    setSelectedImage({ src: '', alt: '', title: '' });
+  };
+
     return (<>
 <Helmet>
   <title>Наша издања – Библиотека Рума</title>
@@ -70,11 +87,13 @@ const OurPublic =()=>{
 
       <Row >
       <Col xs={12} sm={12} md={4} lg={4} xl={4} className="mb-4 text-center">
-            <AnimatedImage
+            <ClickableAnimatedImage
               src={Kandor}
               alt="Кандор" 
               className="container-image"
               style={{display: 'block', margin: '0 auto'}}
+              onClick={() => handleImageClick(Kandor, 'Кандор', 'Кандор')}
+              title="Кликните за већу слику"
           width="300"
           height="400"
             />
@@ -314,6 +333,15 @@ const OurPublic =()=>{
         </Row>
   </div>
       </Container>
+
+      {/* Image Modal */}
+      <ImageModal
+        show={showImageModal}
+        onHide={handleCloseImageModal}
+        imageSrc={selectedImage.src}
+        imageAlt={selectedImage.alt}
+        title={selectedImage.title}
+      />
     </>);
 }
 

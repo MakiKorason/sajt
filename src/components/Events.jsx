@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
+import ImageModal from './ImageModal';
 import { BsCalendar2Heart } from 'react-icons/bs';
 import { LiaBookSolid } from "react-icons/lia";
 import daniSlovensk from '../images/daniSlovensk.webp';
@@ -24,6 +25,10 @@ const Events = () => {
   const [showEvent2, setShowEvent2] = useState(false);
   const [showEvent3, setShowEvent3] = useState(false);
   const [showEvent4, setShowEvent4] = useState(false);
+  
+  // State for image modal
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '', title: '' });
 
 
   const handleShowEvent1 = () => setShowEvent1(true);
@@ -37,6 +42,17 @@ const Events = () => {
     setShowEvent2(false);
     setShowEvent3(false);
     setShowEvent4(false);
+  };
+
+  // Function to handle image click
+  const handleImageClick = (imageSrc, imageAlt, imageTitle) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt, title: imageTitle });
+    setShowImageModal(true);
+  };
+
+  const handleCloseImageModal = () => {
+    setShowImageModal(false);
+    setSelectedImage({ src: '', alt: '', title: '' });
   };
 
   return (
@@ -119,13 +135,18 @@ const Events = () => {
               <Card.Body className="d-flex flex-column">
                 <Row className="align-items-center">
                   <Col xs={12} md={5} className="text-center mb-3 mb-md-0">
-                    <Card.Img style={{width:'205px'}} className="mx-auto d-block" src={daniSlovensk} />
+                    <Card.Img 
+                      className="mx-auto d-block card-img clickable-image" 
+                      src={daniSlovensk} 
+                      onClick={() => handleImageClick(daniSlovensk, 'Дани словенске писмености и културе', 'Дани словенске писмености и културе')}
+                      alt="Дани словенске писмености и културе"
+                    />
                   </Col>
                   <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
                     <h2 className="container-title d-inline-block">
                   Дани словенске писмености и културе <BsCalendar2Heart />
                 </h2>
-                    <br/><br/>
+                    
                     <p className='container-text mt-3'>Дани словенске писмености и културе обележавају се у недељи када се прославља дан Светих Ћирила и Методија, 24. мај.</p>
                     <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent1} aria-label="Сазнајте више о Данима словенске писмености и културе">Детаљније</Button>
                   </Col>
@@ -139,13 +160,19 @@ const Events = () => {
               <Card.Body className="d-flex flex-column">
                 <Row className="align-items-center">
                   <Col xs={12} md={5} className="text-center mb-3 mb-md-0">
-                    <Card.Img style={{width:'140px', borderRadius:'50%'}} className="mx-auto d-block" src={Atanasije} />
+                    <Card.Img 
+                      className="mx-auto d-block card-img clickable-image" 
+                      src={Atanasije} 
+                      onClick={() => handleImageClick(Atanasije, 'Дани Атанасија Стојковића', 'Дани Атанасија Стојковића')}
+                      alt="Дани Атанасија Стојковића"
+                      style={{ objectPosition: 'center 30%' }}
+                    />
                   </Col>
                   <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
                     <h2 className="container-title d-inline-block">
-                      Дани Атанасија Стојковића<br/> <BsCalendar2Heart />
+                      Дани Атанасија Стојковића <BsCalendar2Heart />
                 </h2>
-                    <br/><br/>
+                    
                     <p className='container-text mt-3'>Дани Атанасија Стојковића традиционално се одржавају током недеље у којој се обележава датум његовог рођења – 20. септембар.</p>
                     <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent2} aria-label="Сазнајте више о Данима Атанасија Стојковића">Детаљније</Button>
                   </Col>
@@ -161,13 +188,18 @@ const Events = () => {
               <Card.Body className="d-flex flex-column">
                 <Row className="align-items-center">
                   <Col xs={12} md={5} className="text-center mb-3 mb-md-0">
-                    <Card.Img style={{width:'188px', borderRadius:'50%' }} className="mx-auto d-block" src={knjizevnaKolonija}/>
+                    <Card.Img 
+                      className="mx-auto d-block card-img clickable-image" 
+                      src={knjizevnaKolonija}
+                      onClick={() => handleImageClick(knjizevnaKolonija, 'Румска књижевна колонија', 'Румска књижевна колонија')}
+                      alt="Румска књижевна колонија"
+                    />
                   </Col>
                   <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
                     <h2 className="container-title d-inline-block">
                   Румска књижевна колонија <BsCalendar2Heart />
                 </h2>
-                    <br/><br/>
+                 
                     <p className='container-text mt-3'>Румска књижевна колонија традиционално се одржава сваке године у децембру.</p>
                     <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent3} aria-label="Сазнајте више о Румској књижевној колонији">Детаљније</Button>
                   </Col>
@@ -180,14 +212,19 @@ const Events = () => {
             < AnimatedCard  className='events-card'>
               <Card.Body className="d-flex flex-column">
                 <Row className="align-items-center">
-                  <Col xs={12} md={5} className="text-center mb-3 mb-md-0">
-                    <Card.Img style={{width:'240px', borderRadius:'50%'}} className="mx-auto d-block" src={kulturnoLeto}/>
+                  <Col xs={12} md={5} className="text-center mb-md-0">
+                    <Card.Img 
+                      className="mx-auto d-block card-img clickable-image" 
+                      src={kulturnoLeto}
+                      onClick={() => handleImageClick(kulturnoLeto, 'Румско културно лето', 'Румско културно лето')}
+                      alt="Румско културно лето"
+                    />
                   </Col>
                   <Col xs={12} md={7} className="text-md-start text-center d-flex flex-column">
                     <h2 className="container-title d-inline-block">
-                  Румско културно лето <BsCalendar2Heart />
+                  Румско културно лето<BsCalendar2Heart />
                 </h2>
-                    <br/><br/>
+       
                     <p className='container-text mt-3'>Традиционална манифестација која се одржава од 28. јуна до 31. августа. <BsCalendar2Heart /> </p>
                     <Button className='btn btn-secondary mt-auto' onClick={handleShowEvent4} aria-label="Сазнајте више о Румском културном лету">Детаљније</Button>
                   </Col>
@@ -447,6 +484,15 @@ title='Свечано отварање Дана словенске писмен�
           </Button>
         </Modal.Footer>
       </Modal>
+
+      {/* Image Modal */}
+      <ImageModal
+        show={showImageModal}
+        onHide={handleCloseImageModal}
+        imageSrc={selectedImage.src}
+        imageAlt={selectedImage.alt}
+        title={selectedImage.title}
+      />
         </Container> 
     </>
   );

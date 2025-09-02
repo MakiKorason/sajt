@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useMemo, Suspense } from 'react';
 import './Home.css';
 import { Button, Col, Container, Row, Nav, Modal } from 'react-bootstrap';
+import ImageModal from './ImageModal';
 import cobbis from '../images/cobbis.webp';
 import matica from '../images/matica.webp';
 import narodna from '../images/narodna.webp';
@@ -33,7 +34,7 @@ import dani4 from '../images/dani4.webp';
 import smrtniIshod from '../images/smrtniIshod.webp';
 import predavanjeVizeti from '../images/predavanjeVizeti.webp';
 import poetskoVece from '../images/poetskoVece.webp';
- 
+ import pesmaOTriSveta from '../images/pesmaOTriSveta.webp'
 import karizi from '../images/karizi.webp';
 import konkursAtanasije from '../images/konkursAtanasije.webp';
 import romana from '../images/романа.webp';
@@ -53,7 +54,7 @@ const Home =()=> {
     if (currentMonthIndex === 7) return 'avgust';
     if (currentMonthIndex === 6) return 'jul';
     if (currentMonthIndex === 5) return 'jun';
-    return 'avgust';
+    return 'septembar';
   });
   const markedDates = useMemo(() => [
     new Date(new Date().getFullYear(), 6, 22), // 22. jul
@@ -69,6 +70,10 @@ const Home =()=> {
   const [modalImage, setModalImage] = useState(null);
   const [imageSetIndex, setImageSetIndex] = useState(0);
   const [isForward, setIsForward] = useState(true);
+  
+  // State for image modal
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '', title: '' });
 
   // Ensure carousel is properly initialized
   React.useEffect(() => {
@@ -175,6 +180,17 @@ const Home =()=> {
       return nextIndex;
     });
   };
+
+  // Function to handle image click
+  const handleImageClick = (imageSrc, imageAlt, imageTitle) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt, title: imageTitle });
+    setShowImageModal(true);
+  };
+
+  const handleCloseImageModal = () => {
+    setShowImageModal(false);
+    setSelectedImage({ src: '', alt: '', title: '' });
+  };
   
   return (
     <>
@@ -271,8 +287,14 @@ const Home =()=> {
         </p>
       </div>
     </div> 
-      <div className="carousel-item">
-<img src={digitalna}  alt="Атансије Стојковић"  className="d-block w-100 image-carousel img-thumbnail img-fluid" loading="lazy"/>
+          <div className="carousel-item">
+      <img 
+        src={digitalna}  
+        alt="Атансије Стојковић"  
+        className="d-block w-100 image-carousel img-thumbnail img-fluid clickable-image" 
+        loading="lazy"
+        onClick={() => handleImageClick(digitalna, 'Атансије Стојковић', 'Атансије Стојковић')}
+      />
       <div  className="carousel-caption ">
         <p className="carousel-caption-text" style={{padding:'1.5%'}} >  Румљанин Атанасије Стојковић био је најобразованији Србин<br/> прве трећине 19. века.
          <Button
@@ -288,7 +310,13 @@ const Home =()=> {
       </div>  
     </div>
     <div className="carousel-item">
-      <img src={karoselSlika} alt="Култура за све"   className="d-block w-100 image-carousel img-thumbnail img-fluid" loading="lazy"/>
+      <img 
+        src={karoselSlika} 
+        alt="Култура за све"   
+        className="d-block w-100 image-carousel img-thumbnail img-fluid clickable-image" 
+        loading="lazy"
+        onClick={() => handleImageClick(karoselSlika, 'Култура за све', 'Култура за све')}
+      />
       <div  className="carousel-caption ">
         <p className="carousel-caption-text" style={{padding:'2.5%'}}>Пројекат "КУЛТУРА ЗА СВЕ" представља јачање техничких капацитета наше установе.
         <Button
@@ -305,7 +333,13 @@ const Home =()=> {
       </div>
     </div> 
     <div className="carousel-item">
-      <img src={books} alt="ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА" className="d-block w-100 image-carousel img-thumbnail img-fluid" loading="lazy"/>
+      <img 
+        src={books} 
+        alt="ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА" 
+        className="d-block w-100 image-carousel img-thumbnail img-fluid clickable-image" 
+        loading="lazy"
+        onClick={() => handleImageClick(books, 'ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА', 'ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА')}
+      />
       <div className="carousel-caption ">
         <p className="carousel-caption-text" style={{padding:'1.5%'}}>ОМИЉЕНЕ КЊИГЕ НАШИХ КОРИСНИКА
         <Button
@@ -320,11 +354,8 @@ const Home =()=> {
   </Button>
         </p>
       </div>
-    </div> 
-      
+    </div>       
 </div>
-
-
   </div>
   </Col>
 
@@ -413,8 +444,6 @@ const Home =()=> {
   </Row>
 </Container>
 
-
-
  <Container className='container-library mt-2 mb-2'>
    <h2 className="container-title mb-2">Препорука романа за месец</h2><hr/>
    <Row>
@@ -428,6 +457,9 @@ const Home =()=> {
          </Nav.Item>
          <Nav.Item>
            <Nav.Link eventKey="avgust" className="container-text">Август</Nav.Link>
+         </Nav.Item>
+           <Nav.Item>
+           <Nav.Link eventKey="septembar" className="container-text">Септембар</Nav.Link>
          </Nav.Item>
        </Nav>
      </Col>
@@ -498,6 +530,29 @@ const Home =()=> {
                target="_blank"
                rel="noopener noreferrer"
                aria-label="Прегледај остала дела Доната Каризија"
+               style={{marginTop: '0.5rem'}}
+             >
+               Oстала дела овог аутора
+             </Button>
+           </Col>
+         </Row>
+      
+              )}
+       {activeKey === 'septembar' && (
+         <Row>
+           <Col xs={12} sm={12} md={4} lg={4} xl={4} className=" text-center mt-4">
+             <AnimatedImage className="container-image" alt='Песма о три света' src={pesmaOTriSveta} />
+           </Col>
+           <Col xs={12} sm={12} md={8} lg={8} xl={8} className="mt-4">
+             <p className="container-text">
+Владимир Пиштало у роману „Песма о три света“ оживљава једну од оних заборављених, али дубоко узбудљивих прича из прошлости Боке Которске. Радња романа прати судбину девојке из Пераста, коју су 1624. године отели гусари. Овај догађај постаје полазиште за приповест која премашује обичан историјски запис – Пиштало у њој гради симболичку причу о три света који се сударају: медитерански, оријентални и хришћански.
+ <br/></p>
+             <Button
+               variant="secondary"
+               href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?q=vladimir+pistalo*&db=gbru&mat=allmaterials"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Прегледај остала дела Владимира Пиштала"
                style={{marginTop: '0.5rem'}}
              >
                Oстала дела овог аутора
@@ -724,6 +779,15 @@ aria-label="Преузми статут установе Градске библ
     </div>
     )}
 </div><hr/>
+
+      {/* Image Modal */}
+      <ImageModal
+        show={showImageModal}
+        onHide={handleCloseImageModal}
+        imageSrc={selectedImage.src}
+        imageAlt={selectedImage.alt}
+        title={selectedImage.title}
+      />
 
     </>
   );

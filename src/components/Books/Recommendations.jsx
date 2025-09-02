@@ -1,6 +1,8 @@
 import React from 'react';
 import {  Row, Col,  Container } from 'react-bootstrap';
-import AnimatedImage from "../Department/AnimatedImage"; import { Helmet } from 'react-helmet';
+import AnimatedImage from "../Department/AnimatedImage"; 
+import { Helmet } from 'react-helmet';
+import './Recommendations.css';
 const Recommendations =()=>{
 
 
@@ -184,7 +186,20 @@ const Recommendations =()=>{
             <Row className="mb-4">
                    
                  <Col xs={12} md={12} >
-                    <h2 className='container-title'>Књиге за одрасле</h2><br/> <a className='container-text' href='https://www.instagram.com/reel/C6Vmssjsa3s/' target='_blank' rel="noreferrer">Препоручујемо вам! 📚</a> 
+                    <h2 className='container-title'>Књиге за одрасле</h2><br/> 
+                    <div className="mb-4">
+                      {/* <h3 className="container-title">Препоручујемо вам! 📚</h3> */}
+                      {/* <div className="iframe-container">
+                        <iframe 
+                          src="https://www.instagram.com/reel/C6Vmssjsa3s/embed" 
+                          width="100%" 
+                          height="400" 
+                          frameBorder="0" 
+                          allowFullScreen
+                          title="Instagram препорука књига за одрасле"
+                        ></iframe>
+                      </div> */}
+                    </div> 
                     {knjigeZaOdrasle.map((knjiga, index) => (
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4} style={{ padding: '1.5rem' }}>
@@ -210,7 +225,20 @@ const Recommendations =()=>{
                
                 <Col xs={12} md={12}>
                    
-                    <br/><h2 className='container-title'>Научне књиге</h2><br/><a className='container-text' href='https://www.instagram.com/reel/C33Aqkysm9H/' target='_blank'  rel="noreferrer">Препоручујемо вам! 📚</a>
+                    <br/><h2 className='container-title'>Научне књиге</h2><br/>
+                    <div className="mb-4">
+                      {/* <h3 className="container-title">Препоручујемо вам! 📚</h3> */}
+                       {/* <div className="iframe-container">
+                        <iframe 
+                          src="https://www.instagram.com/reel/C33Aqkysm9H/embed" 
+                          width="100%" 
+                          height="400" 
+                          frameBorder="0" 
+                          allowFullScreen
+                          title="Instagram препорука научних књига"
+                        ></iframe>
+                      </div> */}
+                    </div> 
                     {naucneKnjige.map((knjiga, index) => ( 
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4} >
@@ -235,6 +263,19 @@ const Recommendations =()=>{
                
                 <Col xs={12} md={12}>
                     <br/><h2 className='container-title'>Књиге за децу</h2><br/>
+                    <div className="mb-4">
+                      {/* <h3 className="container-title">Препоручујемо вам! 📚</h3>
+                      <div className="iframe-container">
+                        <iframe 
+                          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                          width="100%" 
+                          height="400" 
+                          frameBorder="0" 
+                          allowFullScreen
+                          title="YouTube препорука књига за децу"
+                        ></iframe>
+                      </div> */}
+                    </div>
                     {knjigeZaDecu.map((knjiga, index) => (
                         <Row key={index} className="mb-4 align-items-center">
                             <Col xs={12} md={4} >

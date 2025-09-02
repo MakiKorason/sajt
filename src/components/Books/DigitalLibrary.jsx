@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import ImageModal from '../ImageModal';
 import digitalna2 from '../../images/digitalna2.webp'
 import AnimatedCard from '../Department/AnimatedCard';     import { Helmet } from 'react-helmet';
 const DigitalLibrary =()=>{
+  // State for image modal
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ src: '', alt: '', title: '' });
+
+  // Function to handle image click
+  const handleImageClick = (imageSrc, imageAlt, imageTitle) => {
+    setSelectedImage({ src: imageSrc, alt: imageAlt, title: imageTitle });
+    setShowImageModal(true);
+  };
+
+  const handleCloseImageModal = () => {
+    setShowImageModal(false);
+    setSelectedImage({ src: '', alt: '', title: '' });
+  };
+
     return (<>
 
        <Helmet>
@@ -52,13 +68,20 @@ const DigitalLibrary =()=>{
       <Row className="mb-5">
         <Col md={12} className="mb-4">
           <AnimatedCard>
-            <Card.Img   src={digitalna2} variant="top"  alt="Дигитална библиотека"  style={{ 
-              display: 'block', 
-              margin: '0 auto', 
-              width: '100%', 
-              height:'100%'
-           
-            }}  />
+            <Card.Img   
+              src={digitalna2} 
+              variant="top"  
+              alt="Дигитална библиотека"  
+              className="clickable-image"
+              onClick={() => handleImageClick(digitalna2, 'Дигитална библиотека', 'Дигитална библиотека')}
+              style={{ 
+                display: 'block', 
+                margin: '0 auto', 
+                width: '100%', 
+                height:'100%'
+             
+              }}  
+            />
             <Card.Body>
            
               <Button 
@@ -90,8 +113,15 @@ const DigitalLibrary =()=>{
 
      
     </Container>
-    
-    
+
+      {/* Image Modal */}
+      <ImageModal
+        show={showImageModal}
+        onHide={handleCloseImageModal}
+        imageSrc={selectedImage.src}
+        imageAlt={selectedImage.alt}
+        title={selectedImage.title}
+      />
     
     </>)
 }
