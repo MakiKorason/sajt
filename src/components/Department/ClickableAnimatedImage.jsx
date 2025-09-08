@@ -30,3 +30,5 @@ const ClickableAnimatedImage = ({
 
 export default ClickableAnimatedImage;
 
+
+

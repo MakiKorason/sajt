@@ -39,3 +39,5 @@ const AnimatedCounter = ({ end, duration = 2000, title, icon }) => {
 
 export default AnimatedCounter;
 
+
+

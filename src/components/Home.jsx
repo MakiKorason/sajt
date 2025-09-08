@@ -41,6 +41,7 @@ import romana from '../images/романа.webp';
 import promocija from '../images/ПРОМОЦИЈА.webp';
 import sanjalica from '../images/sanjalica.webp';
 import todor from '../images/todor.webp';
+import decijiKonkurs from '../images/decijiKonkurs.jpg'
  
 
 const Calendar = React.lazy(() => import('react-calendar'));
@@ -228,12 +229,42 @@ const Home =()=> {
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Пређи на трећу слику карусела"></button> 
     <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Пређи на четврту слику карусела"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="4" aria-label="Пређи на пету слику карусела"></button>
-
+   <button type="button" data-bs-target="#demo" data-bs-slide-to="5" aria-label="Пређи на пету слику карусела"></button>
 
   </div>
  
-  <div className="carousel-inner">   
+  <div className="carousel-inner"> 
       <div className="carousel-item active">
+        <img 
+          src={decijiKonkurs} 
+          alt="Књижевни конкурс Атанасије Стојковић" 
+          className="d-block w-100 image-carousel img-thumbnail img-fluid" 
+          loading="lazy"
+          width="1200"
+          height="675"
+        />
+        <div className="carousel-caption">
+        
+          <Button
+            href="https://www.facebook.com/photo/?fbid=1373834851408801&set=a.512519967540298"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-light container-button"
+            aria-label="Сазнајте више о дечијем литерарном и ликовном конкурсу"
+            style={{
+              textShadow: 'none',
+              backgroundColor: '#f3f2ee',
+              color: '#3f2c11',
+              border: 'none',
+              marginTop: '1rem',
+              fontWeight: 'bold'
+            }}
+          >
+            ДЕТАЉНИЈЕ
+          </Button>
+      </div>
+      </div>
+      <div className="carousel-item">
         <img 
           src={konkursAtanasije} 
           alt="Књижевни конкурс Атанасије Стојковић" 
@@ -361,6 +392,8 @@ const Home =()=> {
 
 </Row>
 
+
+
 <Container  className=" container-library ms-auto mt-4 mb-4 ">
  
 <h2 className= "container-title"  >ОГЛАСНА ТАБЛА</h2>
@@ -386,8 +419,8 @@ const Home =()=> {
           </Button>
         </Modal.Footer>
       </Modal>
-   
     </Col>  
+
     <Col md={8} className='mt-3 mb-3 text-center'>
       <div className="carousel-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '15px', flexWrap: 'wrap' }}>
         <div className="carousel-images" style={{ display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
