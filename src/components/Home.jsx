@@ -237,14 +237,14 @@ const Home =()=> {
       <div className="carousel-item active">
         <img 
           src={decijiKonkurs} 
-          alt="Књижевни конкурс Атанасије Стојковић" 
+          alt="Ликовни и литерарни конкурс" 
           className="d-block w-100 image-carousel img-thumbnail img-fluid" 
           loading="lazy"
           width="1200"
-          height="675"
+          height="765"
         />
         <div className="carousel-caption">
-        
+        <br/>
           <Button
             href="https://www.facebook.com/photo/?fbid=1373834851408801&set=a.512519967540298"
             target="_blank"
@@ -271,10 +271,10 @@ const Home =()=> {
           className="d-block w-100 image-carousel img-thumbnail img-fluid" 
           loading="lazy"
           width="1200"
-          height="675"
+          height="765"
         />
         <div className="carousel-caption">
-        
+     
           <Button
             href="https://www.instagram.com/p/DMQRMyhI5wg/"
             target="_blank"
