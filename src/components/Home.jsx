@@ -462,12 +462,12 @@ const Home =()=> {
          <Nav.Item>
            <Nav.Link eventKey="avgust" className="container-text">Август</Nav.Link>
          </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="oktobar" className="container-text">Октобар</Nav.Link>
-        </Nav.Item>
            <Nav.Item>
            <Nav.Link eventKey="septembar" className="container-text">Септембар</Nav.Link>
          </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="oktobar" className="container-text">Октобар</Nav.Link>
+        </Nav.Item>
        </Nav>
      </Col>
      <Col md={9}>
