@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Container, Card, Button } from 'react-bootstrap';
+import { Table, Container, Card } from 'react-bootstrap';
 import './Services.css';
 import { IoBookSharp } from "react-icons/io5";
 import AnimatedCard from './Department/AnimatedCard'; 
@@ -182,7 +182,7 @@ const Services =()=>{
             <div >
            <p className='container-text text-center'> Упутство за кориснике</p>
 <hr/>
-  <ul className='container-text' style={{ paddingLeft: '1.25rem' }}>
+  <ul className='container-text' >
     <li>Корисник прво треба да провери да ли потребну књигу Градска библиотека поседује у свом фонду.</li>
   <br/>  <li>Уколико је не поседује, потребно је да корисник изврши претрагу Централног електронског каталога – COBISS.SR и да прегледа у којим библиотекама Србије она постоји.</li>
   <br/>  <li>Након тога, потребно је да корисник попуни Захтев за међубиблиотечку позајмицу подацима о књизи која се позајмљује. Образац захтева можете преузети онлајн
@@ -195,7 +195,8 @@ const Services =()=>{
   Образац
 </a> или добити у нашој библиотеци.
   </li>
-  <br/>  <li>Захтев се попуњава и шаље на mail адресу gradskabibliotekaruma@gmail.com.</li>
+  <br/>  <li>Захтев се попуњава и шаље на mail адресу:</li>
+    <li>gradskabibliotekaruma@gmail.com.</li> 
    <br/> <li>О приспећу књиге из међубиблиотечке позајмице корисник ће бити благовремено обавештен телефонским путем или електронском поштом.</li>
   </ul>
             </div>
