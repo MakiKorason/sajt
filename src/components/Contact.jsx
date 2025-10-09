@@ -11,7 +11,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "d3efaa2a-1c6e-4a2c-af80-9e50e001b682");
+    formData.append("access_key", "74a57f37-67a6-4369-b331-ff23b95e07e3");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -122,6 +122,8 @@ const Contact = () => {
                   <Form.Label>Ваша порука</Form.Label>
                   <Form.Control as="textarea" rows={3} name="message" autoComplete="message" required />
                 </Form.Group>
+                {/* Honeypot Spam Protection */}
+                <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
                 <Button className="btn btn-secondary w-100" type="submit" aria-label="Пошаљите поруку библиотекару">Пошаљите поруку</Button>
                 <div className="mt-2 text-center">{result}</div>
               </Form>

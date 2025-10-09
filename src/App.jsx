@@ -36,11 +36,7 @@ function InnerApp() {
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState({ src: '', alt: '', title: '' });
 
-  // Function to handle image click
-  const handleImageClick = (imageSrc, imageAlt, imageTitle) => {
-    setSelectedImage({ src: imageSrc, alt: imageAlt, title: imageTitle });
-    setShowImageModal(true);
-  };
+  // Function to handle image click (removed as unused)
 
   const handleCloseImageModal = () => {
     setShowImageModal(false);
