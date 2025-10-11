@@ -182,7 +182,7 @@ const Services =()=>{
             <div >
            <p className='container-title'> Упутство за кориснике</p>
 <hr/>
-  <ul className='container-text' >
+  <ul className='container-text'  style={{ wordBreak: "break-word", overflowWrap: "anywhere" }} >
     <li>Корисник прво треба да провери да ли потребну књигу Градска библиотека поседује у свом фонду.</li>
   <br/>  <li>Уколико је не поседује, потребно је да корисник изврши претрагу Централног електронског каталога – COBISS.SR и да прегледа у којим библиотекама Србије она постоји.</li>
   <br/>  <li>Након тога, потребно је да корисник попуни Захтев за међубиблиотечку позајмицу подацима о књизи која се позајмљује. Образац захтева можете преузети онлајн
@@ -195,7 +195,7 @@ const Services =()=>{
   Образац
 </a> или добити у нашој библиотеци.
   </li>
-  <br/>  <li>Захтев се попуњава и шаље на mail адресу:</li>
+  <br/>  <li style={{ wordBreak: "break-word", overflowWrap: "anywhere" }}>Захтев се попуњава и шаље на mail адресу:</li>
     <li>gradskabibliotekaruma@gmail.com.</li> 
    <br/> <li>О приспећу књиге из међубиблиотечке позајмице корисник ће бити благовремено обавештен телефонским путем или електронском поштом.</li>
   </ul>
@@ -203,14 +203,14 @@ const Services =()=>{
 
             <div>
               <p className='container-title'>Упуство за библиотеке</p><hr/>
-              <p className="container-text">Библиотеке које желе да остваре услугу међубиблиотечке позајмице од Градске библиотеке „Атанасије Стојковић” потребно је да попуне онлајн образац  &nbsp; <a
+              <p className="container-text" style={{ wordBreak: "break-word", overflowWrap: "anywhere" }}>Библиотеке које желе да остваре услугу међубиблиотечке позајмице од Градске библиотеке „Атанасије Стојковић” потребно је да попуне онлајн образац  &nbsp; <a
   href="/Obrazac za biblioteke.doc"
   download
   className="btn btn-secondary btn-sm"
   aria-label="Преузми захтев за међубиблиотечку позајмицу"
 >
   Образац
-</a>  и пошаљу на gradskabibliotekaruma@gmail.com. Публикација ће бити достављена у најкраћем периоду.</p>
+</a>  и пошаљу на  &nbsp; gradskabibliotekaruma@gmail.com. Публикација ће бити достављена у најкраћем периоду.</p>
               
             </div>
           </Card.Body>
