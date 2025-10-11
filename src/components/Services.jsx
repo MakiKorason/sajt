@@ -202,8 +202,8 @@ const Services =()=>{
             </div>
 
             <div>
-              <p className='container-title'>Упуство за библиотеке</p><hr/>
-              <p className="container-text" style={{ wordBreak: "break-word", overflowWrap: "anywhere" }}>Библиотеке које желе да остваре услугу међубиблиотечке позајмице од Градске библиотеке „Атанасије Стојковић” потребно је да попуне онлајн образац  &nbsp; <a
+              <p className='container-title'>Упутство за библиотеке</p><hr/>
+              <p className="container-text" style={{ wordBreak: "break-word", overflowWrap: "anywhere" }}>Библиотеке које желе да остваре услугу међубиблиотечке позајмице од Градске библиотеке „Атанасије Стојковић” потребно је да попуне онлајн  &nbsp; <a
   href="/Obrazac za biblioteke.doc"
   download
   className="btn btn-secondary btn-sm"
