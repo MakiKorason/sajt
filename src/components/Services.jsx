@@ -192,7 +192,7 @@ const Services =()=>{
   className="btn btn-secondary btn-sm"
   aria-label="Преузми захтев за међубиблиотечку позајмицу"
 >
-  Образац
+  образац
 </a> или добити у нашој библиотеци.
   </li>
   <br/>  <li style={{ wordBreak: "break-word", overflowWrap: "anywhere" }}>Захтев се попуњава и шаље на mail адресу:</li>
@@ -209,7 +209,7 @@ const Services =()=>{
   className="btn btn-secondary btn-sm"
   aria-label="Преузми захтев за међубиблиотечку позајмицу"
 >
-  Образац
+  образац
 </a>  и пошаљу на  &nbsp; gradskabibliotekaruma@gmail.com. Публикација ће бити достављена у најкраћем периоду.</p>
               
             </div>
